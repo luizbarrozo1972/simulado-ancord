@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado ANCORD 1 — 80 questões</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --accent: #2b6cb0;
+            --success: #276749;
+            --success-bg: #c6f6d5;
+            --error: #c53030;
+            --error-bg: #fed7d7;
+            --muted: #718096;
+            --bg: #edf2f7;
+            --card: #ffffff;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: "Segoe UI", system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--primary);
+            line-height: 1.55;
+            margin: 0;
+            padding: 88px 16px 100px;
+            max-width: 920px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .score-panel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #fff;
+            padding: 12px 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.15);
+        }
+        .score-inner {
+            max-width: 920px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 8px 16px;
+            align-items: center;
+        }
+        .score-item { text-align: center; }
+        .score-item strong {
+            display: block;
+            font-size: 1.35rem;
+            font-variant-numeric: tabular-nums;
+        }
+        .score-item span { font-size: 0.78rem; opacity: 0.92; }
+        .progress-wrap {
+            grid-column: 1 / -1;
+            height: 8px;
+            background: rgba(255,255,255,.25);
+            border-radius: 999px;
+            overflow: hidden;
+            margin-top: 4px;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: #9ae6b4;
+            border-radius: 999px;
+            transition: width 0.25s ease;
+        }
+        .header {
+            text-align: center;
+            background: var(--card);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.06);
+            margin-bottom: 20px;
+        }
+        .header h1 { margin: 0 0 8px; font-size: 1.35rem; }
+        .header p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+        .question-card {
+            background: var(--card);
+            padding: 18px 20px;
+            margin-bottom: 16px;
+            border-radius: 12px;
+            box-shadow: 0 1px 6px rgba(0,0,0,.06);
+        }
+        .question-text { font-weight: 600; margin-bottom: 14px; font-size: 0.98rem; }
+        .option-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: background .15s, border-color .15s;
+        }
+        .option-label:hover { background: #f7fafc; }
+        .option-label input { margin-top: 3px; accent-color: var(--accent); }
+        .correct { background: var(--success-bg) !important; border-color: var(--success) !important; }
+        .wrong { background: var(--error-bg) !important; border-color: var(--error) !important; }
+        .opt-text { flex: 1; }
+        .controls {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--card);
+            padding: 12px 16px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 -4px 16px rgba(0,0,0,.08);
+        }
+        button {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .btn-clear { background: var(--error); color: #fff; }
+        .btn-clear:hover { filter: brightness(1.05); }
+    </style>
+</head>
+<body>
+    <div class="score-panel" role="region" aria-label="Pontuação">
+        <div class="score-inner">
+            <div class="score-item"><strong id="hits">0</strong><span>Acertos</span></div>
+            <div class="score-item"><strong id="wrong">0</strong><span>Erros</span></div>
+            <div class="score-item"><strong id="answered">0</strong><span>Respondidas</span></div>
+            <div class="score-item"><strong id="pct">0%</strong><span>Taxa (sobre respondidas)</span></div>
+            <div class="score-item"><strong id="pct-total">0%</strong><span>Parcial sobre 80 questões</span></div>
+            <div class="progress-wrap"><div class="progress-bar" id="progress-bar"></div></div>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Simulado ANCORD 1</h1>
+        <p>80 questões · Gabarito conforme apostila Fevereiro/2024 · Progresso salvo neste navegador.</p>
+    </div>
+
+    <div id="quiz-container"></div>
+
+    <div class="controls">
+        <button type="button" class="btn-clear" id="btn-clear">Limpar respostas</button>
+    </div>
+
+    <script>
+        const questions = [{"id": 1, "q": "Em caso de conduta do Assessor de Investimentos (AI) que configure indício de infração, a CVM deve ser avisada. Desta forma, podemos afirmar que a(o):", "options": ["Ancord deve avisar a CVM, em até 30 dias após sua fiscalização mensal no qual teve conhecimento de condutas inadequadas do AI.", "credenciado possui 30 dias úteis para recorrer a CVM quando descredenciado por penalidade.", "Responsabilidade da comunicação à CVM é da Ancord.", "Responsabilidade da comunicação é da Instituição integrante do sistema de distribuição contratante do AI que cometeu a possível infração."], "correct": 3}, {"id": 2, "q": "Segundo a Resolução CVM 178/23 (e suas atualizações), que trata das atividades do Assessor de Investimentos (AI), a responsabilidade da fiscalização dos AI que atuem como preposto de instituição integrante do sistema de distribuição de valores mobiliários é da(o):", "options": ["Ancord", "AI constituído como pessoa jurídica.", "Comissão de Valores Mobiliários.", "Próprio intermediário."], "correct": 3}, {"id": 3, "q": "Rafael e Guilherme são irmãos e ambos são Assessores de Investimentos (AI) pessoas naturais, mas não trabalham na mesma corretora (CTVM): Rafael é vinculado a corretora ABCD e Guilherme trabalha para a corretora XYZ. Certo dia, um cliente de Rafael deseja realizar diversas operações na bolsa de valores e para ganhar tempo, resolveu passar a sua senha do homebroker para que Rafael pudesse executar de forma mais ágil, já que eles são amigos de longa data. No entanto, Rafael necessitou levar seu filho urgentemente no médico, não podendo executar as operações. Com isso, Rafael decide repassar a senha do cliente a seu irmão Guilherme, pedindo que o mesmo lhe ajude a transmitir as ordens diretamente pelo homebroker ou por seu sistema próprio. Diante dessa situação, podemos afirmar que:", "options": ["Rafael não pode usar a senha do cliente e tão pouco Guilherme, mas pode solicitar a seu irmão que transmita as ordens para sua corretora, afinal, Guilherme também é um Al.", "Rafael pode usar a senha do cliente, pois foi o cliente que repassou, mas não pode pedir a Guilherme que transmita as ordens porque o cliente não o conhece.", "Rafael pode usar a senha do cliente, pois foi o cliente que repassou e por isso pode pedir a Guilherme para acessar tanto o homebroker, quanto encaminhar a ordem por seu sistema.", "Rafael não pode usar a senha do cliente, tão pouco repassar a senha a Guilherme ou solicitar que o mesmo transmita as ordens para sua corretora."], "correct": 3}, {"id": 4, "q": "Constitui direito do Assessor de Investimento perante vínculo a intermediário integrante do sistema de distribuição de valores mobiliários com a qual tenha contrato:", "options": ["Não explicar seu vínculo com a Instituição.", "Delegar a terceiros a execução dos serviços objeto do contrato.", "Ser procurador de seus clientes.", "Agir como seu preposto."], "correct": 3}, {"id": 5, "q": "Considere as afirmativas abaixo: I – Um assessor de Investimento pode exercer a função de consultor de valores mobiliários. II – Um assessor de Investimento pode exercer a função de administrador de carteira. III – Um assessor de Investimento não pode exercer a função de consultor de valores mobiliários. IV – Um assessor de Investimento não pode exercer a função de administrador de carteira. Estão corretas APENAS as alternativas", "options": ["I e II", "I e III", "II e III", "III e IV"], "correct": 3}, {"id": 6, "q": "Preencha corretamente com uma das alternativas abaixo, respectivamente, as lacunas da seguinte frase: “O credenciamento para exercer a atividade de assessor de Investimento é feita pela________, e o seu Registro é concedido pela _______.”", "options": ["B3 / BACEN", "ANCORD / CVM", "CVM / ANCORD", "BACEN / CVM"], "correct": 1}, {"id": 7, "q": "Independente da responsabilidade individual do assessor de Investimento, perante a CVM e as demais entidades competentes, a responsabilidade pelas atividades da sociedade a que pertence é:", "options": ["do sócio que responde a receita federal.", "de todos os sócios.", "do sócio majoritário.", "dos sócios que possuam mais de 25% do capital social."], "correct": 1}, {"id": 8, "q": "Caso um investidor pessoa física resolva contratar um Assessor de Investimentos (AI) para ajuda-lo conhecer melhor o mercado de capitais e melhorar seus investimentos, esse AI deve:", "options": ["Não aceitar ser contratado por esse investidor, pois não lhe é permitido.", "Prospectar e captar os melhores investimentos para seu contratante (investidor), pois essa é uma das atividades do AI.", "Prestar todas as informações sobre todos os produtos de investimentos e serviços que está apto a oferecer ao investidor.", "Receber e registrar as ordens do seu contratante (investidor) e transmiti-las para o sistema de negociação."], "correct": 2}, {"id": 9, "q": "O Art. 5 da Resolução CVM 178/23 define Assessor de Investimento como uma pessoa natural. O Art. 6, da mesma resolução, define o assessor de Investimento pessoa jurídica. Analise as assertivas abaixo: I – Para o credenciamento da Sociedade de AI, é obrigatório que essa tenha como objeto social exclusivo, o exercício da atividade de assessor de Investimento, sendo vedada a participação em outras sociedades. II – Para o credenciamento da Sociedade de AI é obrigatório que essa seja constituída como Sociedade Anônima, adotando qualquer uma das formas permitidas para tal, na forma da legislação em vigor. III – Para o credenciamento da Sociedade de AI, é obrigatório que essa sociedade tenha apenas sócios AI pessoas naturais, as quais será atribuído, o exercício das atividades inerentes ao AI, dentre outras. Estão corretas as alternativas:", "options": ["I, apenas", "II e III, apenas.", "I, II e III.", "Nenhuma das anteriores."], "correct": 3}, {"id": 10, "q": "Para exercer atividade de administração de carteira, consultoria ou análise de valores mobiliários, o Assessor de Investimentos registrado pela CVM, deve requerer a Entidade Credenciadora:", "options": ["A suspensão do seu Registro.", "Cancelamento do seu Registro.", "Cancelamento do seu credenciamento.", "Requerimento para exame de qualificação."], "correct": 2}, {"id": 11, "q": "O Credenciamento de Assessor de Investimentos e das pessoas jurídicas por elas constituídas é feito:", "options": ["pela CVM.", "pela B3.", "por entidades autorizadas pela CVM.", "pela Instituição Contratante."], "correct": 2}, {"id": 12, "q": "O cancelamento do credenciamento do Assessor de Investimento é condição para exercer as atividades de administração de carteira, de:", "options": ["Consultoria ou de análise de valores mobiliários.", "Prospecção e captação de clientes ou de análise de valores mobiliários.", "Consultoria ou análise de ordens para os sistemas de negociação.", "Prospecção e captação de clientes ou de registro de ordens para o sistema de negociação."], "correct": 0}, {"id": 13, "q": "O recurso recuperado nos casos de Lavagem de Dinheiro é destinado:", "options": ["em um primeiro momento à uma conta remunerada na CEF ou outra instituição financeira pública, através de depósito judicial quando trata-se de processos de competência da Justiça Federal e da Justiça do Distrito Federal.", "O recurso fica disponível em conta do Estado para que seja utilizado como investimentos para combate à prevenção de Lavagem de dinheiro de acordo com determinação do Bacen.", "As operações relativas a pagamentos, recebimentos e transferências de recursos, por meio de qualquer instrumento, contra pagamento em espécie, de valor igual ou superior a R$ 50.000,00 (cinquenta mil reais) serão devolvidas diretamente ao tesouro nacional.", "As instituições financeiras deverão identificar seus clientes, representantes e manter cadastro atualizado, nos termos de instruções emanadas das autoridades competentes para que em caso de recuperação dos recursos judicialmente esses possam ser favorecidos."], "correct": 0}, {"id": 14, "q": "Segundo a Circular BACEN 3.978/20 (e suas atualizações) caracterizam-se Pessoas Expostas Politicamente (PEP) os agentes públicos que desempenham ou tenham desempenhado, no país ou no exterior cargos, empregos ou funções públicas relevantes, assim como seus representantes, familiares ou outras Pessoas do seu relacionamento próximo, no seguinte prazo:", "options": ["10 anos se pertenceu a administração direta federal.", "5 anos após o seu desenquadramento.", "7 anos ininterruptos.", "24 meses contados a partir do seu enquadramento."], "correct": 1}, {"id": 15, "q": "Com respeito ao crime de \"lavagem\" ou ocultação de bens, diretos e valores, a Circular Bacen 3.978/20 (e suas atualizações) determina que as instituições financeiras devem indicar um diretor responsável pela implementação e cumprimento das medidas estabelecidas para evitar tais crimes. Admita-se entretanto que esse diretor desempenhe outras funções desde que:", "options": ["Não aja conflito de interesses.", "Não seja na mesma Instituição.", "Tenha uma certificação reconhecida pela CVM.", "Essa função não seja de diretoria."], "correct": 0}, {"id": 16, "q": "Segundo a Res. CVM 50/21 PLD-FT (Lavagem de dinheiro) as entidades administradoras de mercados organizados que não tenham relacionamento direto com o investidor devem obter e manter atualizados os dados cadastrais (dos investidores) com o(s):", "options": ["seus participantes.", "seus Representantes (dos investidores).", "cadastro de Investidores do Banco central.", "cadastro de Investidores da B3."], "correct": 0}, {"id": 17, "q": "A Inflação pode ser causada em função:", "options": ["Dos custos, da demanda ou uma conjunção desses dois fatores.", "Nem dos custos, nem das demandas.", "Da demanda somente.", "Dos custos somente."], "correct": 0}, {"id": 18, "q": "Déficit na Balança Comercial significa:", "options": ["As importações de bens e serviços foram maiores do que as exportações de bens e serviços em determinado período de tempo.", "As importações de bens foram maiores do que as exportações de bens em determinado período de tempo.", "As importações de serviços foram maiores do que as exportações de serviços em determinado período de tempo.", "O país vendeu mais mercadorias ao exterior do que comprou mercadoria do exterior em determinado período de tempo."], "correct": 1}, {"id": 19, "q": "O Conselho Nacional de Previdência Complementar tem como principal função:", "options": ["Fixar as diretrizes da política de seguros privados no Brasil.", "Regular as atividades dos Fundos de Pensão.", "Controlar o mercado de seguros e sociedades de capitalização", "Fiscalizar os Fundos de Pensão."], "correct": 1}, {"id": 20, "q": "A Câmara de Ações (B3) liquida operações realizadas por meio do sistema Bovespa Fix onde são negociados os _______________:", "options": ["títulos privados de renda fixa.", "títulos lastreados em moedas.", "títulos de renda variável.", "títulos lastreados em ouro."], "correct": 0}, {"id": 21, "q": "A BSM Supervisão de Mercados para viabilizar a sua atuação teve assegurada regulamentação vigente, personalidade jurídica e:", "options": ["estabilidade da diretoria.", "subordinação direta a CVM.", "poder de política.", "orçamento Próprio."], "correct": 3}, {"id": 22, "q": "No Sistema de Pagamento Brasileiro é considerado Instituição de pagamento a pessoa jurídica :", "options": ["Financeira responsável pelo relacionamento com os usuários finais com dos serviços de pagamentos.", "Financeira que preste determinado serviço de pagamento ao público.", "Não financeira que tem autorização para compensação e de liquidação de pagamentos.", "Não financeira responsáveis pelo relacionamento com os usuários finais com os serviços de pagamentos."], "correct": 2}, {"id": 23, "q": "Considere as afirmativas abaixo: I – Os bancos múltiplos devem ser constituídos com no mínimo, duas carteiras, sendo uma delas obrigatoriamente ser comercial ou de desenvolvimento. II – Os bancos de Investimentos podem captar recursos via venda de cotas de fundos de investimentos e financiar a aquisição de títulos e valores mobiliários. III – Os bancos comerciais podem captar recursos via depósito a prazo e financiar as empresas prestadoras de serviços. Podemos afirmar que:", "options": ["I e II são falsas.", "I e II são verdadeiras.", "I e III são falsas", "II e III são verdadeiras"], "correct": 3}, {"id": 24, "q": "A caixa econômica federal centraliza o recolhimento e aplicação dos recursos oriundos do FGTS e integra os sistemas:", "options": ["Sistema Especial de Liquidação e de Custódia (SELIC) e financeiro de Habitação (SFH).", "Financeiro da Habitação (SFH) e de Proteção ao Crédito (SPC).", "Brasileiro de Poupança e Empréstimo (SBPE) e de Proteção ao Crédito (SPC).", "Brasileiro de Poupança e Empréstimo (SBPE) e Financeiro de Habilitação (SFH)."], "correct": 3}, {"id": 25, "q": "A respeito do Sistema de compensação e liquidação (clearings) é correto afirmar que:", "options": ["Como contraparte central, a Clearing deve exigir que as corretoras imponham limites operacionais aos seus clientes , assegurando a eliminação do risco de mercado.", "Como contraparte central, a Clearing se interpõe entre operações e contratos , tornando-se compradora para todos os vendedores e vendedora para todos os compradores, visando a redução do risco de mercado.", "Como contraparte central, a Clearing se interpõe entre operações e contratos tornando-se compradora para todos os vendedores e vendedora para todos os compradores, visando aumentar a segurança das liquidações.", "Como contraparte central, a Clearing deve exigir que as corretoras limitem os volumes de riscos dos seus clientes, assegurando a garantia das liquidações."], "correct": 2}, {"id": 26, "q": "Considerando os diferentes tipos de risco existentes, por vezes há mais de um tipo de risco envolvido em uma mesma operação que tenha acarretado grandes perdas. Por exemplo, os prejuízos poderiam ser decorrentes:", "options": ["do risco de mercado, quando houvesse queda acentuada no preço de uma ação e, também do risco operacional, quando houvesse desconhecimento dos riscos reais por parte dos gestores.", "do risco de crédito, quando houvesse queda acentuada nas taxas de juros de empréstimos concedidos a taxas de juros pós-fixados e, também, do risco de mercado se o tomador do crédito estivesse muito alavancado.", "do risco de crédito, quando houvesse alta acentuada nas taxas de juros, e também do risco de liquidez se um título fosse pouco negociado.", "do risco operacional se não houvesse conhecimento técnico adequado sobre uma operação estruturada complexa ou, também, do risco de liquidez se a contraparte não honrasse suas obrigações."], "correct": 0}, {"id": 27, "q": "No ano de 1995 o banco de investimentos Barings, o mais antigo da Inglaterra, quebrou devido as enormes perdas, US$ 1,2 bilhões decorrentes de especulações feitas por um dos seu operadores Nick Leeson. Ele apostava na alta do índice da bolsa de Tóquio que, entretanto, teve fortes baixas. A partir daí os administradores de bancos e de grandes empresas passaram a utilizar a métrica de risco conhecida como Value at Risk - VaR com o objetivo de conhecer e controlar os riscos de mercado. Considerando a análise de retornos esperados e riscos , ao avaliarem novo negócio, os administradores de empresa ou instituição financeira devem:", "options": ["Aprovar o negócio se o retorno esperado for alto e o novo VaR ficar elevado.", "Recusar o negócio se o retorno esperado for alto e o novo VaR ficar baixo (situação de hedge).", "Aprovar o negócio se o VaR ficar mais baixo (situação de hedge), independentemente do retorno esperado.", "Aprovar o negócio se o retorno esperado for satisfatório e o novo VaR ficar baixo (situação de hedge)"], "correct": 3}, {"id": 28, "q": "Em relação aos Túneis de negociação , é correto afirmar que:", "options": ["Os túneis de rejeição e de negociação não são complementares.", "No caso de leilão acionado por túnel, o algoritmo adotado é o de maximização da quantidade negociada e geração de negócios e vários preços.", "Os túneis de rejeição e de negociação e demais regras do pregão eletrônicos, inclusive por prevenir a ocorrência de erros operacionais ao recusar ofertas de compras ou de vendas muito distantes dos vigentes.", "Os túneis de rejeição e de negociação e demais regras do pregão eletrônico, não impõem limites aos tamanhos das ofertas, mas somente aos seus preços."], "correct": 2}, {"id": 29, "q": "O Commercial Papers (Nota Promissória) é um tipo de ativo de emissão das companhias com prazo máximo de vencimento de:", "options": ["360 dias após a data da sua emissão.", "720 dias após a data de sua emissão.", "720 dias após a data de sua aquisição.", "360 dias após a data de sua aquisição."], "correct": 0}, {"id": 30, "q": "Nas debêntures com garantias reais,", "options": ["se houver liquidação da companhia, há preferência de pagamento aos debenturistas em aos acionistas.", "não existem garantia ou preferência ao investidor em caso de liquidação da companhia.", "os bens e direitos garantidos pela empresa na emissão podem ser negociados sem autorização prévia dos debenturistas.", "os bens e direitos garantidos pela empresa na emissão não podem ser comprometidos, portanto só poderá ser negociado com a aprovação dos debenturistas."], "correct": 3}, {"id": 31, "q": "A quantidade de ações de uma empresa negociada em bolsa de valores foi alterada em função de uma bonificação Nesse caso, um investidor que tenha adquirido estas ações:", "options": ["terá um crédito a receber, na forma de juros.", "terá direito a receber novas ações.", "será obrigado a realizar um aporte de capital na empresa.", "terá a quantidade de ações reduzida."], "correct": 1}, {"id": 32, "q": "São emissores de ações, os agentes participantes do mercado de capitais brasileiro:", "options": ["As corretoras de títulos e valores mobiliários.", "Underwriters.", "Bancos múltiplos, com carteira de desenvolvimento.", "Companhias Abertas."], "correct": 3}, {"id": 33, "q": "Quanto a participação da companhia emissora das ações, existem duas categorias de BDRs ( Brazilian Depositary Receipts) que são:", "options": ["Patrocinados (Nível I, II e III) e não patrocinados (Nível III).", "Patrocinados apenas (Nível I e II) e não patrocinados ( Nível II).", "Patrocinados apenas (Nível I) e não patrocinados (Nível I).", "Patrocinados (Nível I, II e III) e não patrocinados."], "correct": 3}, {"id": 34, "q": "Um assessor de investimentos foi questionado pelo seu cliente sobre quem é o responsável pelo recolhimento do Imposto de Renda na fonte nas operações com ações. Desta forma, ele respondeu corretamente que é a(o):", "options": ["Próprio investidor", "Bolsa de valores", "Administrador do fundo", "Corretora de Valores"], "correct": 3}, {"id": 35, "q": "O ambiente de negociação onde ocorre o mecanismo de ajuste diário de lucros e perdas em relação ao preço do ajuste é o mercado.", "options": ["De opções", "Futuro", "A termo", "De Swaps"], "correct": 1}, {"id": 36, "q": "No mercado de opções, a operação através da qual o lançador, pela compra, ou o titular pela venda de ações da mesma série, extingue sua posição, ou parte dela, na mesma Sociedade corretora, chama-se:", "options": ["Posições opostas.", "Encerramento de exercício.", "Bloqueio de posições.", "Encerramento de posição."], "correct": 3}, {"id": 37, "q": "Nos mercados administrados pela Bolsa, os negócios poderão ser realizados em lote-padrão ou seus múltiplos, porém, negociações com lotes fracionários somente no mercado:", "options": ["De opções", "A termo", "Futuro de Opções", "À vista"], "correct": 3}, {"id": 38, "q": "As práticas aplicadas as empresas listadas nos segmentos Bovespa Mais e Bovespa Mais Nível 2, tem semelhanças e diferenças. Abaixo escolha única opção que tem uma diferença válida entre esses segmentos de listagem:", "options": ["Bovespa Mais Nível 2, permite a listagem sem oferta inicial e Bovespa Mais não permite a listagem sem oferta inicial.", "Bovespa Mais Nível 2 não admite ações preferenciais (PN) e Bovespa Mais admite ações preferenciais (PN) .", "Bovespa Mais tem 7 anos para atingir o Free Floating (25%) e Bovespa Mais Nível 2 não tem uma regra específica.", "Bovespa Mais não admite ações preferenciais (PN) e Bovespa Mais Nível 2 admite ações preferenciais (PN)."], "correct": 3}, {"id": 39, "q": "Os segmentos especiais de listagem do BOVESPA, foram criados para:", "options": ["Facilitar o acesso de pessoas físicas ao mercado de ações.", "Desenvolver o Novo Mercado.", "Oferecer adequação aos diferentes perfis de empresas.", "Distinguir ações de companhias 1°, 2° e 3° linha."], "correct": 2}, {"id": 40, "q": "Em relação aos índices da B3, é incorreto afirmar que:", "options": ["Os índices amplos (Ibovespa, IBrX-100, IBrX-50 e IBrA) são compostos exclusivamente por ações, units de ações e BDR’s.", "Os índices IBrX-100 e IBrX-50 se diferem, exclusivamente em sua metodologia, pela quantidade de ativos que compõe a carteira, vide que o IBrX-100 é o indicador do desempenho médio das cotações dos 100 ativos, enquanto que o IBrX-50 é o dos 50 ativos.", "O Ibovespa é o principal índice da bolsa brasileira e seu objetivo é ser o indicador do desempenho médio das cotações dos ativos de maior negociabilidade e representatividade do mercado de ações brasileiro, considerando que não há aportes adicionais nem resgates posteriores, e no qual todos os dividendos são reinvestidos.", "As ações consideradas como Penny Stocks não são elegíveis para a composição da carteiras dos índices amplos."], "correct": 0}, {"id": 41, "q": "A maioria dos valores mobiliários emitidos pelas companhias, ou tem prazos muito longos, ou não tem prazo definido para respectivo resgate. Não fosse o mercado ______ essas características poderiam afastar muitos investidores, pois eles não teriam como negociar, com terceiros, os valores mobiliários substitutos, dificultando o processo de emissão desses valores mobiliários pelas companhias.", "options": ["De balcão organizado", "Primário", "De bolsa", "Secundário"], "correct": 3}, {"id": 42, "q": "Qualquer _________, quando quer cancelar seu Registro como companhia aberta, se utiliza de uma ________, onde ela precisa_______, os valores mobiliários que _________ e esses recursos da compra ou venda irão passar para os (as) _______.", "options": ["Instituição financeira / OPA / Vender / comprou / investidores", "Instituição financeira / IPO/ Comprar / emitiu / emissores", "Sociedade Anônima / IPO / Vender / comprou / empresas", "Sociedade Anônima/ OPA / comprar / emitiu / acionistas"], "correct": 3}, {"id": 43, "q": "Qual o valor total de imposto de renda que deverá ser pago, de um investidor que realizou as operações abaixo na bolsa de valores?", "options": ["R$ 2.000,00", "R$ 2.100,00", "R$ 2.800,00", "Isento de IR, vide que lucrou menos de R$ 20.000,00"], "correct": 0}, {"id": 44, "q": "Com relação à custódia fungível, está correto o que se afirma em:", "options": ["os títulos retirados são exatamente os mesmos que foram depositados.", "tipo de custódia que é utilizado somente nos Estados Unidos e na Europa.", "os títulos retirados não são necessariamente os mesmos que foram depositados, embora tenham a mesma quantidade, qualidade e espécie.", "é aquela onde os títulos retirados serão de outra companhia emissora."], "correct": 2}, {"id": 45, "q": "Uma de oferta compra e venda que deve ser executada por um preço limitado ou melhor, especificado pela ordem do comitente, ou seja, no caso de uma oferta de compra, a sua execução não poderá ocorrer a um preço maior que o limite estabelecido, e no caso de uma oferta de venda, a execução não poderá ocorrer a um preço menor que o limite estabelecido, o nome dessa oferta é:", "options": ["Stop", "À mercado", "Limitada", "De direto"], "correct": 2}, {"id": 46, "q": "Quanto a validade, uma oferta (ordem encaminhada a B3) pode ser:", "options": ["Para o dia, até executar ou até cancelar.", "Tudo ou nada, para data, execute ou cancele.", "Até cancelar, até suspender, execute ou cancele.", "Para o dia, até a data especificada, até cancelar."], "correct": 3}, {"id": 47, "q": "A central depositária da B3 foi, pioneira na desmaterialização dos ativos (substituição de documentos físicos por registros eletrônicos). Todos os registros e movimentações, são feitos de forma escritural e eletrônica em um processo conhecido como:", "options": ["Book Building", "Book Entry", "Clearing house", "Penny Stock"], "correct": 1}, {"id": 48, "q": "As negociações de um determinado ativo negociado no mercado futuro de ações serão suspensas, sempre que as negociações com esses mesmos ativos forem suspensos no mercado:", "options": ["À vista", "Derivativos", "De opções", "À termo"], "correct": 0}, {"id": 49, "q": "Preencha corretamente com uma das alternativas abaixo, respectivamente, as lacunas da seguinte frase: “Toda informação divulgada por, qualquer meio, na qual seja incluída referência à rentabilidade da classe do fundo de investimentos, deve obrigatoriamente contemplar, adicionalmente à informação divulgada, a rentabilidade acumulada dos últimos _______ meses e ser acompanhada do valor do patrimônio líquido médio mensal dos últimos _____ meses ou desde a sua constituição, se mais recente.”", "options": ["3 (três); 12 (doze)", "6 (seis); 6 (seis)", "6 (seis); 12 (doze)", "12 (doze); 12 (doze)"], "correct": 2}, {"id": 50, "q": "Preencha corretamente com uma das alternativas abaixo, respectivamente, as lacunas da seguinte frase: “As importâncias recebidas na integralização de cotas durante o processo de distribuição de cotas de classe fechada devem ser depositadas em _______________________ ou aplicadas em valores mobiliários ou outros ativos financeiros compatíveis com as características da classe”.", "options": ["banco de investimento ou banco múltiplo com carteira de investimento", "banco comercial ou banco múltiplo com carteira comercial", "banco comercial, banco múltiplo com carteira comercial ou Caixa Econômica", "instituição integrante do Sistema de Pagamentos Brasileiro (SPB)."], "correct": 3}, {"id": 51, "q": "Quanto a composição de sua carteira, os fundos de investimentos financeiros, registrados na CVM, classificam-se em:", "options": ["Renda fixa, Ações, Multimercado e Cambial.", "Renda fixa, Ações, Derivativos e Cambial.", "Renda fixa, Renda variável, Multimercado e Cambial.", "Renda variável, Ações, Multimercado e Cambial."], "correct": 0}, {"id": 52, "q": "A classe dos fundos classificados como \"Dívida Externa\" deverão aplicar no mínimo ___ de seu (sua) _______em títulos representativos da dívida externa de responsabilidade da União, sendo permitida a aplicação dos recursos remanescentes em operações de derivativos , no Brasil, exclusivamente para fins de proteção da sua carteira (hedge) ou mantê-los em conta de depósito à vista em nome da classe do fundo, observando, no conjunto, o limite de _____do Patrimônio Líquido respectivo.", "options": ["90% / carteira / 10%", "80% / patrimônio líquido / 10%", "90% / patrimônio líquido / 10%", "80% / Carteira / 20%"], "correct": 1}, {"id": 53, "q": "Fundo de Índice ou Exchange Traded Funds (ETF) são fundos:", "options": ["Cujas cotas não podem ser objeto de empréstimos e de garantias.", "Espelhados em índices e cujas cotas são negociadas em bolsa da mesma forma que as ações.", "Cujas carteiras são formadas somente por títulos da empresa de um setor específico", "Administrados por pessoa jurídica autorizada pela CVM, cujas cotas só podem ser negociadas em mercado primário."], "correct": 1}, {"id": 54, "q": "A legislação da CVM define um fundo de investimentos em cotas de fundos de investimentos em Diretos Creditórios (FIC-FIDC) como uma comunhão de recursos que destina uma parcela ____ do respectivo patrimônio líquido (PL) para a aplicação em ___________.", "options": ["menor que 95% / Direitos Creditórios.", "mínima de 95% / Cotas de Fundos de Investimentos em Diretos Creditórios (FIC- FIDC).", "mínima de 67% / Cotas de Fundos de Investimentos em Diretos Creditórios.", "mínimo de 67% / Direitos Creditórios."], "correct": 2}, {"id": 55, "q": "Sobre os Certificados de Recebíveis Imobiliários, podemos afirmar que:", "options": ["Somente podem ser distribuídos publicamente com prévia autorização da CVM.", "São investimentos lastreados em financiamentos feitos por companhia S/A listada em bolsa.", "Apresentam isenção de imposto para qualquer tipo de investidor.", "Somente podem ser emitidas por uma Sociedade de Credito Imobiliário (SCI)."], "correct": 0}, {"id": 56, "q": "O prazo em dias úteis, para pagamento de resgates de cotas, estabelecidos nas estruturas de Clubes de Investimentos, contado da data da conversão em cotas, não podem ser superior a:", "options": ["10 (dez)", "7 (sete)", "5 (cinco)", "15 ( quinze)"], "correct": 2}, {"id": 57, "q": "O percentual máximo de títulos públicos federais que podem constituir o Patrimônio de um Clube de Investimentos é de:", "options": ["67%", "33%", "50%", "40%"], "correct": 1}, {"id": 58, "q": "Atualmente, grande parte dos ativos de renda fixa é precificada com base na expressão de taxa over anual. Nos dias de hoje, o conceito de taxa over é uma taxa efetiva anual, na qual a equivalente diária é a taxa equivalente, descapitalizada segundo o regime:", "options": ["Simples, pelo número de dias corridos no ano (adotando-se 360 dias como o número de dias corridos do ano).", "Simples, pelo número de dias corridos no ano (adotando-se 252 dias como o número de dias úteis do ano).", "Composto, pelo número de dias corridos no ano (adotando-se 360 dias como o número de dias corridos do ano).", "Composto, pelo número de dias corridos no ano (adotando-se 252 dias como o número de dias úteis do ano)."], "correct": 3}, {"id": 59, "q": "Uma dívida de R$ 30.000,00 a vencer dentro de 1 ano é quitada 3 meses antes do prazo. Para sua aquisição antecipada o credor concede um desconto de 15% ao ano, com capitalização composta. O valor da dívida a ser pago antecipadamente é:", "options": ["28.969,89", "27.553,00", "32.586,00", "29.524,65"], "correct": 0}, {"id": 60, "q": "O valor presente de um fluxo de caixa admitindo uma taxa de juros de 3,5% ao mês e 40 prestações mensais, iguais e sucessivas de R$ 1.850,00 cada, vencendo a primeira ao final do 1° mês, é:", "options": ["38.807,36", "37.500,00", "39.506,88", "35.126,35"], "correct": 2}, {"id": 61, "q": "Um financiamento está sendo negociado a uma taxa nominal de 60% ao ano. O custo efetivo anual dessa operação admitindo que os juros sejam capitalizados, mensalmente, é:", "options": ["81,54% a.a", "76,54% a.a", "80,25% a.a", "79,59% a.a"], "correct": 3}, {"id": 62, "q": "A liquidação de contrato de câmbio ocorre quando da entrega de ambas as moedas, nacional ou estrangeira, objeto de contratação ou de títulos que as representem. No caso de Operações de câmbio de importação e de natureza financeira, com ou sem registro no Banco Central do Brasil, a liquidação deve ocorrer em até:", "options": ["360 dias da contratação.", "90 dias da contratação.", "1.500 dias da contratação.", "180 dias da contratação."], "correct": 0}, {"id": 63, "q": "Sabendo que um título indexado ao IPCA (NTN-B) com pagamento de cupom de juros de 6% a.a e prazo de um ano, foi vendido a taxa de 5,79% a.a, podemos dizer que esse título foi:", "options": ["Negociado com deságio.", "Negociado com ágio.", "Negociado com lucro acima da Inflação.", "Negociado ao par."], "correct": 1}, {"id": 64, "q": "As Letras de Câmbio são instrumentos de captação emitidos por Sociedades de crédito, financiamento e Investimento (Financeiras), com base numa transação comercial. Como características de resgates, as Letras de Câmbio, que normalmente ultrapassam sessenta dias de prazo :", "options": ["Não possuem liquidez diária, mas o investidor poderá resgatar o montante antes do vencimento.", "Não possuem liquidez diária e o investidor só poderá resgatar o montante no vencimento.", "Possuem liquidez diária e o investidor pode resgatar o montante antes do vencimento.", "Possuem liquidez diária a partir de 15 dias onde o investidor poderá resgatar o montante."], "correct": 0}, {"id": 65, "q": "O CDB é um título nominativo privado, emitido por instituições financeiras bancárias e vendidos ao público como forma de captação de recursos. Eles são negociados tanto a partir de uma taxa fixa de juros (prefixadas), quanto de uma taxa vinculada a índices econômicos (pós-fixados). Seus prazos e condições variam de instituição para instituição. Os impostos que incidem sobre as rentabilidades do CDB são o IOF (Imposto sobre Operações Financeiras) e o IR (Imposto de renda) com as características:", "options": ["O IOF decrescente, de acordo com a duração da aplicação e isento a aplicação com duração superior a 30 dias e o IR com alíquota de 15% constante.", "O IOF decrescente, de acordo com a duração da aplicação e isento a aplicação com duração superior a 30 dias e o IR decrescente de acordo com a duração da aplicação e isento de IR para aplicação com prazo superior a 720 dias.", "O IOF decrescente de acordo com a duração da aplicação e isento sobre a aplicação com duração superior a 30 dias e o IR decrescente de acordo com a duração da aplicação, até o mínimo de 15% para aplicação com prazo superior a 720 dias.", "O IOF com alíquota de 3% constante e o IR decrescente de acordo com a duração da aplicação , até o mínimo de 15% para aplicação com prazo superior a 360 dias."], "correct": 2}, {"id": 66, "q": "Um investidor comprou um título pós-fixado (LFT) de prazo igual a 846 dias úteis, com ágio de 0,20% a.a., pagando o PU de R$ 4.446,977486. O preço par aproximado desse título é igual a:", "options": ["4.387,660018", "4.446,977486", "4.417,189525", "4.256,512230"], "correct": 2}, {"id": 67, "q": "O valor de resgate líquido de uma aplicação de R$ 1.000.000,00 em um CDB prefixado, emitido com 30 dias corridos, de prazo e taxa de juros de 10,00% a.a é: (Considere na solução 22,5% de IR sobre os ganhos de capital):", "options": ["1.009.126,32", "1.008.531,25", "1.006.179,96", "1.007.974,14"], "correct": 2}, {"id": 68, "q": "As Letras Imobiliárias são títulos de renda fixa, geralmente emitidos com longo prazo, não sendo garantidos pelo FGC (Fundo Garantidor de Crédito), e que são:", "options": ["Emitidos por bancos de investimento, destinados a captação de recursos de construtores e adquirentes de imóveis.", "Emitidos por bancos comerciais, destinados a captação de recursos para capital de giro de empresas em geral.", "Emitido por Sociedades de Crédito Imobiliário, destinados a captação de recursos para o financiamento de construtores e adquirentes de imóveis.", "Emitidos por sociedades corretoras, destinados para financiar o mercado imobiliário."], "correct": 2}, {"id": 69, "q": "Uma empresa beneficiadora de determinado produto agrícola vendeu a termo a sua produção. A empresa terá que comprar o produto no prazo de três meses, para que possa beneficiá-lo e efetuar a entrega física da venda a termo. Por temer uma alta no preço do produto agrícola, a empresa resolve avaliar algumas alternativas de hedge disponíveis no mercado, que está com as seguintes cotações: • Ptermo (3 meses ) = R$ 500,00 • A taxa de juros efetiva no mercado de renda fixa para 3 meses está em 10% • Opções com Vencimento em 3 meses: - Modalidades: Call - PE: R$ 500,00 - Prêmio: R$ 30,00 Considerando PV o preço à vista no vencimento do produto agrícola, é preferível efetuar hedge por meio de compra da Call, comparativamente ao hedge por meio da compra a termo, se:", "options": ["PV > R$ 467", "PV < R$ 530", "PV > R$ 530", "PV < R$ 467"], "correct": 3}, {"id": 70, "q": "Mercado de derivativos são aqueles:", "options": ["Que tem horários reduzidos de funcionamento e que contam com a participação de apenas investidores residentes.", "Restritos, onde são negociados contratos conjugados, de elevado risco e que se destinam ao aumento dos ganhos dos especuladores.", "Onde são negociados contratos lastreado em ações que tenham apregoações nos mercados brasileiros e europeu (EDRs).", "Nos quais são negociados contratos cujos preços derivam daqueles praticados em mercados mais básicos, onde são negociados os ativos-subjacentes e que podem servir a diferentes interesses."], "correct": 3}, {"id": 71, "q": "As operações a termo são aquelas que:", "options": ["Destinam-se aos mercados agropecuários, devendo ser entregues as mercadorias de acordo com o interesse dos compradores.", "Destinam-se aos mercados de ações, preveem a liquidação por diferença não permitindo a liquidação física.", "Após a sua realização, preveem liquidação física e financeira, ou liquidação por diferença, em data futura.", "Têm as margens de garantias mais reduzidas, dada a existência de mecanismo de ajustes diários."], "correct": 2}, {"id": 72, "q": "Em relação as operações a futuro, é correto afirmar que:", "options": ["Os vendedores descobertos estão sujeitos a ajustes diários negativos, mas não aos positivos.", "O mercado futuro de depósito interfinanceiro destina-se principalmente a especulação, devido a não existência da liquidação física.", "Os contratos são negociados para determinados prazos e não para determinadas datas de vencimento.", "Há mercados futuros com volumes de negociação bastante elevados e tanto podem ser utilizados com objetivos de hedge como de especulação."], "correct": 3}, {"id": 73, "q": "Em relação ao mercado de Swaps, é correto afirmar que são contratos:", "options": ["Padronizados quanto as datas de vencimento e aos volumes.", "Que sujeitam as contrapartes a chamadas de margem de garantia, que são diretamente proporcionais aos diferenciais a receber.", "Que preveem a troca futura de fluxos de caixa e que tem como diferencial a possibilidade de efetuar hedge de duas variáveis a partir de um contrato.", "Negociados em Pregão."], "correct": 2}, {"id": 74, "q": "Selecione a alternativa que apresenta estratégias de hedge utilizando mercados derivativos:", "options": ["Detentor de ação vende a ação a termo, compra opção de venda sobre a ação ou vende opção de compra sobre a ação.", "Devedor com dívida indexada ao dólar implementa Swap de dólar, vende Opções de compra de dólar, ou aplica em títulos indexados ao dólar.", "Devedor com dívida indexada ao dólar, compra dólar futuro compra Opções de venda de dólar, ou compra dólar a termo.", "Detentor de ação vende IBOVESPA futuro, vende opção de venda sobre a ação ou vende a ação a termo."], "correct": 2}, {"id": 75, "q": "Considerando que há países com mercados derivativos mais desenvolvidos ou menos desenvolvidos, como também operações e regulações de derivativos, é correto afirmar que:", "options": ["Um país que estimula grandes volumes de mercados derivativos destinados a especulação garante desempenho econômico melhor.", "Um país não deveria eliminar a existência de mercado de derivativos porque isso reduziria drasticamente as chances das empresas efetuarem hedge.", "Os exportadores que têm receitas em dólares e compram puts de dólares são especuladores.", "As empresas que têm dívidas indexadas em dólar e que compram Calls de dólar são especuladoras e devem ter existência de margem de garantia maiores."], "correct": 1}, {"id": 76, "q": "A respeito dos preços de equilíbrio dos mercados futuros, comparativamente aos preços à vista dos ativos objetos, é correto afirmar:", "options": ["Os preços futuros de equilíbrio se situam acima dos preços à vista, podendo haver inversões em situações de desequilíbrio.", "Os preços futuros de equilíbrio podem se situar acima ou abaixo dos preços à vista, dependendo das variáveis que influenciam os preços.", "Os preços futuros espelham a expectativa do mercado para os preços à vista no vencimento, e portanto, não se pode falar em preços de equilíbrio, independentemente de arbitragem.", "Os preços futuros de equilíbrio se situam abaixo dos preços à vista, podendo haver inversões em situações de equilíbrio."], "correct": 0}, {"id": 77, "q": "No tocante aos preços de Liquidação de operações em derivativos é correto afirmar que:", "options": ["no tocante aos preços de Liquidação de operações em derivativos é correto afirmar que:", "as liquidações dos ajustes diários positivos e negativos ocorrem em D+1 e não são aceitas fianças bancárias.", "no mercado futuro de dólar as posições não encerradas no dia seguinte do vencimento, são liquidadas fisicamente.", "no mercado futuro de ouro as posições não encerradas no dia seguinte do vencimento, são liquidadas mediante ao registro de operações da natureza inversa pela bolsa."], "correct": 3}, {"id": 78, "q": "O Imposto sobre as operações financeiras (IOF) pode ser cobrado sobre derivativos ou outros instrumentos financeiros. Pode ser criado ou ter suas alíquotas alteradas ao longo do tempo, sem a necessidade do princípio da anterioridade tributária. No que se refere a sua tributação sobre operações relativas a títulos ou valores mobiliários, é correto afirmar que:", "options": ["A tributação de IOF ocorre quando há ganho na operação e é de responsabilidade da Corretora.", "a tributação de IOF ocorre no momento da aquisição, cessão, resgate, repactuação ou pagamento para liquidação de títulos e valores mobiliários, apenas quando há ganho na operação.", "a tributação de IOF ocorre no momento da aquisição, cessão, resgate, repactuação ou pagamento para liquidação de títulos e valores mobiliários, independentemente do ganho na operação.", "A tributação de IOF ocorre quando há ganho na operação e é de responsabilidade do comitente final."], "correct": 1}, {"id": 79, "q": "A respeito da tributação nos mercados de opções e a termo é correto afirmar:", "options": ["Para fins de apuração e pagamento do imposto mensal sobre os ganhos líquido, as perdas incorridas poderão ser compensadas com os ganhos líquidos auferidos, no próprio mês ou nos meses subsequentes, inclusive nos anos- calendário seguintes, exceto operações Day-trade, que somente serão compensadas com ganhos auferidos em operações da mesma espécie.", "Perdas incorridas poderão ser compensadas com ganhos líquidos auferidos no próprio mês ou nos meses subsequentes, inclusive nos anos-calendário seguintes , inclusive operações Day-trade.", "Para fins de apuração e pagamento do imposto mensal sobre os ganhos líquidos, as perdas incorridas não poderão ser compensadas com os ganhos líquidos auferidos.", "Para fins de apuração e pagamento do imposto mensal sobre os ganhos líquidos, as perdas incorridas, poderão ser compensadas com ganhos líquidos auferidos no próprio mês ou nos meses subsequentes, mas não nos anos- calendário seguintes."], "correct": 0}, {"id": 80, "q": "Sobre as operações ex-pit, é correto afirmar que:", "options": ["São submetidas a interferência do mercado.", "Reduzem a liquidez do mercado a termo e ampliam a liquidez do mercado futuro.", "Não possibilitam a precificação de posições a termo por meio de preços a futuro.", "Constituem negócios realizados fora do Pit de negociação ou Pregão de uma Bolsa."], "correct": 3}];
+
+        const STORAGE_KEY = "ancord_sim1_v2";
+
+        const hitsEl = document.getElementById("hits");
+        const wrongEl = document.getElementById("wrong");
+        const answeredEl = document.getElementById("answered");
+        const pctEl = document.getElementById("pct");
+        const pctTotalEl = document.getElementById("pct-total");
+        const progressBar = document.getElementById("progress-bar");
+        const container = document.getElementById("quiz-container");
+
+        function loadSaved() {
+            try {
+                return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+            } catch (e) {
+                return {};
+            }
+        }
+
+        function saveAnswer(qId, optionIdx) {
+            const data = loadSaved();
+            data[qId] = optionIdx;
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+            updateScore();
+            renderHints();
+        }
+
+        function updateScore() {
+            const data = loadSaved();
+            let hits = 0, wrong = 0, answered = 0;
+            questions.forEach((item) => {
+                const sel = data[item.id];
+                if (sel === undefined || sel === null) return;
+                answered++;
+                if (sel === item.correct) hits++;
+                else wrong++;
+            });
+            hitsEl.textContent = hits;
+            wrongEl.textContent = wrong;
+            answeredEl.textContent = answered;
+            const rate = answered ? Math.round((hits / answered) * 1000) / 10 : 0;
+            pctEl.textContent = rate + "%";
+            const rateTotal = Math.round((hits / questions.length) * 1000) / 10;
+            pctTotalEl.textContent = rateTotal + "%";
+            progressBar.style.width = (answered / questions.length * 100) + "%";
+        }
+
+        function renderHints() {
+            const data = loadSaved();
+            questions.forEach((item) => {
+                const sel = data[item.id];
+                if (sel === undefined || sel === null) return;
+                for (let o = 0; o < 4; o++) {
+                    const lab = document.getElementById("label-" + item.id + "-" + o);
+                    if (!lab) continue;
+                    lab.classList.remove("correct", "wrong");
+                    if (o === sel) {
+                        lab.classList.add(o === item.correct ? "correct" : "wrong");
+                    }
+                }
+            });
+        }
+
+        function initQuiz() {
+            container.innerHTML = "";
+            const data = loadSaved();
+            questions.forEach((item, qIdx) => {
+                const card = document.createElement("div");
+                card.className = "question-card";
+                const opts = document.createElement("div");
+                item.options.forEach((opt, oIdx) => {
+                    const lab = document.createElement("label");
+                    lab.className = "option-label";
+                    lab.id = "label-" + item.id + "-" + oIdx;
+                    const inp = document.createElement("input");
+                    inp.type = "radio";
+                    inp.name = "q-" + item.id;
+                    inp.value = String(oIdx);
+                    if (data[item.id] === oIdx) inp.checked = true;
+                    inp.addEventListener("change", () => {
+                        saveAnswer(item.id, oIdx);
+                    });
+                    const span = document.createElement("span");
+                    span.className = "opt-text";
+                    span.textContent = String.fromCharCode(65 + oIdx) + ") " + opt;
+                    lab.appendChild(inp);
+                    lab.appendChild(span);
+                    opts.appendChild(lab);
+                });
+                const title = document.createElement("div");
+                title.className = "question-text";
+                title.textContent = (qIdx + 1) + ". " + item.q;
+                card.appendChild(title);
+                card.appendChild(opts);
+                container.appendChild(card);
+            });
+            updateScore();
+            renderHints();
+        }
+
+        document.getElementById("btn-clear").addEventListener("click", () => {
+            if (confirm("Limpar todas as respostas salvas neste dispositivo?")) {
+                localStorage.removeItem(STORAGE_KEY);
+                initQuiz();
+            }
+        });
+
+        initQuiz();
+    </script>
+</body>
+</html>
