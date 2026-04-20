@@ -1,0 +1,1524 @@
+[
+  {
+    "ref": "9811",
+    "section": "3.11",
+    "q": "O processo e julgamento dos crimes previstos na Lei nº 9.613/98 quandopraticadoscontraosistemafinanceiroeaordemeconômico-financeira, são de competência:",
+    "options": [
+      "da Controladoria Geral da União.",
+      "da Procuradoria Geral da República.",
+      "da Justiça Federal.",
+      "da CVM."
+    ],
+    "correct": 2,
+    "id": 1
+  },
+  {
+    "ref": "3526",
+    "section": "3.11",
+    "q": "Um profissional que praticar insider trading terá:",
+    "options": [
+      "apenas multa.",
+      "pena com multa e reclusão de um a cinco anos.",
+      "pena sem multa.",
+      "apenas reclusão."
+    ],
+    "correct": 1,
+    "id": 2
+  },
+  {
+    "ref": "4540",
+    "section": "3.11",
+    "q": "O principal órgão de combate à lavagem de dinheiro, criado a partir da Lei nº 9.613/98 é:",
+    "options": [
+      "o COAF (Conselho de Controle de Atividades Financeiras).",
+      "a secretaria da Receita Federal, a quem compete verificar a sonegação de impostos tanto de PF quanto de PJ.",
+      "o Banco Central.",
+      "a auditoria interna de seu banco, obrigada a fiscalizar depósitos em excesso de clientes que não conseguem demonstrar a origem de seus recursos."
+    ],
+    "correct": 0,
+    "id": 3
+  },
+  {
+    "ref": "3267",
+    "section": "3.11",
+    "q": "A fase do processo de lavagem de dinheiro caracterizada pela ação de criminosos que inserem recursos gerados de atividades ilícitas no sistema financeiro, especialmente de países com legislação menos restri- tiva, é conhecida por:",
+    "options": [
+      "integração.",
+      "omissão.",
+      "colocação.",
+      "ocultação."
+    ],
+    "correct": 2,
+    "id": 4
+  },
+  {
+    "ref": "9870",
+    "section": "3.11",
+    "q": "ComrelaçãoàICVM30,quetratadaadequaçãoaoperfildocliente, considere as afirmativas abaixo. I – Os AAI devem verificar se os produtos, serviço ou operação é adequado aos objetivos de investimento do cliente e para essa verificação, analisar as finalidades do investimento. II – Os AAI devem verificar se a situação financeira do cliente é compatível com o produto, serviço ou operação e para essa verificação, analisar a for- mação acadêmica e a experiência profissional do cliente. III–OsAAIdevemverificarseoclientepossuiconhecimentonecessáriopara compreender os riscos relacionados ao produto, serviço ou operação e para essa verificação, analisar o valor e os ativos que compõem o patrimônio do cliente. Escolha a opção certa:",
+    "options": [
+      "apenas a opção I é verdadeira.",
+      "apenas a opção II é verdadeira.",
+      "apenas a opção III é verdadeira;",
+      "apenas as opções I e III."
+    ],
+    "correct": 3,
+    "id": 5
+  },
+  {
+    "ref": "9871",
+    "section": "3.11",
+    "q": "As operações cujo grau de complexidade e risco se afigurem in- compatíveis com a qualificação técnica do cliente ou de seu representante, devem ser constantemente monitoradas (ICVM 301/99 e sua atualizações) pelas",
+    "options": [
+      "pessoasfísicasconstituídascomosociedadedeAAIquetenhamcomoativi- dade a mediação títulos ou valores mobiliários no âmbito do mercado de valores.",
+      "aspessoasjurídicasconstituídasdeAAIpessoasnaturais,quetenhamcomo atividade a negociação de títulos ou valores mobiliários no âmbito do mer- cado de valores mobiliários.",
+      "as pessoas físicas constituídas como entidades administradoras de merca- dos regulados, que tenham como atividade a intermediação títulos ou val- ores mobiliários no âmbito do mercado de valores mobiliários.",
+      "as pessoas que tenham, como atividade, a distribuição de títulos ou valores mobiliários no âmbito do mercado de valores mobiliários."
+    ],
+    "correct": 3,
+    "id": 6
+  },
+  {
+    "ref": "4224",
+    "section": "3.11",
+    "q": "São punições previstas para aqueles que forem enquadrados no crime de lavagem de dinheiro:",
+    "options": [
+      "pagamento de multa apenas.",
+      "advertência.",
+      "reclusão e multa.",
+      "reclusão."
+    ],
+    "correct": 2,
+    "id": 7
+  },
+  {
+    "ref": "9829",
+    "section": "3.11",
+    "q": "Não constitui finalidade do Conselho de Controle de Atividades Financeiras (COAF):",
+    "options": [
+      "regulação das atividades de mediação e distribuição.",
+      "identificação de ocorrência suspeitas de atividades ilícitas",
+      "aplicação de penas administrativas.",
+      "coordenaçãodemecanismo decombateà ocultaçãodebens, direitose val- ores"
+    ],
+    "correct": 0,
+    "id": 8
+  },
+  {
+    "ref": "3269",
+    "section": "3.11",
+    "q": "Caracteriza-se por ser a fase mais crítica em um processo de lavagem de dinheiro, pois é nesta fase em que os recursos encontram mais próximos a suas origens ilícitas:",
+    "options": [
+      "participação.",
+      "ocultação.",
+      "colocação.",
+      "integração."
+    ],
+    "correct": 2,
+    "id": 9
+  },
+  {
+    "ref": "9834",
+    "section": "4.13",
+    "q": "Política cambial atual no Brasil:",
+    "options": [
+      "flutuação limpa, onde o mercado determina o valor do câmbio.",
+      "fixa, determinada pelo BACEN.",
+      "flutuação suja, com intervenções por parte do BACEN.",
+      "fixa, determinada pelo Conselho Monetário Nacional (CMN)."
+    ],
+    "correct": 2,
+    "id": 10
+  },
+  {
+    "ref": "3774",
+    "section": "4.13",
+    "q": "O tipo de taxa cambial vigente no Brasil é:",
+    "options": [
+      "determinadapelomercado,cominterferênciadoBacen,caracterizandouma flutuação suja.",
+      "taxa fixa, determinada pelo Banco Central do Brasil.",
+      "um sistema de bandas cambiais, com piso e teto determinados pelo CMN.",
+      "o Brasil não tem sistema fixo, com variações conforme a conveniência mo- mentânea do BACEN."
+    ],
+    "correct": 0,
+    "id": 11
+  },
+  {
+    "ref": "4204",
+    "section": "4.13",
+    "q": "Superávit primário do governo significa que:",
+    "options": [
+      "a arrecadação do governo central é maior que suas despesas.",
+      "o governo está gastando mais do que arrecada.",
+      "a arrecadação do governo é menor que suas despesas.",
+      "a arrecadação do governo central, estados, municípios e empresas públicas é superior ao total de seus gastos."
+    ],
+    "correct": 3,
+    "id": 12
+  },
+  {
+    "ref": "3688",
+    "section": "4.13",
+    "q": "O índice de preços utilizado pelo CMN para o acompanhamento de metas de inflação é:",
+    "options": [
+      "IPCA.",
+      "IPA.",
+      "IGP-M.",
+      "INCC."
+    ],
+    "correct": 0,
+    "id": 13
+  },
+  {
+    "ref": "3847",
+    "section": "4.13",
+    "q": "O investidor quer se proteger contra os efeitos da inflação, para tal ele deverá investir em títulos que oferecem rentabilidade atrelada:",
+    "options": [
+      "ao dólar.",
+      "ao IPCA.",
+      "à Taxa Selic.",
+      "ao CDI."
+    ],
+    "correct": 1,
+    "id": 14
+  },
+  {
+    "ref": "4556",
+    "section": "4.13",
+    "q": "Em determinado período constatou-se uma inflação de 10%, isto significa que:",
+    "options": [
+      "o poder de compra da moeda, neste intervalo, elevou-se em 10%.",
+      "o poder de compra da moeda, neste intervalo, reduziu-se em 10%.",
+      "os preços em média subiram 10%.",
+      "os preços em média caíram 10%."
+    ],
+    "correct": 2,
+    "id": 15
+  },
+  {
+    "ref": "4137",
+    "section": "4.13",
+    "q": "No Brasil, a meta de inflação é determinada pelo:",
+    "options": [
+      "BACEN.",
+      "Copom.",
+      "MF.",
+      "CMN."
+    ],
+    "correct": 3,
+    "id": 16
+  },
+  {
+    "ref": "4318",
+    "section": "4.13",
+    "q": "A taxa PTAX reflete:",
+    "options": [
+      "a média das operações realizadas com o câmbio futuro.",
+      "a média das operações de câmbio realizadas nas exportações.",
+      "a média das operações de câmbio realizadas nas importações.",
+      "a média das operações realizadas no mercado interbancário de câmbio."
+    ],
+    "correct": 3,
+    "id": 17
+  },
+  {
+    "ref": "3895",
+    "section": "4.13",
+    "q": "OGovernocancelourecentementeaisençãodeIPIparaautomóveis. Isto caracteriza uma política:",
+    "options": [
+      "fiscal expansionista, que visa acelerar o crescimento do PIB.",
+      "monetária restritiva, que visa conter a inflação.",
+      "monetária expansionista, que visa incentivar o consumo.",
+      "fiscal restritiva, que visa conter o consumo."
+    ],
+    "correct": 3,
+    "id": 18
+  },
+  {
+    "ref": "4642",
+    "section": "5.13",
+    "q": "Compete privativamente ao Banco Central do Brasil:",
+    "options": [
+      "fiscalizar as instituições financeiras.",
+      "aprovar os orçamentos monetários de moeda e crédito.",
+      "emitir títulos públicos.",
+      "fixar as diretrizes e normas da política cambial."
+    ],
+    "correct": 0,
+    "id": 19
+  },
+  {
+    "ref": "3192",
+    "section": "5.13",
+    "q": "O Sistema Financeiro Nacional é composto por instituições e re- sponsáveis por:",
+    "options": [
+      "regularexclusivamenteoprocessodelançamentodetítulosmobil- iários.",
+      "transferir recursos entre investidores, somente.",
+      "distribuir e circular valores e títulos mobiliários.",
+      "captar recursos financeiros, distribuir e circular valores, e regular esse processo."
+    ],
+    "correct": 3,
+    "id": 20
+  },
+  {
+    "ref": "9841",
+    "section": "5.13",
+    "q": "UmadasprincipaisatividadesdaB3SupervisãodeMercados(BSM) é:",
+    "options": [
+      "estabelecer as normas e os regulamentos necessários ao desem- penho da Bolsa de Valores.",
+      "supervisãodosparticipantesdomercadocommediaçãodediálogo e ressarcimento de prejuízos.",
+      "prestar serviços de distribuição, intermediação e corretagem.",
+      "registrar e aprovar o prospecto de emissão primária de ações das companhias que não façam parte do novo Mmercado."
+    ],
+    "correct": 1,
+    "id": 21
+  },
+  {
+    "ref": "3591",
+    "section": "5.13",
+    "q": "Autorizar o funcionamento das instituições financeiras é com- petência privativa:",
+    "options": [
+      "da Comissão de Valores Imobiliários.",
+      "do Banco Central do Brasil.",
+      "do Ministério da Fazenda/Economia.",
+      "do Conselho de recursos do sistema financeiro Nacional."
+    ],
+    "correct": 1,
+    "id": 22
+  },
+  {
+    "ref": "3411",
+    "section": "5.13",
+    "q": "Osinvestidoresestãomigrandodapoupançaecomprandodólares no mercado. Quem vai intervir nesse tipo de situação é:",
+    "options": [
+      "o Banco Central.",
+      "a ANBIMA.",
+      "a CVM.",
+      "o CMN."
+    ],
+    "correct": 0,
+    "id": 23
+  },
+  {
+    "ref": "3221",
+    "section": "5.13",
+    "q": "Os órgãos normativos que regulam, controlam, exercem a fiscal- ização do Sistema Financeiro Nacional e das instituições de intermediação:",
+    "options": [
+      "comissões consultivas no senado.",
+      "comissões consultivas da câmara federal.",
+      "autoridades máximas.",
+      "autoridades monetárias."
+    ],
+    "correct": 3,
+    "id": 24
+  },
+  {
+    "ref": "3229",
+    "section": "5.13",
+    "q": "O Conselho Monetário Nacional (CMN) é considerado o:",
+    "options": [
+      "legislador do sistema de previdência complementar aberta.",
+      "fiscalizador do mercado de capitais.",
+      "banco dos bancos.",
+      "órgão máximo do Sistema Financeiro Nacional."
+    ],
+    "correct": 3,
+    "id": 25
+  },
+  {
+    "ref": "3859",
+    "section": "5.13",
+    "q": "Órgão responsável pela captação e recursos para financiar a dívida interna do governo:",
+    "options": [
+      "Conselho Monetário Nacional.",
+      "Tesouro Nacional.",
+      "Secretaria da Dívida Pública.",
+      "Banco Central."
+    ],
+    "correct": 1,
+    "id": 26
+  },
+  {
+    "ref": "3609",
+    "section": "5.13",
+    "q": "Responsávelpelaautorregulaçãodomercadodefundosdeinves- timentos e das ofertas públicas:",
+    "options": [
+      "Conselho Monetário Nacional.",
+      "Banco Central do Brasil.",
+      "ANBIMA.",
+      "CVM."
+    ],
+    "correct": 2,
+    "id": 27
+  },
+  {
+    "ref": "3797",
+    "section": "6.8",
+    "q": "As corretoras de valores mobiliários e de mercadorias são:",
+    "options": [
+      "instituições financeiras reguladas e fiscalizadas pela CVM.",
+      "instituições financeiras reguladas e fiscalizadas pelo BACEN.",
+      "instituições financeiras reguladas e fiscalizadas pelo BACEN e CVM.",
+      "instituições não financeiras reguladas e fiscalizados pelo BACEN e CVM."
+    ],
+    "correct": 2,
+    "id": 28
+  },
+  {
+    "ref": "3226",
+    "section": "6.8",
+    "q": "Podemos afirmar sobre um banco múltiplo: I. deve obrigatoriamente possuir as carteiras comercial e de investimento; II. deve possuir no mínimo duas carteiras, sendo que uma delas deverá ser comercial ou de investimento; III. pode coordenar ofertas públicas, quando possuir a carteira de investi- mento; IV. pode administrar recursos de terceiros, quando possuir a carteira de in- vestimento. Está correto o que se afirma em:",
+    "options": [
+      "I, II e IV.",
+      "II, III e IV.",
+      "II e III.",
+      "II e IV."
+    ],
+    "correct": 1,
+    "id": 29
+  },
+  {
+    "ref": "3178",
+    "section": "6.8",
+    "q": "Sãoconsideradosinvestidoresnãoresidentesosseguintesagentes econômicos que possuam residência, sede ou domicílio no exterior: I. pessoa física; II. pessoa jurídica; III. fundos e outras entidades de investimentos coletivos. Está correto o que se afirma em:",
+    "options": [
+      "I.",
+      "I e II.",
+      "I, II e III.",
+      "II e III."
+    ],
+    "correct": 2,
+    "id": 30
+  },
+  {
+    "ref": "3446",
+    "section": "6.8",
+    "q": "As sociedades de crédito imobiliário foram criadas para financiar o mercado imobiliário utilizando como principal instrumento de captação:",
+    "options": [
+      "CDI.",
+      "RDB.",
+      "CDB e RDB.",
+      "caderneta de poupança."
+    ],
+    "correct": 3,
+    "id": 31
+  },
+  {
+    "ref": "4480",
+    "section": "6.8",
+    "q": "As corretoras de títulos e valores mobiliárias:",
+    "options": [
+      "estão autorizadas a atuar no mercado de câmbio.",
+      "estão autorizadas a realizarem operações de arrendamento mer- cantil.",
+      "estão autorizadas a captar através de depósito à vista.",
+      "não podem administrar recursos de terceiros."
+    ],
+    "correct": 0,
+    "id": 32
+  },
+  {
+    "ref": "3413",
+    "section": "6.8",
+    "q": "São considerados investidores profissionais, segundo critério da CVM, as pessoas físicas e jurídicas que atestem possuir investimentos finan- ceiros em valor superior a:",
+    "options": [
+      "R$ 10.000.000,00.",
+      "R$ 300.000,00.",
+      "R$ 600.000,00.",
+      "R$ 1.000.000,00."
+    ],
+    "correct": 0,
+    "id": 33
+  },
+  {
+    "ref": "4627",
+    "section": "6.8",
+    "q": "Tem como foco realizar operações de captação e financiamento de médio e longo prazo:",
+    "options": [
+      "banco comercial.",
+      "banco múltiplo com carteira comercial.",
+      "banco de investimento.",
+      "corretora de títulos e valores mobiliários."
+    ],
+    "correct": 2,
+    "id": 34
+  },
+  {
+    "ref": "4006",
+    "section": "6.8",
+    "q": "A função dos bancos comerciais é:",
+    "options": [
+      "proporcionar o suprimento de recursos para financiar, somente a curtoprazo,ocomércio,aindústria,asempresaseaspessoasfísicas.",
+      "proporcionarosuprimentoderecursosparafinanciar,exclusivamente pessoas físicas.",
+      "proporcionarosuprimentoderecursosparafinanciar,alongoprazo, a indústria, o comércio e as empresas.",
+      "proporcionarosuprimentoderecursosparafinanciaracurtoemé- dio prazo, a indústria, o comércio, as empresas e pessoas físicas."
+    ],
+    "correct": 3,
+    "id": 35
+  },
+  {
+    "ref": "3805",
+    "section": "6.8",
+    "q": "Osbancosmúltiplospodemrealizaroperaçõesfinanceirasespecí- ficas segundo o tipo de carteira que possuem, essas instituições, entretanto devem possuir no mínimo duas carteiras sendo obrigatoriamente, uma de- las:",
+    "options": [
+      "comercial ou de desenvolvimento.",
+      "comercial ou de crédito imobiliário.",
+      "de investimento e de crédito financiamento e investimento.",
+      "comercial ou de investimentos."
+    ],
+    "correct": 3,
+    "id": 36
+  },
+  {
+    "ref": "3965",
+    "section": "7.5",
+    "q": "Uma empresa emitiu debêntures e não está conseguindo honrar seus pagamentos. O risco predominante é:",
+    "options": [
+      "risco de crédito.",
+      "risco operacional.",
+      "risco de liquidez.",
+      "risco de mercado."
+    ],
+    "correct": 0,
+    "id": 37
+  },
+  {
+    "ref": "3807",
+    "section": "7.5",
+    "q": "O risco de mercado associa-se fundamentalmente:",
+    "options": [
+      "ao baixo índice de negociabilidade.",
+      "às falhas operacionais.",
+      "à inadimplência de emissores.",
+      "à flutuação de preços."
+    ],
+    "correct": 3,
+    "id": 38
+  },
+  {
+    "ref": "3169",
+    "section": "7.5",
+    "q": "Três opções de investimentos A, B e C apresentam mesma du- ration. O investidor escolhe a opção B. Sabendo que os três investimentos apresentam o mesmo retorno, podemos afirmar que:",
+    "options": [
+      "o investimento B tem maior risco do que A e C.",
+      "o investimento B tem menor risco do que A e C.",
+      "o investimento C tem maior risco do que A e B.",
+      "o investimento A tem maior risco do que B e C."
+    ],
+    "correct": 1,
+    "id": 39
+  },
+  {
+    "ref": "4327",
+    "section": "7.5",
+    "q": "Umfundodeinvestimentoquepossuiretornoconstanteteráuma volatilidade:",
+    "options": [
+      "nula.",
+      "positiva.",
+      "crescente.",
+      "decrescente."
+    ],
+    "correct": 0,
+    "id": 40
+  },
+  {
+    "ref": "3489",
+    "section": "7.5",
+    "q": "Um título prefixado paga cupom semestral de 3% e o principal no seu vencimento. O prazo até o seu vencimento é de três anos. A duration de Macaulay deste título é:",
+    "options": [
+      "inferior a três anos.",
+      "inferior a 3%.",
+      "igual a três anos.",
+      "igual a 3%."
+    ],
+    "correct": 0,
+    "id": 41
+  },
+  {
+    "ref": "9893",
+    "section": "7.5",
+    "q": "Afunçãodacentraldeliquidaçãoecompensação,clearinghouse, é garantir o cumprimento e a integridade de todos os contratos assumidos:",
+    "options": [
+      "pelos órgãos controladores do mercado.",
+      "por compradores e vendedores.",
+      "somente por compradores.",
+      "somente dos vendedores."
+    ],
+    "correct": 1,
+    "id": 42
+  },
+  {
+    "ref": "8032",
+    "section": "7.5",
+    "q": "Considerando o value at risk (VAR), assinale a alternativa correta. Investimentos tem como consequência direta:",
+    "options": [
+      "significaoquantouminvestidorteráderetornoapartirdeumdeterminado valor investido.",
+      "significa o retorno máximo que um investidor pode ter.",
+      "significa a média histórica de oscilação de um ativo.",
+      "significaaperdamáximaqueuminvestidorpodeter,comumdeterminado nível de confiança."
+    ],
+    "correct": 3,
+    "id": 43
+  },
+  {
+    "ref": "4584",
+    "section": "7.5",
+    "q": "Seu cliente tem um imóvel cujo valor de mercado é 50 mil reais. Ele decidiu vendê-lo para solucionar problemas financeiros. A única pro- posta de compra que recebeu foi de R$ 30 mil. O risco determinante deste investimento foi de:",
+    "options": [
+      "inflação.",
+      "liquidez.",
+      "crédito.",
+      "câmbio."
+    ],
+    "correct": 1,
+    "id": 44
+  },
+  {
+    "ref": "3611",
+    "section": "7.5",
+    "q": "Um fundo de investimento em ações, amplamente diversificado, poderá eliminar o risco:",
+    "options": [
+      "relativo.",
+      "sistemático.",
+      "de crédito.",
+      "não sistemático."
+    ],
+    "correct": 3,
+    "id": 45
+  },
+  {
+    "ref": "3727",
+    "section": "8.23",
+    "q": "O IGC (Índice de Governança Corporativa) é composto por ações listadas na bolsa de valores nos segmentos:",
+    "options": [
+      "apenas nível 1.",
+      "somente nível 1 e nível 2.",
+      "nível 1, nível 2 e novo mercado.",
+      "novo mercado e nível 2, apenas."
+    ],
+    "correct": 2,
+    "id": 46
+  },
+  {
+    "ref": "9854",
+    "section": "8.23",
+    "q": "A NTN-B está atrelada à variação do(a):",
+    "options": [
+      "IGP-M.",
+      "IPCA.",
+      "Taxa Selic.",
+      "dólar."
+    ],
+    "correct": 1,
+    "id": 47
+  },
+  {
+    "ref": "3860",
+    "section": "8.23",
+    "q": "Os underwriters em geral são:",
+    "options": [
+      "bancos comerciais, sociedades corretoras e sociedades distribuidoras.",
+      "bancos de investimento, sociedades corretoras, sociedades distribuidoras.",
+      "financeiras, sociedades corretoras e sociedades distribuidoras.",
+      "agenteautônomos,bancosdeinvestimento,sociedadescorretoras,sociedades distribuidoras."
+    ],
+    "correct": 1,
+    "id": 48
+  },
+  {
+    "ref": "3990",
+    "section": "8.23",
+    "q": "A TopInvest tem 1.000 ações a R$ 4 cada. A empresa decidiu realizar uma bonificação em ações, que representavam R$ 2.000,00. Um acionistapossui40%docapitalsocietário. Depoisdesteaumento,esteacionista terá:",
+    "options": [
+      "200 ações.",
+      "400 ações.",
+      "600 ações.",
+      "800 ações."
+    ],
+    "correct": 2,
+    "id": 49
+  },
+  {
+    "ref": "4630",
+    "section": "8.23",
+    "q": "Sobre os CDBs podemos afirmar:",
+    "options": [
+      "podem ser emitidos por prazos muito curtos, inclusive por um dia.",
+      "o cliente corre o risco de crédito da instituição (acima de R$ 250.000,00).",
+      "todas as alternativas estão corretas",
+      "podem ser pactuados com taxas de juros fixas ou flutuantes (pós-fixada). ."
+    ],
+    "correct": 2,
+    "id": 50
+  },
+  {
+    "ref": "9902",
+    "section": "8.23",
+    "q": "É possível compensar ganhos auferidos em operações realizadas no mercado futuro na B3 com perdas incorridas em:",
+    "options": [
+      "planos de previdência privada.",
+      "fundos de investimento em renda variável.",
+      "fundos de investimento em renda fixa.",
+      "operações da B3 de mesma espécie."
+    ],
+    "correct": 3,
+    "id": 51
+  },
+  {
+    "ref": "3597",
+    "section": "8.23",
+    "q": "Em uma operação de underwriting de melhor esforço:",
+    "options": [
+      "asinstituiçõesfinanceirasassumemapenasocompromissodecolocaromáx- imo de uma emissão nas melhores condições possíveis e em um determi- nado período.",
+      "as instituições financeiras estabelecem como meta um determinado per- centualdostítulosaseremoferecidosaopúblicoeassumemocompromisso de subscrever o restante.",
+      "asinstituiçõesfinanceirassecomprometemasubscreverelasprópriasqual- quer quantidade de ativos que não tenham sido vendidos ao público.",
+      "as dificuldades de colocação dos ativos não se refletem diretamente na em- presa emissora."
+    ],
+    "correct": 0,
+    "id": 52
+  },
+  {
+    "ref": "3907",
+    "section": "8.23",
+    "q": "A importância do mercado secundário:",
+    "options": [
+      "é aumentar ou diminuir recursos para financiar novos empreendimentos.",
+      "dar rapidez aos ativos financeiros, negociados no mercado primário e inter- bancário.",
+      "é dar liquidez aos ativos financeiros, negociados no mercado primário.",
+      "éigualadoprimário,umavezquesuaexistêncianãoécondiçãoparaofun- cionamento do outro."
+    ],
+    "correct": 2,
+    "id": 53
+  },
+  {
+    "ref": "9853",
+    "section": "8.23",
+    "q": "É igual a do primário, uma vez que sua existência não é condição para o funcionamento do outro:",
+    "options": [
+      "Válida até…",
+      "Válida até cancelar…",
+      "Executa ou cancela…",
+      "Cancelar se.."
+    ],
+    "correct": 3,
+    "id": 54
+  },
+  {
+    "ref": "9847",
+    "section": "9.14",
+    "q": "Em alguns casos, uma ou mais taxas de remuneração de fun- dos são devolvidas ao investidor se houver obediência às regras específicas, por exemplo, tempo de permanência no fundo, solicitação de resgate com grande antecedência, etc. Outros exemplos são:",
+    "options": [
+      "de administração.",
+      "de performance.",
+      "de custódia.",
+      "de carregamento."
+    ],
+    "correct": 1,
+    "id": 55
+  },
+  {
+    "ref": "3143",
+    "section": "9.14",
+    "q": "Os ativos presentes no fundo de investimento são de propriedade:",
+    "options": [
+      "do gestor do fundo.",
+      "do custodiante do fundo.",
+      "dos cotistas do fundo.",
+      "do administrador do fundo."
+    ],
+    "correct": 2,
+    "id": 56
+  },
+  {
+    "ref": "4712",
+    "section": "9.14",
+    "q": "Nos fundos de investimento, a marcação dos títulos prefixados pela taxa nominal provoca:",
+    "options": [
+      "equidade entre os cotistas, não importando em que momento cada cotista aplicou ou resgatou no fundo.",
+      "aumento de patrimônio líquido, pois os títulos podem ser negociados a val- ores de mercado e gerar lucros para o fundo.",
+      "distorção na rentabilidade apurada, podendo ocorrer distribuição de renda entre os cotistas.",
+      "diferença contábil diária no patrimônio líquido, ajustada mensalmente no balanço."
+    ],
+    "correct": 2,
+    "id": 57
+  },
+  {
+    "ref": "3880",
+    "section": "9.14",
+    "q": "Um cliente investiu 10 mil reais em um fundo de investimento de curto prazo para fins tributários há mais de dois anos. No próximo dia 31 de maio, esse investidor será tributado pelo come-cotas à alíquota de:",
+    "options": [
+      "20%.",
+      "15%.",
+      "17,5%.",
+      "22,5%."
+    ],
+    "correct": 0,
+    "id": 58
+  },
+  {
+    "ref": "4343",
+    "section": "9.14",
+    "q": "Um fundo de investimento poderá cobrar a taxa de performance, prevista em regulamento:",
+    "options": [
+      "após a cobrança da taxa de administração e de outras despesas.",
+      "desde que o ciclo mínimo de cobrança seja de 12 meses.",
+      "desde que o percentual de benchmark seja inferior a 100% de sua variação.",
+      "após a cobrança do IR."
+    ],
+    "correct": 0,
+    "id": 59
+  },
+  {
+    "ref": "3680",
+    "section": "9.14",
+    "q": "Em relação ao seu benchmark, é característica de um fundo ativo e passivo, respectivamente:",
+    "options": [
+      "acompanhar e acompanhar o benchmark.",
+      "superar e superar o benchmark.",
+      "superar e superar o benchmark.",
+      "superar e acompanhar o benchmark."
+    ],
+    "correct": 3,
+    "id": 60
+  },
+  {
+    "ref": "3214",
+    "section": "9.14",
+    "q": "A alíquota de IOF para aplicações em fundos de investimento será igual a zero quando o prazo de aplicação for superior a:",
+    "options": [
+      "29 dias.",
+      "20 dias.",
+      "180 dias.",
+      "360 dias."
+    ],
+    "correct": 0,
+    "id": 61
+  },
+  {
+    "ref": "3315",
+    "section": "9.14",
+    "q": "Um fundo multimercado é aquele que:",
+    "options": [
+      "investe em vários fatores de risco sem particularidade na concentração.",
+      "investe (obrigatoriamente) em ações, para uma parcela dos recursos.",
+      "investe 25% do seu patrimônio líquido no mercado internacional.",
+      "investeemváriosfatoresderiscocomconcentraçãodasalocaçõesnosmer- cados mais arriscados."
+    ],
+    "correct": 0,
+    "id": 62
+  },
+  {
+    "ref": "3462",
+    "section": "9.14",
+    "q": "A remuneração do administrador de um fundo pode ser feita pela cobrança da taxa de administração fixa e:",
+    "options": [
+      "de performance e retorno.",
+      "de entrada e/ou saída e/ou retorno.",
+      "de entrada e retorno.",
+      "de performance, de ingresso e saída."
+    ],
+    "correct": 3,
+    "id": 63
+  },
+  {
+    "ref": "4146",
+    "section": "10.6",
+    "q": "Assinale a alternativa errada a respeito do fundo de investimento imobiliário (FII):",
+    "options": [
+      "o rendimento obtido pelo investidor na venda de cotas do FII é tributado à alíquota de 20%.",
+      "o FII, como todo fundo de investimento, não é tributado.",
+      "em um FII, o cotista pessoa física não será tributado sobre os rendimentos distribuídos, desde que tenha menos que 10% do total de cotas e tenha di- reito a menos que 10% dos rendimentos distribuídos. É necessário também quetenhasuascotasadmitidasànegociaçãoembolsaoubalcãoorganizado e a quantidade de cotistas seja igual ou superior a 50.",
+      "novencimentodofundo,oganhoobtidopelocotistaserátributadonafonte."
+    ],
+    "correct": 1,
+    "id": 64
+  },
+  {
+    "ref": "4621",
+    "section": "10.6",
+    "q": "O Imposto de Renda cobrado em aplicações realizadas por pessoa jurídica em fundo de investimento imobiliário deve:",
+    "options": [
+      "incidirsobreosganhosdecapitalesobreosrendimentosaumaalíquotade 15%.",
+      "incidir somente sobre os rendimentos a uma alíquota de 15%.",
+      "incidir somente sobre os ganhos de capital a uma alíquota de 20%.",
+      "incidirsobreosganhosdecapitalesobreosrendimentosaumaalíquotade 20%."
+    ],
+    "correct": 3,
+    "id": 65
+  },
+  {
+    "ref": "3263",
+    "section": "10.6",
+    "q": "As características de um FIDC são:",
+    "options": [
+      "aplicação mínima inicial de R$ 50.000,00.",
+      "deve aplicar 80% no mínimo em direitos creditórios.",
+      "316",
+      "deve ter seus ativos classificador por agência classificadora de risco.",
+      "qualquer investidor pode aplicar nesse tipo de fundo."
+    ],
+    "correct": 2,
+    "id": 66
+  },
+  {
+    "ref": "4087",
+    "section": "10.6",
+    "q": "Em relação aos FIDCS, as cotas:",
+    "options": [
+      "sênior tem preferencia no recebimento.",
+      "subordinadas tem preferência no recebimento.",
+      "sênior contam com a cobertura do FGC, as subordinadas não.",
+      "sênior receberão depois das subordinadas."
+    ],
+    "correct": 0,
+    "id": 67
+  },
+  {
+    "ref": "4047",
+    "section": "10.6",
+    "q": "Um fundo de investimento cujo objetivo é acompanhar a perfor- mance do Ibovespa:",
+    "options": [
+      "é um fundo de ações indexado.",
+      "é um fundo que tem sua carteira composta por títulos de renda fixa.",
+      "é um título de renda fixa indexado.",
+      "se caracteriza como um fundo com gestão ativa."
+    ],
+    "correct": 0,
+    "id": 68
+  },
+  {
+    "ref": "4335",
+    "section": "10.6",
+    "q": "Em relação à tributação dos fundos de investimento imobiliário pelo Imposto de Renda, é correto afirmar que:",
+    "options": [
+      "hádoistiposdefatosgeradores,adistribuiçãodoslucrosauferidospelofundo aoscotistaseaobtençãodeganhodecapitalerendimentosnaalienaçãoou resgates de cotas.",
+      "oimpostoapuradodeveserrecolhidopeloprópriotitulardascotas,em31de junho e 31 de dezembro de cada ano.",
+      "trata-se de uma modalidade de investimento isenta de imposto, para pes- soa jurídica, sobre os ganhos de capital e/ou rendimentos na alienação ou resgates das cotas.",
+      "os lucros auferidos pelos fundos distribuídos aos cotistas devem ser tributa- dos na fonte à alíquota de 15%."
+    ],
+    "correct": 0,
+    "id": 69
+  },
+  {
+    "ref": "3554",
+    "section": "10.6",
+    "q": "Os retornos oriundos por pessoa física no resgate de cotas de fundos imobiliários, cujas cotas são negociadas em bolsa de valores, terão alíquotas de:",
+    "options": [
+      "22,5%.",
+      "come-cotas.",
+      "20%.",
+      "15%."
+    ],
+    "correct": 2,
+    "id": 70
+  },
+  {
+    "ref": "4657",
+    "section": "10.6",
+    "q": "Sobre o fundo de investimento imobiliário (FII): I.éconstituídonaformadecondomíniofechadoepodeterprazodeduração indeterminado; II. pode ser objeto de oferta para investidores de varejo ou qualificados; III.podeadquiriraparticipaçãoemempreendimentosimobiliários, pormeio de letra hipotecária (LH), letra de crédito imobiliário (LCI) e certificados de recebíveis imobiliários (CRI). Está(ão) correta(s):",
+    "options": [
+      "III.",
+      "I, II e III.",
+      "I e II.",
+      "I e II."
+    ],
+    "correct": 1,
+    "id": 71
+  },
+  {
+    "ref": "4166",
+    "section": "10.6",
+    "q": "Um fundo referenciado que possuir mais de 50% de sua carteira composta por títulos de emissão de pessoas físicas ou jurídicas de direito privado:",
+    "options": [
+      "deve vender tais títulos, pois o limite máximo aceitável de concentração da carteira para esse tipo de risco é de 5%.",
+      "precisa conter, na denominação do fundo, a expressão \"crédito privado\".",
+      "estará de acordo com a legislação vigente.",
+      "terá um retorno provavelmente inferior a um concorrente que possua so- mente títulos públicos em sua composição."
+    ],
+    "correct": 1,
+    "id": 72
+  },
+  {
+    "ref": "4081",
+    "section": "11.3",
+    "q": "Operação em que uma variedade de ativos é \"empacotada\" na forma de títulos para serem comercializados para investidores:",
+    "options": [
+      "mercado futuro.",
+      "SWAP.",
+      "securitização de recebíveis.",
+      "letra de crédito imobiliário."
+    ],
+    "correct": 2,
+    "id": 73
+  },
+  {
+    "ref": "4485",
+    "section": "11.3",
+    "q": "Na composição de uma carteira diversificada de renda fixa para um investidor pessoa física, que exige parte do rendimento com isenção de Imposto de Renda retido na fonte, recomenda-se aplicação em:",
+    "options": [
+      "Certificado de Recebíveis Imobiliários.",
+      "letras de câmbio.",
+      "recibo de depósito bancário.",
+      "fundos de investimento curto prazo."
+    ],
+    "correct": 0,
+    "id": 74
+  },
+  {
+    "ref": "9798",
+    "section": "11.3",
+    "q": "A expressão \"securitização\" é usada no mercado para designar:",
+    "options": [
+      "o seguro de um ativo.",
+      "uma garantia na operação de recebíveis.",
+      "um ativo transferível.",
+      "um ativo intransferível."
+    ],
+    "correct": 1,
+    "id": 75
+  },
+  {
+    "ref": "4105",
+    "section": "11.3",
+    "q": "É correto falar sobre os Certificados de Recebíveis Imobiliários:",
+    "options": [
+      "somente podem ser distribuídos publicamente com prévia autorização da CVM.",
+      "que elas apresentam isenção do Imposto de Renda para qualquer tipo de investidor.",
+      "que elas são somente emitidas por sociedades de crédito, financiamento e investimento.",
+      "queéuminvestimentolastreadoemfinanciamentosfeitosporempresasde capital aberto."
+    ],
+    "correct": 0,
+    "id": 76
+  },
+  {
+    "ref": "4371",
+    "section": "11.3",
+    "q": "Sobre os Certificados de Recebíveis Imobiliários, é correto afirmar que:",
+    "options": [
+      "é necessária autorização da CVM para o seu registro.",
+      "está coberto pelo fundo garantidor de crédito.",
+      "não possuem garantia real.",
+      "pessoa física que investir em CRI devem recolher Imposto de Renda."
+    ],
+    "correct": 0,
+    "id": 77
+  },
+  {
+    "ref": "4495",
+    "section": "11.3",
+    "q": "Os Certificados de Recebíveis Imobiliários:",
+    "options": [
+      "emitido por companhias securitizadoras.",
+      "não possuem garantia real.",
+      "emitido apenas por banco de investimento.",
+      "emitido apenas por empresas."
+    ],
+    "correct": 0,
+    "id": 78
+  },
+  {
+    "ref": "9797",
+    "section": "11.3",
+    "q": "Em um processo de securitização de recebíveis, esses recebíveis devem estar registrados no balanço do(da):",
+    "options": [
+      "auditor independente.",
+      "empresa que originou os recebíveis.",
+      "agente fiduciário.",
+      "sociedade de propósito específico."
+    ],
+    "correct": 0,
+    "id": 79
+  },
+  {
+    "ref": "3578",
+    "section": "11.3",
+    "q": "Emumasecuritizaçãoderecebíveis,ofluxofinanceirodosdireitos de crédito é pago para:",
+    "options": [
+      "o investidor.",
+      "a companhia securitizadora.",
+      "o FGC.",
+      "o devedor."
+    ],
+    "correct": 1,
+    "id": 80
+  },
+  {
+    "ref": "9845",
+    "section": "11.3",
+    "q": "As sociedades de crédito imobiliário, em suas atividades, podem empregar recursos provenientes de:",
+    "options": [
+      "depósitos à vista",
+      "letras de câmbio.",
+      "letras hipotecárias",
+      "depósitos a prazo, desde que seja inferior a noventa dias"
+    ],
+    "correct": 2,
+    "id": 81
+  },
+  {
+    "ref": "4341",
+    "section": "12.2",
+    "q": "As principais vantagens de um clube de investimentos em relação a um fundo de investimentos em ações são: I. maior influência dos membros na gestão da carteira; II.maiorflexibilidadeemajustaracarteiraaoperfildogrupodeinvestidores; III. taxa de administração mais baixa; IV. custos menores.",
+    "options": [
+      "I, II, III e IV.",
+      "II e III.",
+      "I, II e IV.",
+      "III e IV."
+    ],
+    "correct": 0,
+    "id": 82
+  },
+  {
+    "ref": "4243",
+    "section": "12.2",
+    "q": "O percentual mínimo de patrimônio líquido que os clubes de in- vestimentos deverão investir em ações; bônus de subscrição; debêntures conversíveis em ações de emissão de companhias abertas; recibos de sub- scrição; cotas de fundos de índices de ações negociados em mercado orga- nizado; e certificados de depósitos de ações é de:",
+    "options": [
+      "0.51%.",
+      "0.8%.",
+      "0.5%.",
+      "0.67%."
+    ],
+    "correct": 3,
+    "id": 83
+  },
+  {
+    "ref": "4581",
+    "section": "12.2",
+    "q": "Qual o percentual mínimo do patrimônio líquido que os clubes de investimentos deverão investir nas [INSERIR] abaixo? 337 i. ações; ii. bônus de subscrição; iii. debêntures conversíveis em ações, de emissão de companhias abertas; iv. recibos de subscrição; v. cotas de fundos de índices de ações negociados em mercado organizado; vi. certificados de depósitos de ações",
+    "options": [
+      "67%.",
+      "100%.",
+      "50%.",
+      "80%."
+    ],
+    "correct": 0,
+    "id": 84
+  },
+  {
+    "ref": "4291",
+    "section": "12.2",
+    "q": "Os ganhos de capital auferidos por clubes de investimentos são tributados pelo imposto de renda à alíquota de:",
+    "options": [
+      "15%.",
+      "17,5%.",
+      "22,5%.",
+      "20%."
+    ],
+    "correct": 0,
+    "id": 85
+  },
+  {
+    "ref": "3816",
+    "section": "12.2",
+    "q": "Instrumento legal que permite a reunião de um grupo de investi- dores para investimento em ações:",
+    "options": [
+      "clube de investimento.",
+      "cooperativa de investidores.",
+      "agremiação de investidores.",
+      "assembleia de investidores."
+    ],
+    "correct": 0,
+    "id": 86
+  },
+  {
+    "ref": "3357",
+    "section": "12.2",
+    "q": "Podem administrar clubes de investimento:",
+    "options": [
+      "bancodedesenvolvimento,bancodeinvestimento,corretorasedistribuido- ras.",
+      "corretoras, distribuidoras e bancos de investimento.",
+      "banco comercial e corretoras.",
+      "corretoras, distribuidoras e bancos comerciais."
+    ],
+    "correct": 1,
+    "id": 87
+  },
+  {
+    "ref": "4045",
+    "section": "12.2",
+    "q": "Um clube de investimento:",
+    "options": [
+      "deve ter, no mínimo, três participantes.",
+      "deve ter, no mínimo, dez participantes.",
+      "pode ter um único participante (clube exclusivo).",
+      "deve ter, no mínimo, 150 participantes."
+    ],
+    "correct": 0,
+    "id": 88
+  },
+  {
+    "ref": "4353",
+    "section": "12.2",
+    "q": "Em relação aos clubes de investimentos é correto afirmar que:",
+    "options": [
+      "aplica no mínimo 67% de ações.",
+      "nenhum cotista pode deter mais que 51% das cotas do fundo.",
+      "pode ter no máximo 100 cotistas.",
+      "é direcionado às pessoas físicas e jurídicas."
+    ],
+    "correct": 0,
+    "id": 89
+  },
+  {
+    "ref": "4277",
+    "section": "12.2",
+    "q": "A carteira de um clube de investimento deve ter:",
+    "options": [
+      "no mínimo 51% em ações.",
+      "no mínimo 67% de ações.",
+      "a quantidade de ações especificada no estatuto.",
+      "100% em ações."
+    ],
+    "correct": 1,
+    "id": 90
+  },
+  {
+    "ref": "3023",
+    "section": "13.6",
+    "q": "Um cliente possui R$ 5 milhões investidos e necessita de uma renda mensal perpétua de R$ 25.000. O objetivo de rentabilidade mensal desse investidor será aproximadamente de:",
+    "options": [
+      "0,50%.",
+      "0,47%.",
+      "0,61%.",
+      "0,35%."
+    ],
+    "correct": 0,
+    "id": 91
+  },
+  {
+    "ref": "3184",
+    "section": "13.6",
+    "q": "Seu cliente consulta o site do Tesouro Nacional e nota que entre os títulos ofertados no dia da consulta, tem os dois títulos abaixo. 1. LTN: 8,86% ao ano. 2. NTN-B principal: 4,03% ao ano. Assumindo que o prazo dos títulos são iguais, seu cliente questiona qual a inflação projetada para o período deste título, você responde que:",
+    "options": [
+      "a taxa de inflação projetada para o período é de 4,83% ao ano.",
+      "a taxa de inflação projetada para o período é de 12,89% ao ano.",
+      "paraconsultaraprojeçãodainflaçãoénecessárioconsultarorelatórioFocus do BC.",
+      "a taxa de inflação projetada para o período é de 4,64% ao ano."
+    ],
+    "correct": 3,
+    "id": 92
+  },
+  {
+    "ref": "3695",
+    "section": "13.6",
+    "q": "Em um investimento, será maior o valor presente se:",
+    "options": [
+      "o fluxo de pagamento tem de ser arriscado.",
+      "a taxa de desconto for menor.",
+      "o fluxo de pagamento for mais previsível.",
+      "a taxa de desconto for maior."
+    ],
+    "correct": 1,
+    "id": 93
+  },
+  {
+    "ref": "4746",
+    "section": "13.6",
+    "q": "Umapessoapretendeinvestirseusrecursosdeformaagarantiros resgates a seguir para os próximos quatro anos. Qual o valor a ser investido considerando-se uma taxa líquida anual de 6,50% ao ano? 1º ano: R$ 10.000,00. 2º ano: R$ 20.000,00. 3º ano: R$ 35.000,00. 4º ano: R$ 50.000,00.",
+    "options": [
+      "R$ 94.863,73.",
+      "R$ 115.000,00.",
+      "R$ 198.335,24.",
+      "R$ 95.343,22."
+    ],
+    "correct": 0,
+    "id": 94
+  },
+  {
+    "ref": "3968",
+    "section": "13.6",
+    "q": "Um CDB é negociado a 9% ao ano. Você quer aplicar nesse CDB por seis meses e o gerente informa que a taxa é de 4,5% para esse período. Essas duas taxas são:",
+    "options": [
+      "equivalentes, pois se trata de juros simples.",
+      "equivalentes, pois se trata de juros compostos.",
+      "proporcionais, pois se trata de juros simples.",
+      "proporcionais, pois se trata de juros compostos."
+    ],
+    "correct": 2,
+    "id": 95
+  },
+  {
+    "ref": "4013",
+    "section": "13.6",
+    "q": "Um investidor efetuou uma aplicação em títulos de renda fixa, que lhe proporcionou um rendimento de 3%. Nesse mesmo período, a taxa de inflação registrou deflação de 2%. A taxa real de juros dessa aplicação foi:",
+    "options": [
+      "superior a nominal.",
+      "negativa.",
+      "igual a nominal.",
+      "inferior a nominal."
+    ],
+    "correct": 0,
+    "id": 96
+  },
+  {
+    "ref": "4773",
+    "section": "13.6",
+    "q": "O valor da taxa equivalente à taxa nominal de 36% ao ano com capitalização mensal é:",
+    "options": [
+      "19,41% ao semestre.",
+      "6,58% ao bimestre.",
+      "3,60% ao mês.",
+      "38,52% ao ano."
+    ],
+    "correct": 0,
+    "id": 97
+  },
+  {
+    "ref": "3596",
+    "section": "13.6",
+    "q": "Um gestor de fundo de ações ativo deseja se proteger do risco sistemático do mercado de ações. Qual operação seria a mais indicada para atingir o seu objetivo?",
+    "options": [
+      "vender contratos futuros de Ibovespa.",
+      "comprar contratos futuros de Ibovespa.",
+      "comprar opções de compra de Ibovespa.",
+      "vender opções de venda de Ibovespa."
+    ],
+    "correct": 0,
+    "id": 98
+  },
+  {
+    "ref": "3384",
+    "section": "13.6",
+    "q": "Um fluxo de pagamentos possui três recebimentos para os próx- imos meses (todos no final do mês): R$ 300,00 / R$ 450,00 / R$ 560,00. Utilizando-se uma taxa de desconto de 2% ao mês, qual o VPL desse fluxo?",
+    "options": [
+      "R$ 1.283,80.",
+      "R$ 1.500,00.",
+      "R$ 1.254,34.",
+      "R$ 860,64."
+    ],
+    "correct": 2,
+    "id": 99
+  },
+  {
+    "ref": "3767",
+    "section": "14.11",
+    "q": "O investidor fez uma aplicação em CDB. Em caso de liquidação extrajudicial do banco:",
+    "options": [
+      "oinvestidorvaireceberovalorinvestidonolimitedeR$250.000doFGC,por CPF/CNPJ.",
+      "cabeaoinvestidorparticipardeassembleiaparatransferirorecursoaplicado em CDB para outro banco.",
+      "oinvestidorvaireceberodinheirodobanco,quegaranteodinheirodocliente mesmo em casos de liquidação extrajudicial.",
+      "o investidor vai receber o dinheiro do BACEN, que garante o dinheiro do cliente mesmo em casos de liquidação extrajudicial."
+    ],
+    "correct": 0,
+    "id": 100
+  },
+  {
+    "ref": "3946",
+    "section": "14.11",
+    "q": "Os Títulos Públicos Federais:",
+    "options": [
+      "apresentam sempre remuneração prefixada.",
+      "proporcionam lucro ao investidor quando o preço de resgate for superior ao preço de aquisição.",
+      "têm rendimento real positivo quando sua remuneração nominal for inferior à taxa de inflação do período.",
+      "podem ter seu rendimento indexado à inflação, apenas."
+    ],
+    "correct": 1,
+    "id": 101
+  },
+  {
+    "ref": "4137",
+    "section": "14.11",
+    "q": "No Brasil, a meta de inflação é determinada pelo:",
+    "options": [
+      "BACEN.",
+      "Copom.",
+      "MF.",
+      "CMN."
+    ],
+    "correct": 3,
+    "id": 102
+  },
+  {
+    "ref": "4116",
+    "section": "14.11",
+    "q": "Uminvestidorquequeiraseprotegerdainflaçãoemumaaplicação de quatro anos deveria decidir por:",
+    "options": [
+      "investir na caderneta de poupança.",
+      "investir em um Tesouro prefixado (LTN).",
+      "investir em uma Tesouro prefixado com juros semestrais (NTN-F).",
+      "investir em uma Tesouro IPCA+ (NTN-B Principal)."
+    ],
+    "correct": 3,
+    "id": 103
+  },
+  {
+    "ref": "4050",
+    "section": "14.11",
+    "q": "Os certificados de depósitos bancários (CDBs) são:",
+    "options": [
+      "de emissão das instituições financeiras, que lastreiam as operações no mer- cado interbancário que sua negociação é restrita.",
+      "de emissão dos bancos comerciais e de investimentos, que podem ser vis- tos como um depósito bancário, já que ao comprar o CDB o investidor está emprestando o dinheiro ao banco e recebendo em troca o pagamento de juros.",
+      "que não admitem negociação antes de seu vencimento (não são transfer- íveis).",
+      "pós-fixados e só sabemos a remuneração no vencimento."
+    ],
+    "correct": 1,
+    "id": 104
+  },
+  {
+    "ref": "3544",
+    "section": "14.11",
+    "q": "A empresa aplicou em um CDB com prazo de vencimento de 600 dias, o IR vai incidir:",
+    "options": [
+      "noúltimodiaútildosmesesdemaioenovembroounoresgate,aqueocorrer primeiro, e será recolhido na fonte.",
+      "noúltimodiaútildosmesesdemaioenovembroounoresgate,aqueocorrer primeiro e será recolhido pelo contribuinte via DARF.",
+      "somente na ocasião do resgate, quando haverá o recebimento da renda e será recolhido na fonte.",
+      "somente na ocasião do resgate, quando haverá o recebimento da renda e será recolhido via DARF."
+    ],
+    "correct": 2,
+    "id": 105
+  },
+  {
+    "ref": "3424",
+    "section": "14.11",
+    "q": "Sobre a cobrança de IR em Títulos Públicos Federais:",
+    "options": [
+      "é cobrada a uma alíquota fixa de 15%.",
+      "o pagamento do imposto é de responsabilidade do investidor e feito por meio de DARF.",
+      "o fator gerador é o resgate no vencimento do título.",
+      "aalíquotacobradareduzconformeotempodeaplicação,tendocomomenor valor 15%."
+    ],
+    "correct": 3,
+    "id": 106
+  },
+  {
+    "ref": "4210",
+    "section": "14.11",
+    "q": "No mercado brasileiro, os Títulos Públicos Federais são considera- dos ativos livres de risco. Qual afirmativa abaixo é verdadeira?",
+    "options": [
+      "OsTítulosPúblicosFederaissãorealmenteativoslivresporquenãopossuem risco de crédito, já que o Governo pode emitir moedas para honrá-los.",
+      "OsTítulosPúblicosFederaissãoumaboaaproximaçãodoativolivrederisco, poisapesardeteremvolatilidadenãopossuemriscodecrédito,jáqueoGov- erno pode emitir moedas para honrá-los.",
+      "OsTítulosPúblicosFederaissãoapenasumaaproximaçãogrosseiradoativo livrederiscodecrédito,poispossuemvolatilidadeetambémriscodecrédito.",
+      "SomenteosTítulosPúblicosFederaisemitidosnoexteriordeveriamsercon- siderados ativo livre de risco, uma vez que as taxas de juros no mercado in- ternacional têm pouca volatilidade e pouco alteram o preço desses títulos."
+    ],
+    "correct": 2,
+    "id": 107
+  },
+  {
+    "ref": "9884",
+    "section": "14.11",
+    "q": "Quanto à forma, as debêntures são classificadas em:",
+    "options": [
+      "escriturais ou permutáveis.",
+      "nominativas ou simples.",
+      "nominativas ou escriturais.",
+      "conversíveis em ações ou permutáveis."
+    ],
+    "correct": 2,
+    "id": 108
+  },
+  {
+    "ref": "3608",
+    "section": "15.24",
+    "q": "Quando o preço de exercício de uma opção de compra é infe- rior ao preço à vista corrente do papel, a opção está:",
+    "options": [
+      "dentro do preço.",
+      "no preço.",
+      "fora do preço.",
+      "barata."
+    ],
+    "correct": 0,
+    "id": 109
+  },
+  {
+    "ref": "9904",
+    "section": "15.24",
+    "q": "O recolhimento do Imposto de Renda retido na fonte em operações com contratos futuros na B3 deverá ser realizado:",
+    "options": [
+      "pelo próprio investidor.",
+      "pelo membro de compensação utilizado pela corretora.",
+      "pela bolsa em que a operação tiver sido realizada.",
+      "pela corretora que intermediar o negócio."
+    ],
+    "correct": 2,
+    "id": 110
+  },
+  {
+    "ref": "3749",
+    "section": "15.24",
+    "q": "Um investidor com uma posição ativa em dólar que deseja se hedgear nessa posição deverá:",
+    "options": [
+      "comprar contratos de dólar futuro.",
+      "vender contratos de dólar futuro.",
+      "vender opção de venda (put) de dólar.",
+      "comprar opção de compra (call) de dólar."
+    ],
+    "correct": 1,
+    "id": 111
+  },
+  {
+    "ref": "3380",
+    "section": "15.24",
+    "q": "O índice Bovespa vale, neste momento, 80.000 pontos, ao passo que o contrato futuro de índice Bovespa está sendo negociado a 81.980 pontos. Esta diferença deve-se a:",
+    "options": [
+      "não há relação entre o contrato futuro e o índice à vista.",
+      "taxa de juros entre a data de hoje e a data de vencimento do contrato futuro.",
+      "expectativa de alta do Ibovespa.",
+      "maior procura por contratos futuro que por ações à vista."
+    ],
+    "correct": 2,
+    "id": 112
+  },
+  {
+    "ref": "3642",
+    "section": "15.24",
+    "q": "No mercado a termo de ações da B3, as garantias:",
+    "options": [
+      "são exigidas apenas dos vendedores.",
+      "são exigidas dos compradores e dos vendedores.",
+      "são exigidas das empresas emissoras das ações.",
+      "são exigidas apenas dos compradores."
+    ],
+    "correct": 1,
+    "id": 113
+  },
+  {
+    "ref": "4255",
+    "section": "15.24",
+    "q": "Uma empresa possui dívidas em dólar. Seu diretor financeiro avaliaqueorealtemgrandeschancesdesedesvalorizarfortementeno curto prazo. A operação que permite alavancar mais este movimento e ganhar dinheiro em reais é:",
+    "options": [
+      "comprar calls de dólar dentro do dinheiro.",
+      "vender calls de dólar dentro do dinheiro.",
+      "vender calls de dólar fora do dinheiro.",
+      "comprar calls de dólar fora do dinheiro."
+    ],
+    "correct": 3,
+    "id": 114
+  },
+  {
+    "ref": "4554",
+    "section": "15.24",
+    "q": "Todos os fatores que afetam o prêmio de uma call são:",
+    "options": [
+      "juros, prazo e volatilidade do ativo-objeto.",
+      "juros, prazo, volatilidade e preço a vista do ativo-objeto.",
+      "juros, prazo, volatilidade, preço a vista, valor do prêmio.",
+      "juros, prazo, volatilidade, preço à vista, dividendos (quando houver) e preço de exercício."
+    ],
+    "correct": 3,
+    "id": 115
+  },
+  {
+    "ref": "3999",
+    "section": "15.24",
+    "q": "O exercício da opção de venda depende:",
+    "options": [
+      "da vontade do titular.",
+      "da vontade do lançador.",
+      "da decisão de uma câmara de arbitragem.",
+      "de comum acordo entre o lançador e o titular."
+    ],
+    "correct": 0,
+    "id": 116
+  },
+  {
+    "ref": "3731",
+    "section": "15.24",
+    "q": "O swap caracteriza-se por ser:",
+    "options": [
+      "umcontratodetrocadoindexadorporoutrodiferenteparaserfeitaem uma data futura.",
+      "um custo do investidor para investir em ações.",
+      "o direito de aquisição de novo lote de ações por ocasião do aumento de capital.",
+      "a subscrição de indicadores para data futura."
+    ],
+    "correct": 0,
+    "id": 117
+  }
+]
