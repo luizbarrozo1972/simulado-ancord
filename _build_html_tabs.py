@@ -52,6 +52,18 @@ def main():
     j1 = json.dumps(s1, ensure_ascii=False)
     j2 = json.dumps(s2, ensure_ascii=False)
     n1, n2 = len(s1), len(s2)
+    exam_sec_1 = 150 * 60
+    exam_sec_2 = round(150 * 60 * n2 / 80) if n1 else 150 * 60
+    desc1 = (
+        f"{n1} questões · Gabarito apostila Fevereiro/2024 (Rafael Toro). "
+        "Timer padrão: 2 h 30 min (prova oficial ANCORD · FGV)."
+    )
+    desc2 = (
+        f"{n2} questões · Material Top Invest (links de justificativa do PDF no rodapé). "
+        f"Timer com ritmo equivalente ao da prova oficial (~{exam_sec_2 // 60} min)."
+    )
+    js_desc1 = json.dumps(desc1)
+    js_desc2 = json.dumps(desc2)
 
     html = f"""<!DOCTYPE html>
 <html lang="pt-br">
@@ -78,7 +90,7 @@ def main():
             color: var(--primary);
             line-height: 1.55;
             margin: 0;
-            padding: 158px 16px 120px;
+            padding: 208px 16px 120px;
             max-width: 920px;
             margin-left: auto;
             margin-right: auto;
@@ -211,6 +223,60 @@ def main():
         }}
         .btn-clear {{ background: var(--error); color: #fff; }}
         .btn-clear:hover {{ filter: brightness(1.05); }}
+        .timer-row {{
+            grid-column: 1 / -1;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px 16px;
+            padding-top: 10px;
+            margin-top: 6px;
+            border-top: 1px solid rgba(255,255,255,.28);
+            font-size: 0.88rem;
+        }}
+        .timer-row #timer-display {{
+            font-size: 1.55rem;
+            font-variant-numeric: tabular-nums;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+        }}
+        .timer-row .timer-btn {{
+            padding: 6px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.82rem;
+            background: rgba(255,255,255,.22);
+            color: #fff;
+        }}
+        .timer-row .timer-btn:hover {{ filter: brightness(1.08); }}
+        .score-panel.timer-expired #timer-display {{ color: #feb2b2; }}
+        .q-footer {{
+            margin-top: 14px;
+            padding-top: 12px;
+            border-top: 1px dashed #cbd5e0;
+            font-size: 0.88rem;
+            color: var(--muted);
+        }}
+        .q-footer a {{ color: var(--accent); font-weight: 600; }}
+        .wrong-reveal {{
+            margin-top: 8px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            background: #fff5f5;
+            border: 1px solid #feb2b2;
+            color: #742a2a;
+            font-weight: 500;
+        }}
+        .wrong-reveal strong {{ font-weight: 700; }}
+        .explain-line {{ margin-bottom: 6px; }}
+        .option-label.reveal-correct {{
+            background: #e6fffa !important;
+            border-color: #319795 !important;
+            border-width: 2px;
+        }}
     </style>
 </head>
 <body>
@@ -222,6 +288,12 @@ def main():
             <div class="score-item"><strong id="pct">0%</strong><span>Taxa (sobre respondidas)</span></div>
             <div class="score-item"><strong id="pct-total">0%</strong><span id="partial-label">Parcial (questões)</span></div>
             <div class="progress-wrap"><div class="progress-bar" id="progress-bar"></div></div>
+            <div class="timer-row" aria-live="polite">
+                <span id="timer-caption">Prova ANCORD · 2 h 30 min</span>
+                <strong id="timer-display">150:00</strong>
+                <button type="button" class="timer-btn" id="timer-start">Iniciar</button>
+                <button type="button" class="timer-btn" id="timer-reset">Zerar timer</button>
+            </div>
         </div>
     </div>
 
@@ -231,7 +303,7 @@ def main():
             <button type="button" class="tab-btn" data-tab="2">Simulado 2 · Top Invest ({n2})</button>
         </div>
         <h1 id="hdr-title">Simulado ANCORD 1</h1>
-        <p id="hdr-desc">{n1} questões · Gabarito apostila Fevereiro/2024 (Rafael Toro). Progresso salvo por aba.</p>
+        <p id="hdr-desc">{desc1}</p>
     </div>
 
     <div id="quiz-container"></div>
@@ -252,13 +324,20 @@ def main():
         const META = {{
             1: {{
                 title: "Simulado ANCORD 1",
-                desc: "{n1} questões · Gabarito apostila Fevereiro/2024 (Rafael Toro). Progresso salvo por aba."
+                desc: {js_desc1}
             }},
             2: {{
                 title: "Simulado Top Invest",
-                desc: "{n2} questões · Extraídas do PDF Material Top Invest (simulados por módulo). Referência ref # em cada questão."
+                desc: {js_desc2}
             }}
         }};
+
+        const EXAM_DURATION_SEC = {{
+            1: {exam_sec_1},
+            2: {exam_sec_2}
+        }};
+
+        const TIMER_STORAGE = "ancord_exam_timer_v3";
 
         let activeTab = 1;
 
@@ -270,6 +349,11 @@ def main():
         const partialLabel = document.getElementById("partial-label");
         const progressBar = document.getElementById("progress-bar");
         const container = document.getElementById("quiz-container");
+        const timerDisplay = document.getElementById("timer-display");
+        const timerCaption = document.getElementById("timer-caption");
+        const timerStartBtn = document.getElementById("timer-start");
+        const timerResetBtn = document.getElementById("timer-reset");
+        const scorePanelEl = document.querySelector(".score-panel");
 
         function getQuestions() {{
             return activeTab === 1 ? QUESTIONS_S1 : QUESTIONS_S2;
@@ -285,6 +369,76 @@ def main():
             }} catch (e) {{
                 return {{}};
             }}
+        }}
+
+        function loadTimerState() {{
+            try {{
+                return JSON.parse(localStorage.getItem(TIMER_STORAGE) || "{{}}");
+            }} catch (e) {{
+                return {{}};
+            }}
+        }}
+
+        function saveTimerState(state) {{
+            localStorage.setItem(TIMER_STORAGE, JSON.stringify(state));
+        }}
+
+        function getTimerSlot() {{
+            const st = loadTimerState();
+            const tab = String(activeTab);
+            if (!st[tab]) st[tab] = {{ startAt: null, durationSec: EXAM_DURATION_SEC[activeTab] }};
+            return st;
+        }}
+
+        function formatRemain(sec) {{
+            sec = Math.max(0, Math.floor(sec));
+            const h = Math.floor(sec / 3600);
+            const m = Math.floor((sec % 3600) / 60);
+            const s = sec % 60;
+            if (h > 0)
+                return (
+                    h +
+                    ":" +
+                    String(m).padStart(2, "0") +
+                    ":" +
+                    String(s).padStart(2, "0")
+                );
+            return String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+        }}
+
+        function updateTimerUI() {{
+            const st = getTimerSlot();
+            const tab = String(activeTab);
+            const slot = st[tab] || {{}};
+            const dur = slot.durationSec ?? EXAM_DURATION_SEC[activeTab];
+            if (activeTab === 1) {{
+                timerCaption.textContent = "Prova ANCORD oficial · 2 h 30 min (" + getQuestions().length + " questões)";
+            }} else {{
+                timerCaption.textContent =
+                    "Ritmo equivalente à prova · " +
+                    Math.round(dur / 60) +
+                    " min (" +
+                    getQuestions().length +
+                    " questões)";
+            }}
+            if (!slot.startAt) {{
+                timerDisplay.textContent = formatRemain(dur);
+                timerStartBtn.textContent = "Iniciar";
+                scorePanelEl.classList.remove("timer-expired");
+                return;
+            }}
+            const elapsed = (Date.now() - slot.startAt) / 1000;
+            const left = dur - elapsed;
+            timerDisplay.textContent = formatRemain(left);
+            timerStartBtn.textContent = "Em andamento";
+            if (left <= 0) scorePanelEl.classList.add("timer-expired");
+            else scorePanelEl.classList.remove("timer-expired");
+        }}
+
+        let timerInterval = null;
+        function ensureTimerTick() {{
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(updateTimerUI, 1000);
         }}
 
         function saveAnswer(qId, optionIdx) {{
@@ -322,16 +476,33 @@ def main():
             const data = loadSaved();
             questions.forEach((item) => {{
                 const sel = data[item.id];
-                if (sel === undefined || sel === null) return;
                 const nOpt = item.options.length;
                 for (let o = 0; o < nOpt; o++) {{
                     const lab = document.getElementById(
                         "label-" + activeTab + "-" + item.id + "-" + o
                     );
                     if (!lab) continue;
-                    lab.classList.remove("correct", "wrong");
+                    lab.classList.remove("correct", "wrong", "reveal-correct");
+                }}
+                const wrongBox = document.getElementById("wrong-" + activeTab + "-" + item.id);
+                if (wrongBox) {{
+                    if (sel === undefined || sel === null || sel === item.correct) {{
+                        wrongBox.hidden = true;
+                    }} else {{
+                        wrongBox.hidden = false;
+                    }}
+                }}
+                if (sel === undefined || sel === null) return;
+                for (let o = 0; o < nOpt; o++) {{
+                    const lab = document.getElementById(
+                        "label-" + activeTab + "-" + item.id + "-" + o
+                    );
+                    if (!lab) continue;
                     if (o === sel) {{
                         lab.classList.add(o === item.correct ? "correct" : "wrong");
+                    }}
+                    if (sel !== item.correct && o === item.correct) {{
+                        lab.classList.add("reveal-correct");
                     }}
                 }}
             }});
@@ -350,6 +521,10 @@ def main():
                     rt.textContent = "Ref. #" + item.ref + (item.section ? " · Módulo " + item.section : "");
                     card.appendChild(rt);
                 }}
+                const title = document.createElement("div");
+                title.className = "question-text";
+                title.textContent = (qIdx + 1) + ". " + item.q;
+                card.appendChild(title);
                 const opts = document.createElement("div");
                 item.options.forEach((opt, oIdx) => {{
                     const lab = document.createElement("label");
@@ -368,17 +543,47 @@ def main():
                     lab.appendChild(span);
                     opts.appendChild(lab);
                 }});
-                const title = document.createElement("div");
-                title.className = "question-text";
-                title.textContent = (qIdx + 1) + ". " + item.q;
-                card.appendChild(title);
                 card.appendChild(opts);
+
+                const footer = document.createElement("div");
+                footer.className = "q-footer";
+                if (activeTab === 2 && item.justificationUrl) {{
+                    const ex = document.createElement("div");
+                    ex.className = "explain-line";
+                    const labEl = document.createElement("span");
+                    labEl.textContent = "Justificativa (material Top Invest): ";
+                    const a = document.createElement("a");
+                    a.href = item.justificationUrl;
+                    a.target = "_blank";
+                    a.rel = "noopener noreferrer";
+                    a.textContent = "abrir comentário no site Top Invest";
+                    ex.appendChild(labEl);
+                    ex.appendChild(a);
+                    footer.appendChild(ex);
+                }}
+                const cLet = String.fromCharCode(65 + item.correct);
+                const cText = item.options[item.correct];
+                const wrongReveal = document.createElement("div");
+                wrongReveal.className = "wrong-reveal";
+                wrongReveal.id = "wrong-" + activeTab + "-" + item.id;
+                const wrStrong = document.createElement("strong");
+                wrStrong.textContent = "Resposta correta:";
+                wrongReveal.appendChild(wrStrong);
+                wrongReveal.appendChild(document.createTextNode(" "));
+                wrongReveal.appendChild(
+                    document.createTextNode(cLet + ") " + cText)
+                );
+                wrongReveal.hidden = true;
+                footer.appendChild(wrongReveal);
+
+                card.appendChild(footer);
                 container.appendChild(card);
             }});
             document.getElementById("hdr-title").textContent = META[activeTab].title;
             document.getElementById("hdr-desc").textContent = META[activeTab].desc;
             updateScore();
             renderHints();
+            updateTimerUI();
         }}
 
         document.querySelectorAll(".tab-btn").forEach((btn) => {{
@@ -393,6 +598,27 @@ def main():
             }});
         }});
 
+        timerStartBtn.addEventListener("click", () => {{
+            const st = getTimerSlot();
+            const tab = String(activeTab);
+            const slot = st[tab] || {{}};
+            if (slot.startAt) return;
+            slot.durationSec = EXAM_DURATION_SEC[activeTab];
+            slot.startAt = Date.now();
+            st[tab] = slot;
+            saveTimerState(st);
+            updateTimerUI();
+        }});
+
+        timerResetBtn.addEventListener("click", () => {{
+            if (!confirm("Zerar o timer desta aba? O cronômetro volta ao tempo integral e para de contar até você iniciar de novo.")) return;
+            const st = loadTimerState();
+            const tab = String(activeTab);
+            st[tab] = {{ startAt: null, durationSec: EXAM_DURATION_SEC[activeTab] }};
+            saveTimerState(st);
+            updateTimerUI();
+        }});
+
         document.getElementById("btn-clear").addEventListener("click", () => {{
             if (confirm("Limpar todas as respostas desta aba neste dispositivo?")) {{
                 localStorage.removeItem(storageKey());
@@ -400,6 +626,7 @@ def main():
             }}
         }});
 
+        ensureTimerTick();
         initQuiz();
     </script>
 </body>

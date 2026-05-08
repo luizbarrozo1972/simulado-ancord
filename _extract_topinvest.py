@@ -120,18 +120,54 @@ def parse_questions_block(text: str):
 def parse_gabarito_block(text: str):
     answers = {}
     for m in re.finditer(
-        r"(\d+)\s*-\s*Resposta[s]?\s*:\s*([A-E])([A-E])?",
+        r"(\d+)\s*-\s*Resposta[s]?\s*:\s*([A-E]+)([A-E])?",
         text,
         re.IGNORECASE,
     ):
         n = int(m.group(1))
-        letter = m.group(2).upper()
+        raw = m.group(2).upper()
+        letter = raw[0] if raw else ""
         extra = m.group(3)
         if extra:
             answers[n] = LET[letter]
         elif letter in LET:
             answers[n] = LET[letter]
     return answers
+
+
+def normalize_gabarito_urls_blob(text: str) -> str:
+    """Corrige quebras de linha no meio de URLs e variantes '5-Resposta'."""
+    t = text
+    t = re.sub(r"(?m)^(\d+)\s*-\s*Resposta", r"\1 - Resposta", t)
+    t = re.sub(
+        r"(https?://simulados\.topinvest\.com\.br/simulados/)\s*\n\s*(\d+/iniciar[^\s<>]*)",
+        r"\1\2",
+        t,
+        flags=re.IGNORECASE,
+    )
+    return t
+
+
+def parse_justification_urls(text: str) -> dict[int, str]:
+    """URLs após 'Justificativa:' no gabarito Top Invest (material PDF)."""
+    urls = {}
+    blob = normalize_gabarito_urls_blob(text)
+    pat = re.compile(
+        r"(?m)^(\d+)\s*-\s*Resposta[s]?\s*:\s*[A-E]+\.\s*Justificativa:\s*(?:\r\n|\n|\r)\s*(?:<)?(https?://[^\s<>]+)>?",
+        re.IGNORECASE,
+    )
+    for m in pat.finditer(blob):
+        urls[int(m.group(1))] = m.group(2).strip()
+    # Alguns PDFs colam Justificativa na mesma linha da resposta
+    pat2 = re.compile(
+        r"(?m)^(\d+)\s*-\s*Resposta[s]?\s*:\s*[A-E]+\.\s*Justificativa:\s*(?:<)?(https?://[^\s<>]+)>?",
+        re.IGNORECASE,
+    )
+    for m in pat2.finditer(blob):
+        n = int(m.group(1))
+        if n not in urls:
+            urls[n] = m.group(2).strip()
+    return urls
 
 
 def main():
@@ -144,6 +180,7 @@ def main():
     for sec, body, gab_block in iter_sections(blob):
         qs = parse_questions_block(body)
         gab = parse_gabarito_block(gab_block)
+        just_urls = parse_justification_urls(gab_block)
         for q in qs:
             ln = q["n_local"]
             if ln not in gab:
@@ -153,15 +190,16 @@ def main():
             if c_idx >= len(q["options"]):
                 problems.append(f"sec {sec} q {ln} gabarito fora do índice")
                 continue
-            all_q.append(
-                {
-                    "ref": q["ref"],
-                    "section": sec,
-                    "q": q["q"],
-                    "options": q["options"],
-                    "correct": c_idx,
-                }
-            )
+            entry = {
+                "ref": q["ref"],
+                "section": sec,
+                "q": q["q"],
+                "options": q["options"],
+                "correct": c_idx,
+            }
+            if ln in just_urls:
+                entry["justificationUrl"] = just_urls[ln]
+            all_q.append(entry)
 
     for i, q in enumerate(all_q, start=1):
         q["id"] = i
