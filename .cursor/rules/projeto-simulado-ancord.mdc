@@ -1,0 +1,25 @@
+---
+description: ANCORD simulado context — structure, data, and language
+alwaysApply: true
+---
+
+# Simulado ANCORD
+
+This repository generates **HTML practice exams** (multiple-choice questions) from **JSON** and Python extraction scripts (`pdfplumber`) and assembly scripts.
+
+## Main files
+
+- `_questions_raw.json` / `_questions_topinvest.json` — question bank (text, options, metadata as produced by the extractor).
+- `_extract_q.py`, `_extract_topinvest.py` — extraction from PDF.
+- `_build_html.py`, `_build_html_tabs.py` — generation of `simulado_ancord_1.html` (or variants).
+- Output HTML is **static** (no backend).
+
+## Content and language
+
+- **Cursor assistant:** All replies to the developer (explanations, summaries, technical discussion) must be in **English**.
+- **Simulado HTML (end users):** Interface, titles, and learner-facing copy remain **Portuguese (pt-BR)**; use `lang="pt-br"` in HTML when applicable.
+
+## Scope of changes
+
+- Change only what the task requires; do not refactor scripts or generated HTML unless explicitly requested.
+- Preserve the JSON shape expected by the builders when editing questions.

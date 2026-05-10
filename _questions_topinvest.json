@@ -11,7 +11,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/955382/iniciar",
-    "id": 1
+    "id": 1,
+    "justificationText": "A alternativa C está correta porque o contexto menciona que nos processos de competência da Justiça Federal e da Justiça do Distrito Federal, previstos na Lei 9.613/98, são tratados os crimes de \"lavagem\" ou ocultação de bens, direitos e valores. Portanto, a Justiça Federal é a responsável pelo processo e julgamento desses crimes."
   },
   {
     "ref": "3526",
@@ -25,7 +26,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1361029/iniciar",
-    "id": 2
+    "id": 2,
+    "justificationText": "INSUFICIENTE: Não há informações no contexto que fundamentem a justificativa para a alternativa correta."
   },
   {
     "ref": "4540",
@@ -39,7 +41,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/955399/iniciar",
-    "id": 3
+    "id": 3,
+    "justificationText": "O COAF (Conselho de Controle de Atividades Financeiras) é mencionado como um dos órgãos envolvidos na prevenção e combate à lavagem de dinheiro, conforme a legislação pertinente. Ele atua em conjunto com o Ministério Público e outras entidades para identificar e examinar atividades suspeitas, o que reforça sua posição como o principal órgão nesse combate, conforme estabelecido pela Lei nº 9.613/98."
   },
   {
     "ref": "3267",
@@ -53,7 +56,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/955405/iniciar",
-    "id": 4
+    "id": 4,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre as fases do processo de lavagem de dinheiro."
   },
   {
     "ref": "9870",
@@ -67,7 +71,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/955411/iniciar",
-    "id": 5
+    "id": 5,
+    "justificationText": "A alternativa D está correta porque as opções I e III abordam aspectos que devem ser verificados pelos Assessores de Investimentos (AI) em relação ao cliente. A opção I menciona a necessidade de verificar se os produtos são adequados aos objetivos de investimento do cliente, enquanto a opção III destaca a importância de avaliar se o cliente possui conhecimento para compreender os riscos envolvidos. Ambas estão alinhadas com a Resolução CVM 30/21 sobre a adequação ao perfil do cliente. A opção II, por outro lado, não é mencionada como uma exigência no contexto."
   },
   {
     "ref": "9871",
@@ -81,7 +86,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/955417/iniciar",
-    "id": 6
+    "id": 6,
+    "justificationText": "A alternativa D está correta porque menciona que as pessoas que têm como atividade a distribuição de títulos ou valores mobiliários devem monitorar as operações cujo grau de complexidade e risco não se compatibilize com a qualificação técnica do cliente. Essa responsabilidade está alinhada com a necessidade de supervisão e controle das atividades no mercado de valores mobiliários, conforme estabelecido pela ICVM 301/99 e suas atualizações."
   },
   {
     "ref": "4224",
@@ -95,7 +101,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/955428/iniciar",
-    "id": 7
+    "id": 7,
+    "justificationText": "INSUFICIENTE: Não há informações no contexto que detalhem as punições específicas para o crime de lavagem de dinheiro."
   },
   {
     "ref": "9829",
@@ -109,7 +116,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/955442/iniciar",
-    "id": 8
+    "id": 8,
+    "justificationText": "A alternativa A está correta porque o contexto não menciona que o Conselho de Controle de Atividades Financeiras (COAF) tem a finalidade de regular as atividades de mediação e distribuição. As outras alternativas estão relacionadas a funções que o COAF realmente exerce, como a identificação de atividades ilícitas e a coordenação de mecanismos de combate à ocultação de bens."
   },
   {
     "ref": "3269",
@@ -123,7 +131,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/955450/iniciar",
-    "id": 9
+    "id": 9,
+    "justificationText": "A fase de colocação é considerada a mais crítica em um processo de lavagem de dinheiro, pois é nesse momento que os recursos ilícitos são introduzidos no sistema financeiro, tornando-se mais próximos de suas origens ilegais. Essa fase envolve a movimentação inicial dos valores obtidos de atividades criminosas, o que a torna vulnerável a detecções e investigações."
   },
   {
     "ref": "9834",
@@ -137,7 +146,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960365/iniciar",
-    "id": 10
+    "id": 10,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre a política cambial atual no Brasil."
   },
   {
     "ref": "3774",
@@ -151,7 +161,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960367/iniciar",
-    "id": 11
+    "id": 11,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre o tipo de taxa cambial vigente no Brasil."
   },
   {
     "ref": "4204",
@@ -165,7 +176,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960371/iniciar",
-    "id": 12
+    "id": 12,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre superávit primário do governo."
   },
   {
     "ref": "3688",
@@ -179,7 +191,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960376/iniciar",
-    "id": 13
+    "id": 13,
+    "justificationText": "INSUFICIENTE: Não há informação suficiente no contexto para justificar a escolha do IPCA como índice de preços utilizado pelo CMN para o acompanhamento de metas de inflação."
   },
   {
     "ref": "3847",
@@ -193,7 +206,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960382/iniciar",
-    "id": 14
+    "id": 14,
+    "justificationText": "A alternativa B está correta porque o IPCA é o índice que mede a inflação no Brasil, e investir em títulos atrelados a ele garante que a rentabilidade do investimento acompanhe a variação dos preços, protegendo o investidor contra os efeitos da inflação."
   },
   {
     "ref": "4556",
@@ -207,7 +221,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960385/iniciar",
-    "id": 15
+    "id": 15,
+    "justificationText": "A alternativa C está correta porque a inflação de 10% indica que, em média, os preços dos bens e serviços aumentaram em 10% durante o período considerado. Isso reflete a perda do poder de compra da moeda, mas a afirmação correta é que os preços subiram."
   },
   {
     "ref": "4137",
@@ -221,7 +236,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960387/iniciar",
-    "id": 16
+    "id": 16,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre a determinação da meta de inflação no Brasil."
   },
   {
     "ref": "4318",
@@ -235,7 +251,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960389/iniciar",
-    "id": 17
+    "id": 17,
+    "justificationText": "A alternativa D está correta porque a taxa PTAX é definida como a média das operações realizadas no mercado interbancário de câmbio, refletindo assim as transações entre instituições financeiras. Essa taxa é amplamente utilizada como referência para a cotação do dólar no Brasil."
   },
   {
     "ref": "3895",
@@ -249,7 +266,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960425/iniciar",
-    "id": 18
+    "id": 18,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações suficientes para justificar a alternativa correta."
   },
   {
     "ref": "4642",
@@ -263,7 +281,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960664/iniciar",
-    "id": 19
+    "id": 19,
+    "justificationText": "O Banco Central do Brasil (BACEN) é uma entidade supervisora, e suas atribuições estão associadas à fiscalização das instituições financeiras, conforme mencionado no contexto. Portanto, a alternativa A está correta, pois reflete uma das funções primordiais do BACEN."
   },
   {
     "ref": "3192",
@@ -277,7 +296,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960668/iniciar",
-    "id": 20
+    "id": 20,
+    "justificationText": "A alternativa D está correta porque o Sistema Financeiro Nacional tem a função de captar recursos financeiros, distribuir e circular valores, além de regular esse processo. Essa abrangência é fundamental para o funcionamento adequado do sistema financeiro, garantindo a intermediação entre os agentes econômicos."
   },
   {
     "ref": "9841",
@@ -291,7 +311,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960701/iniciar",
-    "id": 21
+    "id": 21,
+    "justificationText": "A alternativa B está correta porque a BSM (BSM Supervisão de Mercados) tem como uma de suas principais atividades a supervisão dos participantes do mercado, o que inclui a mediação de diálogo e o ressarcimento de prejuízos. Essa função é essencial para garantir a integridade e a confiança no funcionamento do mercado financeiro."
   },
   {
     "ref": "3591",
@@ -305,7 +326,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1361001/iniciar",
-    "id": 22
+    "id": 22,
+    "justificationText": "O Banco Central do Brasil é a entidade responsável por autorizar o funcionamento das instituições financeiras, conforme indicado no contexto. Essa atribuição é parte das funções do Banco Central, que inclui a supervisão e regulamentação do sistema financeiro nacional. Portanto, a alternativa B está correta."
   },
   {
     "ref": "3411",
@@ -319,7 +341,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960709/iniciar",
-    "id": 23
+    "id": 23,
+    "justificationText": "O Banco Central é a entidade responsável por intervir em situações que envolvem a estabilidade econômica e a política monetária do país, como a migração de investidores da poupança para a compra de dólares. Essa intervenção visa regular o mercado de câmbio e assegurar a estabilidade financeira."
   },
   {
     "ref": "3221",
@@ -333,7 +356,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960712/iniciar",
-    "id": 24
+    "id": 24,
+    "justificationText": "As autoridades monetárias são responsáveis pela regulação e fiscalização do Sistema Financeiro Nacional, conforme indicado nas atribuições do Banco Central e outras entidades mencionadas no contexto. Essas autoridades têm a função de assegurar a estabilidade econômica e a supervisão das instituições financeiras, o que se alinha com a definição de \"autoridades monetárias\"."
   },
   {
     "ref": "3229",
@@ -347,7 +371,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960715/iniciar",
-    "id": 25
+    "id": 25,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre o Conselho Monetário Nacional (CMN) e sua classificação como órgão máximo do Sistema Financeiro Nacional."
   },
   {
     "ref": "3859",
@@ -361,7 +386,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960719/iniciar",
-    "id": 26
+    "id": 26,
+    "justificationText": "O Tesouro Nacional é o órgão responsável pela captação de recursos para financiar a dívida interna do governo, conforme indicado no contexto. Essa função é essencial para a gestão das finanças públicas e a manutenção da estabilidade econômica."
   },
   {
     "ref": "3609",
@@ -375,7 +401,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/960725/iniciar",
-    "id": 27
+    "id": 27,
+    "justificationText": "INSUFICIENTE: Não há informações no contexto que fundamentem a resposta sobre a autorregulação do mercado de fundos de investimentos e das ofertas públicas."
   },
   {
     "ref": "3797",
@@ -389,7 +416,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/965930/iniciar",
-    "id": 28
+    "id": 28,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre a regulação e fiscalização das corretoras de valores mobiliários e de mercadorias."
   },
   {
     "ref": "3226",
@@ -403,7 +431,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/965934/iniciar",
-    "id": 29
+    "id": 29,
+    "justificationText": "As afirmações II, III e IV estão corretas. A afirmação II é verdadeira porque um banco múltiplo deve ter no mínimo duas carteiras, sendo uma delas comercial ou de investimento. A afirmação III é correta, pois o banco pode coordenar ofertas públicas ao possuir a carteira de investimento. Por fim, a afirmação IV também é verdadeira, já que o banco pode administrar recursos de terceiros quando possui a carteira de investimento."
   },
   {
     "ref": "3178",
@@ -417,7 +446,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/965936/iniciar",
-    "id": 30
+    "id": 30,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre a definição de investidores não residentes."
   },
   {
     "ref": "3446",
@@ -431,7 +461,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/965939/iniciar",
-    "id": 31
+    "id": 31,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre os instrumentos de captação utilizados pelas sociedades de crédito imobiliário."
   },
   {
     "ref": "4480",
@@ -445,7 +476,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/965943/iniciar",
-    "id": 32
+    "id": 32,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações que sustentem a afirmação de que as corretoras de títulos e valores mobiliários estão autorizadas a atuar no mercado de câmbio."
   },
   {
     "ref": "3413",
@@ -459,7 +491,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/965945/iniciar",
-    "id": 33
+    "id": 33,
+    "justificationText": "INSUFICIENTE: Não há informação suficiente no contexto para justificar a alternativa correta."
   },
   {
     "ref": "4627",
@@ -473,7 +506,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/965948/iniciar",
-    "id": 34
+    "id": 34,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre as operações de captação e financiamento de médio e longo prazo realizadas por bancos de investimento."
   },
   {
     "ref": "4006",
@@ -487,7 +521,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/965952/iniciar",
-    "id": 35
+    "id": 35,
+    "justificationText": "A alternativa D está correta porque os bancos comerciais têm a função de fornecer recursos para financiar tanto a curto quanto a médio prazo, abrangendo a indústria, o comércio, as empresas e as pessoas físicas. Essa abrangência é característica fundamental das operações realizadas por bancos comerciais."
   },
   {
     "ref": "3805",
@@ -501,7 +536,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/965953/iniciar",
-    "id": 36
+    "id": 36,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre as carteiras obrigatórias dos bancos múltiplos."
   },
   {
     "ref": "3965",
@@ -515,7 +551,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/985940/iniciar",
-    "id": 37
+    "id": 37,
+    "justificationText": "O risco predominante é o risco de crédito, pois se refere à possibilidade de a empresa não conseguir honrar seus pagamentos relacionados às debêntures emitidas. Esse tipo de risco está diretamente ligado à capacidade da empresa de cumprir suas obrigações financeiras, o que é característico do risco de crédito."
   },
   {
     "ref": "3807",
@@ -529,7 +566,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/985951/iniciar",
-    "id": 38
+    "id": 38,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre o risco de mercado e sua relação com a flutuação de preços."
   },
   {
     "ref": "3169",
@@ -543,7 +581,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/985968/iniciar",
-    "id": 39
+    "id": 39,
+    "justificationText": "INSUFICIENTE: Não há informações suficientes no contexto para justificar a escolha da alternativa correta."
   },
   {
     "ref": "4327",
@@ -557,7 +596,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/985976/iniciar",
-    "id": 40
+    "id": 40,
+    "justificationText": "A volatilidade de um fundo de investimento que possui retorno constante é nula, pois a volatilidade mede a variação dos retornos em relação à média. Como não há variação nos retornos, a volatilidade é zero."
   },
   {
     "ref": "3489",
@@ -571,7 +611,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/985979/iniciar",
-    "id": 41
+    "id": 41,
+    "justificationText": "A duration de Macaulay de um título que paga cupons semestrais é sempre inferior ao prazo total até o vencimento, pois considera o tempo até o recebimento dos cupons. Como o título mencionado paga cupons semestrais e tem um prazo de três anos, a duration será inferior a três anos."
   },
   {
     "ref": "9893",
@@ -585,7 +626,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/985982/iniciar",
-    "id": 42
+    "id": 42,
+    "justificationText": "A função da central de liquidação e compensação (Clearing House) é garantir o cumprimento e a integridade de todos os contratos assumidos por compradores e vendedores. Isso implica que a clearing house atua como intermediária, assegurando que ambas as partes cumpram suas obrigações contratuais, o que justifica a escolha da alternativa B como correta."
   },
   {
     "ref": "8032",
@@ -599,7 +641,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/3654218/iniciar",
-    "id": 43
+    "id": 43,
+    "justificationText": "A alternativa D está correta porque o Value at Risk (VaR) é uma medida que quantifica a perda máxima que um investidor pode enfrentar em um determinado período, dado um nível de confiança específico. Essa definição está alinhada com o conceito de VaR, que busca estimar o risco de perda em uma carteira de investimentos."
   },
   {
     "ref": "4584",
@@ -613,7 +656,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/985996/iniciar",
-    "id": 44
+    "id": 44,
+    "justificationText": "A alternativa B) liquidez está correta porque a situação apresentada envolve a venda de um imóvel, cujo valor de mercado é significativamente maior do que a proposta recebida. Isso indica um problema de liquidez, já que o cliente não consegue vender o ativo pelo seu valor justo e enfrenta dificuldades financeiras."
   },
   {
     "ref": "3611",
@@ -627,7 +671,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/986005/iniciar",
-    "id": 45
+    "id": 45,
+    "justificationText": "Um fundo de investimento em ações, ao ser amplamente diversificado, é capaz de eliminar o risco não sistemático, que é o risco específico de uma empresa ou setor. A diversificação permite que os efeitos negativos de perdas em alguns ativos sejam compensados por ganhos em outros, reduzindo assim a exposição a riscos que não afetam o mercado como um todo. Portanto, a alternativa D está correta."
   },
   {
     "ref": "3727",
@@ -641,7 +686,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/992687/iniciar",
-    "id": 46
+    "id": 46,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre a composição do IGC."
   },
   {
     "ref": "9854",
@@ -655,7 +701,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/992685/iniciar",
-    "id": 47
+    "id": 47,
+    "justificationText": "INSUFICIENTE: Não há informação no contexto sobre a NTN-B e sua relação com o IPCA."
   },
   {
     "ref": "3860",
@@ -669,7 +716,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/992681/iniciar",
-    "id": 48
+    "id": 48,
+    "justificationText": "Os agentes underwriters são definidos como instituições financeiras ou não financeiras especializadas em coordenar processos de emissões de valores mobiliários. A alternativa B é correta, pois menciona bancos de investimento, sociedades corretoras e sociedades distribuidoras, que são as entidades que atuam nesse papel no mercado financeiro."
   },
   {
     "ref": "3990",
@@ -683,7 +731,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/3653807/iniciar",
-    "id": 49
+    "id": 49,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre o cálculo da bonificação em ações e a quantidade de ações que o acionista terá após o aumento de capital."
   },
   {
     "ref": "4630",
@@ -697,7 +746,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/992694/iniciar",
-    "id": 50
+    "id": 50,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre os CDBs."
   },
   {
     "ref": "9902",
@@ -711,7 +761,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/3653814/iniciar",
-    "id": 51
+    "id": 51,
+    "justificationText": "A alternativa D está correta porque as regras de compensação de ganhos e perdas em operações na B3 permitem que perdas incorridas em uma operação sejam compensadas com ganhos de operações da mesma espécie, como as realizadas no mercado futuro. Isso garante que o investidor possa equilibrar sua situação fiscal em relação a operações semelhantes."
   },
   {
     "ref": "3597",
@@ -725,7 +776,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/992717/iniciar",
-    "id": 52
+    "id": 52,
+    "justificationText": "A alternativa A está correta porque define que, em uma operação de underwriting de melhor esforço, as instituições financeiras se comprometem apenas a colocar o máximo de uma emissão nas melhores condições possíveis dentro de um determinado período. Isso reflete a natureza desse tipo de underwriting, onde não há garantia de que todos os títulos serão vendidos."
   },
   {
     "ref": "3907",
@@ -739,7 +791,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/992739/iniciar",
-    "id": 53
+    "id": 53,
+    "justificationText": "A alternativa C está correta porque o mercado secundário tem como função principal proporcionar liquidez aos ativos financeiros que foram negociados no mercado primário. Isso permite que os investidores possam comprar e vender esses ativos com maior facilidade, aumentando a eficiência do mercado."
   },
   {
     "ref": "9853",
@@ -753,7 +806,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/992736/iniciar",
-    "id": 54
+    "id": 54,
+    "justificationText": "INSUFICIENTE: Não há informações suficientes no contexto para justificar a alternativa correta."
   },
   {
     "ref": "9847",
@@ -767,7 +821,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998241/iniciar",
-    "id": 55
+    "id": 55,
+    "justificationText": "A alternativa B) de performance está correta porque, em alguns casos, as taxas de performance dos fundos podem ser devolvidas ao investidor se forem seguidas regras específicas, como tempo de permanência no fundo e solicitação de resgate com antecedência. Isso demonstra que a taxa de performance está sujeita a condições que podem resultar em devolução ao investidor."
   },
   {
     "ref": "3143",
@@ -781,7 +836,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998251/iniciar",
-    "id": 56
+    "id": 56,
+    "justificationText": "Os ativos presentes no fundo de investimento são de propriedade dos cotistas do fundo, pois a estrutura dos fundos de investimento é projetada para que os investidores (cotistas) detenham os direitos sobre os ativos que compõem a carteira do fundo. Essa característica é fundamental para a operação dos fundos, garantindo que os cotistas participem dos resultados proporcionais aos seus investimentos."
   },
   {
     "ref": "4712",
@@ -795,7 +851,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998258/iniciar",
-    "id": 57
+    "id": 57,
+    "justificationText": "A alternativa C está correta porque a marcação a mercado pode levar a uma distorção na rentabilidade apurada dos fundos de investimento. Isso ocorre devido à variação dos preços dos títulos prefixados, que podem resultar em diferentes rentabilidades para cotistas que aplicaram ou resgataram em momentos distintos, possibilitando assim a distribuição de renda entre eles."
   },
   {
     "ref": "3880",
@@ -809,7 +866,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998261/iniciar",
-    "id": 58
+    "id": 58,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre a tributação do come-cotas para fundos de investimento de curto prazo."
   },
   {
     "ref": "4343",
@@ -823,7 +881,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998266/iniciar",
-    "id": 59
+    "id": 59,
+    "justificationText": "A alternativa A está correta porque a cobrança da taxa de performance em fundos de investimento deve ocorrer após a dedução da taxa de administração e de outras despesas, conforme as regras gerais de funcionamento desses fundos. Essa prática assegura que a taxa de performance seja calculada sobre o rendimento líquido, refletindo a verdadeira performance do fundo após custos."
   },
   {
     "ref": "3680",
@@ -837,7 +896,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998269/iniciar",
-    "id": 60
+    "id": 60,
+    "justificationText": "A alternativa D é correta porque um fundo ativo tem como objetivo superar o benchmark, buscando um desempenho melhor do que o índice de referência, enquanto um fundo passivo tem a característica de acompanhar o benchmark, replicando sua performance. Essa distinção é fundamental na gestão de fundos de investimento."
   },
   {
     "ref": "3214",
@@ -851,7 +911,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998272/iniciar",
-    "id": 61
+    "id": 61,
+    "justificationText": "INSUFICIENTE: Não há informações no contexto sobre a alíquota de IOF para aplicações em fundos de investimento."
   },
   {
     "ref": "3315",
@@ -865,7 +926,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998277/iniciar",
-    "id": 62
+    "id": 62,
+    "justificationText": "A alternativa A está correta porque define um fundo multimercado como aquele que investe em diversos fatores de risco sem uma concentração específica, permitindo uma maior diversificação nas alocações. Essa característica é essencial para a flexibilidade e a estratégia de investimento desse tipo de fundo."
   },
   {
     "ref": "3462",
@@ -879,7 +941,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998282/iniciar",
-    "id": 63
+    "id": 63,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre a remuneração do administrador de um fundo e suas taxas."
   },
   {
     "ref": "4146",
@@ -893,7 +956,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998522/iniciar",
-    "id": 64
+    "id": 64,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre a tributação específica de fundos de investimento imobiliário (FII)."
   },
   {
     "ref": "4621",
@@ -907,7 +971,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998533/iniciar",
-    "id": 65
+    "id": 65,
+    "justificationText": "INSUFICIENTE: Não há informações no contexto que fundamentem a justificativa para a alternativa correta."
   },
   {
     "ref": "3263",
@@ -922,7 +987,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998540/iniciar",
-    "id": 66
+    "id": 66,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações suficientes sobre a alternativa C) 316."
   },
   {
     "ref": "4087",
@@ -936,7 +1002,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998547/iniciar",
-    "id": 67
+    "id": 67,
+    "justificationText": "A alternativa A está correta porque, em relação aos FIDCs, as cotas sênior realmente têm preferência no recebimento em comparação às cotas subordinadas. Essa estrutura de prioridade é uma característica comum em fundos de investimento, onde as cotas sênior são pagas antes das subordinadas em caso de liquidação ou distribuição de recursos."
   },
   {
     "ref": "4047",
@@ -950,7 +1017,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998557/iniciar",
-    "id": 68
+    "id": 68,
+    "justificationText": "Um fundo de investimento cujo objetivo é acompanhar a performance do Ibovespa é classificado como um fundo de ações indexado, pois ele replica a variação do índice, conforme mencionado no contexto. Essa característica é essencial para a definição de um fundo que busca seguir o desempenho de um benchmark específico, como o Ibovespa."
   },
   {
     "ref": "4335",
@@ -964,7 +1032,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998567/iniciar",
-    "id": 69
+    "id": 69,
+    "justificationText": "A alternativa A está correta porque menciona os dois tipos de fatos geradores na tributação dos fundos de investimento imobiliário: a distribuição dos lucros aos cotistas e a obtenção de ganho de capital na alienação ou resgates de cotas. Essa distinção é fundamental para entender como se dá a tributação nesse tipo de investimento."
   },
   {
     "ref": "3554",
@@ -978,7 +1047,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998576/iniciar",
-    "id": 70
+    "id": 70,
+    "justificationText": "INSUFICIENTE: Não há informação no contexto que permita fundamentar a resposta sobre as alíquotas de retornos oriundos por pessoa física no resgate de cotas de fundos imobiliários."
   },
   {
     "ref": "4657",
@@ -992,7 +1062,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998583/iniciar",
-    "id": 71
+    "id": 71,
+    "justificationText": "A alternativa B está correta porque afirma que os fundos de investimento imobiliário (FII) podem ser constituídos na forma de condomínio fechado com prazo de duração indeterminado, podem ser oferecidos a investidores de varejo ou qualificados, e têm a possibilidade de adquirir participação em empreendimentos imobiliários por meio de letras hipotecárias, letras de crédito imobiliário e certificados de recebíveis imobiliários. Essas características são compatíveis com as definições e regulamentações sobre FII."
   },
   {
     "ref": "4166",
@@ -1006,7 +1077,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/998597/iniciar",
-    "id": 72
+    "id": 72,
+    "justificationText": "A alternativa B está correta porque, de acordo com a regulamentação vigente, um fundo referenciado que possui mais de 50% de sua carteira composta por títulos de emissão de pessoas físicas ou jurídicas de direito privado deve incluir a expressão \"crédito privado\" em sua denominação. Essa exigência visa garantir transparência e clareza sobre a composição do fundo para os investidores."
   },
   {
     "ref": "4081",
@@ -1020,7 +1092,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1097928/iniciar",
-    "id": 73
+    "id": 73,
+    "justificationText": "A alternativa C está correta porque a securitização de recebíveis é definida como uma operação em que uma variedade de ativos é empacotada na forma de títulos para serem comercializados para investidores. Essa descrição se alinha diretamente com a definição apresentada no material de estudo."
   },
   {
     "ref": "4485",
@@ -1034,7 +1107,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1097933/iniciar",
-    "id": 74
+    "id": 74,
+    "justificationText": "A alternativa correta é a letra A, pois os Certificados de Recebíveis Imobiliários (CRIs) são títulos de renda fixa que oferecem isenção de Imposto de Renda para pessoas físicas, tornando-se uma opção atrativa para investidores que buscam rendimento isento. Essa característica é relevante na composição de uma carteira diversificada de renda fixa."
   },
   {
     "ref": "9798",
@@ -1048,7 +1122,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1097942/iniciar",
-    "id": 75
+    "id": 75,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações suficientes para justificar a alternativa correta."
   },
   {
     "ref": "4105",
@@ -1062,7 +1137,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1097954/iniciar",
-    "id": 76
+    "id": 76,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre os Certificados de Recebíveis Imobiliários e suas condições de distribuição."
   },
   {
     "ref": "4371",
@@ -1076,7 +1152,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1097960/iniciar",
-    "id": 77
+    "id": 77,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre os Certificados de Recebíveis Imobiliários e sua relação com a CVM."
   },
   {
     "ref": "4495",
@@ -1090,7 +1167,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1097964/iniciar",
-    "id": 78
+    "id": 78,
+    "justificationText": "A alternativa A está correta porque os Certificados de Recebíveis Imobiliários são, de fato, emitidos por companhias securitizadoras, conforme a estrutura de securitização de recebíveis. As demais alternativas estão incorretas, pois não refletem a natureza e as características dos Certificados de Recebíveis Imobiliários."
   },
   {
     "ref": "9797",
@@ -1104,7 +1182,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1097969/iniciar",
-    "id": 79
+    "id": 79,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre o registro de recebíveis em um processo de securitização."
   },
   {
     "ref": "3578",
@@ -1118,7 +1197,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1097973/iniciar",
-    "id": 80
+    "id": 80,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre o fluxo financeiro dos direitos de crédito em uma securitização."
   },
   {
     "ref": "9845",
@@ -1132,7 +1212,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1097975/iniciar",
-    "id": 81
+    "id": 81,
+    "justificationText": "As sociedades de crédito imobiliário podem empregar recursos provenientes de letras hipotecárias, que são títulos lastreados em créditos imobiliários e emitidos por instituições financeiras autorizadas a conceder créditos hipotecários. Essa relação é fundamental para a operação dessas sociedades, pois as letras hipotecárias garantem a captação de recursos para financiar operações imobiliárias."
   },
   {
     "ref": "4341",
@@ -1146,7 +1227,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098540/iniciar",
-    "id": 82
+    "id": 82,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre as vantagens de um clube de investimentos em relação a um fundo de investimentos em ações."
   },
   {
     "ref": "4243",
@@ -1160,7 +1242,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098541/iniciar",
-    "id": 83
+    "id": 83,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre o percentual mínimo de patrimônio líquido que os clubes de investimentos devem investir nos ativos mencionados."
   },
   {
     "ref": "4581",
@@ -1174,7 +1257,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098543/iniciar",
-    "id": 84
+    "id": 84,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre o percentual mínimo do patrimônio líquido que os clubes de investimentos devem investir nos itens mencionados."
   },
   {
     "ref": "4291",
@@ -1188,7 +1272,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1360995/iniciar",
-    "id": 85
+    "id": 85,
+    "justificationText": "INSUFICIENTE: Não há informação suficiente no contexto para fundamentar a resposta sobre a alíquota do imposto de renda sobre ganhos de capital auferidos por clubes de investimentos."
   },
   {
     "ref": "3816",
@@ -1202,7 +1287,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098499/iniciar",
-    "id": 86
+    "id": 86,
+    "justificationText": "A alternativa correta é a letra A, clube de investimento, pois é um instrumento legal que permite a reunião de um grupo de investidores para realizar investimentos em ações, conforme a regulamentação vigente. O clube de investimento possibilita que pequenos investidores tenham acesso a operações mais complexas e sofisticadas do mercado financeiro."
   },
   {
     "ref": "3357",
@@ -1216,7 +1302,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098507/iniciar",
-    "id": 87
+    "id": 87,
+    "justificationText": "A alternativa B está correta porque o contexto menciona que as corretoras, distribuidoras e bancos de investimento são entidades que podem administrar clubes de investimento. Essas instituições têm a capacidade de gerenciar e operar dentro desse tipo de investimento, conforme as regulamentações pertinentes."
   },
   {
     "ref": "4045",
@@ -1230,7 +1317,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098523/iniciar",
-    "id": 88
+    "id": 88,
+    "justificationText": "A alternativa A está correta porque, segundo o contexto, um clube de investimento deve ter, no mínimo, três participantes. Essa informação é explicitamente mencionada, confirmando a exigência mínima de participantes para a formação de um clube de investimento."
   },
   {
     "ref": "4353",
@@ -1244,7 +1332,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098528/iniciar",
-    "id": 89
+    "id": 89,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre a porcentagem mínima de ações que um clube de investimentos deve aplicar."
   },
   {
     "ref": "4277",
@@ -1258,7 +1347,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098531/iniciar",
-    "id": 90
+    "id": 90,
+    "justificationText": "INSUFICIENTE: Não há informação suficiente no contexto para justificar a alternativa correta."
   },
   {
     "ref": "3023",
@@ -1272,7 +1362,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1360939/iniciar",
-    "id": 91
+    "id": 91,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações suficientes para justificar a alternativa correta."
   },
   {
     "ref": "3184",
@@ -1286,7 +1377,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1360961/iniciar",
-    "id": 92
+    "id": 92,
+    "justificationText": "INSUFICIENTE: Não há informações suficientes no contexto para justificar a taxa de inflação projetada para o período do título."
   },
   {
     "ref": "3695",
@@ -1300,7 +1392,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098715/iniciar",
-    "id": 93
+    "id": 93,
+    "justificationText": "A alternativa B está correta porque, em finanças, o valor presente de um fluxo de caixa é inversamente proporcional à taxa de desconto. Quando a taxa de desconto é menor, o valor presente dos pagamentos futuros aumenta, resultando em um valor presente maior."
   },
   {
     "ref": "4746",
@@ -1314,7 +1407,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098723/iniciar",
-    "id": 94
+    "id": 94,
+    "justificationText": "INSUFICIENTE: Não há informações suficientes no contexto para justificar a alternativa correta."
   },
   {
     "ref": "3968",
@@ -1328,7 +1422,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098727/iniciar",
-    "id": 95
+    "id": 95,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações suficientes sobre a relação entre as taxas de juros do CDB e a aplicação em questão."
   },
   {
     "ref": "4013",
@@ -1342,7 +1437,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098741/iniciar",
-    "id": 96
+    "id": 96,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre a relação entre a taxa de rendimento e a taxa de inflação para justificar a resposta."
   },
   {
     "ref": "4773",
@@ -1356,7 +1452,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098824/iniciar",
-    "id": 97
+    "id": 97,
+    "justificationText": "INSUFICIENTE: Não há informações no contexto que permitam justificar a alternativa correta."
   },
   {
     "ref": "3596",
@@ -1370,7 +1467,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1098755/iniciar",
-    "id": 98
+    "id": 98,
+    "justificationText": "A alternativa correta é vender contratos futuros de Ibovespa, pois essa operação permite ao gestor de fundo de ações se proteger contra a queda do mercado, mitigando o risco sistemático. Ao vender contratos futuros, o gestor pode compensar perdas na carteira de ações com ganhos nos contratos vendidos, alinhando-se à estratégia de hedge desejada."
   },
   {
     "ref": "3384",
@@ -1384,7 +1482,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1360965/iniciar",
-    "id": 99
+    "id": 99,
+    "justificationText": "INSUFICIENTE: Não há informações suficientes no contexto para calcular o VPL do fluxo de pagamentos mencionado."
   },
   {
     "ref": "3767",
@@ -1398,7 +1497,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103305/iniciar",
-    "id": 100
+    "id": 100,
+    "justificationText": "A alternativa A está correta porque o Fundo Garantidor de Créditos (FGC) assegura que os investidores recebam até R$ 250.000,00 por CPF ou CNPJ em caso de liquidação extrajudicial de instituições financeiras. Essa proteção é uma característica fundamental do FGC, que visa proteger os depositantes e investidores em situações de insolvência dos bancos."
   },
   {
     "ref": "3946",
@@ -1412,7 +1512,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103315/iniciar",
-    "id": 101
+    "id": 101,
+    "justificationText": "A alternativa B está correta porque, em investimentos, o lucro é obtido quando o preço de resgate é superior ao preço de aquisição. Isso se aplica aos Títulos Públicos Federais, onde a valorização do título em relação ao seu custo inicial resulta em ganho para o investidor."
   },
   {
     "ref": "4137",
@@ -1426,7 +1527,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103325/iniciar",
-    "id": 102
+    "id": 102,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre a determinação da meta de inflação no Brasil."
   },
   {
     "ref": "4116",
@@ -1440,7 +1542,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103328/iniciar",
-    "id": 103
+    "id": 103,
+    "justificationText": "A alternativa D está correta porque o Tesouro IPCA+ (NTN-B Principal) é um título que garante a rentabilidade atrelada à inflação, proporcionando proteção contra a perda do poder de compra ao longo do tempo. Isso é especialmente relevante para um investimento de quatro anos, pois o rendimento é ajustado pela variação do IPCA, assegurando que o investidor mantenha seu capital real."
   },
   {
     "ref": "4050",
@@ -1454,7 +1557,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103339/iniciar",
-    "id": 104
+    "id": 104,
+    "justificationText": "A alternativa B está correta porque os certificados de depósitos bancários (CDBs) são de emissão dos bancos comerciais e de investimentos, e ao adquirir um CDB, o investidor efetivamente empresta dinheiro ao banco, recebendo juros em troca. Essa relação é similar a um depósito bancário, onde o investidor confia seus recursos à instituição financeira."
   },
   {
     "ref": "3544",
@@ -1468,7 +1572,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103350/iniciar",
-    "id": 105
+    "id": 105,
+    "justificationText": "A alternativa C está correta porque, segundo o contexto, o Imposto de Renda sobre aplicações em CDB é recolhido na fonte apenas na ocasião do resgate, quando o investidor recebe a renda. Não há menção a recolhimento via DARF ou em datas específicas antes do resgate."
   },
   {
     "ref": "3424",
@@ -1482,7 +1587,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103358/iniciar",
-    "id": 106
+    "id": 106,
+    "justificationText": "A alternativa D está correta porque a tributação para a pessoa física em títulos de renda fixa, como os Títulos Públicos Federais, segue a regra geral de que a alíquota do Imposto de Renda é reduzida conforme o tempo de aplicação, podendo chegar ao menor valor de 15%. Essa informação é consistente com as normas de tributação aplicáveis a esses investimentos."
   },
   {
     "ref": "4210",
@@ -1496,7 +1602,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103365/iniciar",
-    "id": 107
+    "id": 107,
+    "justificationText": "A alternativa correta é a C, pois os Títulos Públicos Federais, apesar de serem considerados ativos com baixo risco de crédito, apresentam volatilidade e, portanto, não são completamente isentos de risco. A afirmação destaca que eles são apenas uma aproximação do ativo livre de risco, reconhecendo a possibilidade de flutuações em seu valor e a presença de risco de crédito."
   },
   {
     "ref": "9884",
@@ -1510,7 +1617,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103372/iniciar",
-    "id": 108
+    "id": 108,
+    "justificationText": "A alternativa C está correta porque as debêntures são classificadas como nominativas, que são aquelas registradas em nome do titular, e escriturais, que são aquelas que não possuem um certificado físico, sendo registradas em sistema eletrônico. Essa classificação é fundamental para entender a natureza e a forma de negociação desses títulos no mercado."
   },
   {
     "ref": "3608",
@@ -1524,7 +1632,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103740/iniciar",
-    "id": 109
+    "id": 109,
+    "justificationText": "INSUFICIENTE: Não há informações no contexto que expliquem a relação entre o preço de exercício de uma opção de compra e o preço à vista corrente do papel."
   },
   {
     "ref": "9904",
@@ -1538,7 +1647,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103746/iniciar",
-    "id": 110
+    "id": 110,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações específicas sobre o recolhimento do Imposto de Renda em operações com contratos futuros na B3."
   },
   {
     "ref": "3749",
@@ -1552,7 +1662,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103750/iniciar",
-    "id": 111
+    "id": 111,
+    "justificationText": "A alternativa correta é vender contratos de dólar futuro, pois essa ação permite ao investidor proteger sua posição ativa em dólar contra a desvalorização da moeda. Ao vender contratos futuros, o investidor se compromete a entregar dólares a um preço fixo no futuro, mitigando o risco de flutuações adversas na taxa de câmbio."
   },
   {
     "ref": "3380",
@@ -1566,7 +1677,8 @@
     ],
     "correct": 2,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103755/iniciar",
-    "id": 112
+    "id": 112,
+    "justificationText": "A alternativa C está correta porque a diferença entre o valor do índice Bovespa e o contrato futuro reflete a expectativa de alta do Ibovespa. Quando os investidores acreditam que o índice irá subir, isso se reflete nos preços dos contratos futuros, que tendem a ser negociados a valores superiores ao índice à vista."
   },
   {
     "ref": "3642",
@@ -1580,7 +1692,8 @@
     ],
     "correct": 1,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103760/iniciar",
-    "id": 113
+    "id": 113,
+    "justificationText": "A alternativa B está correta porque, no mercado a termo de ações da B3, as garantias são exigidas tanto dos compradores quanto dos vendedores para assegurar o cumprimento das obrigações contratuais. Isso garante a integridade das operações realizadas nesse mercado."
   },
   {
     "ref": "4255",
@@ -1594,7 +1707,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103765/iniciar",
-    "id": 114
+    "id": 114,
+    "justificationText": "A alternativa correta é comprar calls de dólar fora do dinheiro, pois essa estratégia permite que a empresa se beneficie da valorização do dólar em relação ao real, alavancando ganhos em um cenário de desvalorização da moeda local. A compra de calls fora do dinheiro é uma forma de se proteger contra a alta do dólar, permitindo que a empresa capitalize sobre a expectativa de desvalorização do real."
   },
   {
     "ref": "4554",
@@ -1608,7 +1722,8 @@
     ],
     "correct": 3,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103768/iniciar",
-    "id": 115
+    "id": 115,
+    "justificationText": "INSUFICIENTE: ..."
   },
   {
     "ref": "3999",
@@ -1622,7 +1737,8 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103772/iniciar",
-    "id": 116
+    "id": 116,
+    "justificationText": "INSUFICIENTE: O contexto não fornece informações sobre o exercício da opção de venda."
   },
   {
     "ref": "3731",
@@ -1636,6 +1752,7 @@
     ],
     "correct": 0,
     "justificationUrl": "https://simulados.topinvest.com.br/simulados/1103776/iniciar",
-    "id": 117
+    "id": 117,
+    "justificationText": "O swap é um contrato que envolve a troca de indexadores, caracterizando-se como um acordo para ser realizado em uma data futura. Essa definição se alinha com a alternativa A, que descreve corretamente a natureza do swap como um contrato de troca de indexadores. As demais alternativas não refletem a essência do swap."
   }
 ]

@@ -1,0 +1,22 @@
+---
+description: Convenções dos scripts Python de extração e build
+globs: "**/*.py"
+alwaysApply: false
+---
+
+# Scripts Python
+
+## Portabilidade
+
+- Preferir caminhos **relativos ao diretório do repositório** (ou `pathlib.Path(__file__).resolve().parent`) em vez de caminhos absolutos de outra máquina.
+- Abrir arquivos de texto com `encoding="utf-8"`.
+- JSON: `ensure_ascii=False` ao gravar texto em português.
+
+## Estilo
+
+- `main()` como ponto de entrada; executável com `if __name__ == "__main__":`.
+- Comentários de cabeçalho curtos explicando entrada/saída do script (como nos arquivos existentes).
+
+## Dados
+
+- Ao mudar o schema das questões, atualizar **todos** os scripts que leem o JSON e o HTML gerado para não quebrar o fluxo.

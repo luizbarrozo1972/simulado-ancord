@@ -1,0 +1,5 @@
+# RAG local (_rag_local.py) + justificativas (_enrich_justifications.py)
+numpy>=1.24
+pdfplumber>=0.10
+openai>=1.0
+python-dotenv>=1.0

@@ -1,0 +1,5 @@
+# Ficheiros que o Cursor não deve indexar nem incluir no contexto do agente.
+# Segredos locais (variáveis de ambiente)
+.env
+.env.*
+!.env.example

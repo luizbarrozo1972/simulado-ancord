@@ -1,0 +1,11 @@
+---
+description: Proíbe acesso do agente a ficheiros .env e segredos locais
+alwaysApply: true
+---
+
+# Segredos e variáveis de ambiente
+
+- **Não ler, abrir, listar conteúdo, citar nem reproduzir** ficheiros `.env`, `.env.*` ou qualquer ficheiro só com credenciais locais.
+- **Exceção:** pode usar **`.env.example`** como modelo (sem segredos reais).
+- Para trabalhar com API keys, assumir que o utilizador define **`OPENAI_API_KEY`** no ambiente ou no `.env` local **sem** o agente inspecionar esse ficheiro.
+- Se for preciso documentar variáveis, referir nomes e exemplos **placeholders** no `.env.example` ou na documentação, nunca valores reais.

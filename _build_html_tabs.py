@@ -1,8 +1,9 @@
 # Gera simulado_ancord_1.html com abas: Simulado 1 (ANCORD) + Simulado 2 (Top Invest).
 import json
 import re
+from pathlib import Path
 
-ROOT = r"c:\Users\luiz.barrozo\Desktop\simulado ancord"
+ROOT = Path(__file__).resolve().parent
 
 GABARITO = """
 01. D 02. D 03. D 04. D 05. D 06. B 07. B 08. C 09. D 10. C 11. C 12. A 13. A 14. B 15. A 16. A 17. A
@@ -24,7 +25,7 @@ def parse_gabarito():
 
 def load_s1():
     gab = parse_gabarito()
-    with open(f"{ROOT}\\_questions_raw.json", encoding="utf-8") as f:
+    with open(ROOT / "_questions_raw.json", encoding="utf-8") as f:
         raw = json.load(f)
     items = []
     for q in raw:
@@ -42,8 +43,11 @@ def load_s1():
 
 
 def load_s2():
-    with open(f"{ROOT}\\_questions_topinvest.json", encoding="utf-8") as f:
-        return json.load(f)
+    with open(ROOT / "_questions_topinvest.json", encoding="utf-8") as f:
+        data = json.load(f)
+    for q in data:
+        q.pop("justificationUrl", None)
+    return data
 
 
 def main():
@@ -59,7 +63,7 @@ def main():
         "Timer padrão: 2 h 30 min (prova oficial ANCORD · FGV)."
     )
     desc2 = (
-        f"{n2} questões · Material Top Invest (links de justificativa do PDF no rodapé). "
+        f"{n2} questões · Material Top Invest (justificativa ao errar). "
         f"Timer com ritmo equivalente ao da prova oficial (~{exam_sec_2 // 60} min)."
     )
     js_desc1 = json.dumps(desc1)
@@ -260,7 +264,6 @@ def main():
             font-size: 0.88rem;
             color: var(--muted);
         }}
-        .q-footer a {{ color: var(--accent); font-weight: 600; }}
         .wrong-reveal {{
             margin-top: 8px;
             padding: 10px 12px;
@@ -271,7 +274,14 @@ def main():
             font-weight: 500;
         }}
         .wrong-reveal strong {{ font-weight: 700; }}
-        .explain-line {{ margin-bottom: 6px; }}
+        .justification-text {{
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px dashed rgba(116, 42, 42, 0.35);
+            font-weight: 400;
+            line-height: 1.45;
+            white-space: pre-wrap;
+        }}
         .option-label.reveal-correct {{
             background: #e6fffa !important;
             border-color: #319795 !important;
@@ -547,20 +557,6 @@ def main():
 
                 const footer = document.createElement("div");
                 footer.className = "q-footer";
-                if (activeTab === 2 && item.justificationUrl) {{
-                    const ex = document.createElement("div");
-                    ex.className = "explain-line";
-                    const labEl = document.createElement("span");
-                    labEl.textContent = "Justificativa (material Top Invest): ";
-                    const a = document.createElement("a");
-                    a.href = item.justificationUrl;
-                    a.target = "_blank";
-                    a.rel = "noopener noreferrer";
-                    a.textContent = "abrir comentário no site Top Invest";
-                    ex.appendChild(labEl);
-                    ex.appendChild(a);
-                    footer.appendChild(ex);
-                }}
                 const cLet = String.fromCharCode(65 + item.correct);
                 const cText = item.options[item.correct];
                 const wrongReveal = document.createElement("div");
@@ -573,6 +569,12 @@ def main():
                 wrongReveal.appendChild(
                     document.createTextNode(cLet + ") " + cText)
                 );
+                if (activeTab === 2 && item.justificationText) {{
+                    const jt = document.createElement("div");
+                    jt.className = "justification-text";
+                    jt.textContent = item.justificationText;
+                    wrongReveal.appendChild(jt);
+                }}
                 wrongReveal.hidden = true;
                 footer.appendChild(wrongReveal);
 
@@ -633,7 +635,7 @@ def main():
 </html>
 """
 
-    out_path = f"{ROOT}\\simulado_ancord_1.html"
+    out_path = ROOT / "simulado_ancord_1.html"
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
     print("written", out_path, "s1=", n1, "s2=", n2)

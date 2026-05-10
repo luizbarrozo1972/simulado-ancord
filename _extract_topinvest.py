@@ -1,10 +1,12 @@
 # Extrai todos os blocos N.M. SIMULADO do PDF Top Invest e o gabarito seguinte.
+# Gabarito: após "Justificativa:", extrai o texto explicativo do PDF e a URL (complemento).
 import json
 import re
-import pdfplumber
+from pathlib import Path
 
-PDF = r"c:\Users\luiz.barrozo\Desktop\simulado ancord\Material_TopInvest_AI-da-Ancord.pdf"
-OUT = r"c:\Users\luiz.barrozo\Desktop\simulado ancord\_questions_topinvest.json"
+ROOT = Path(__file__).resolve().parent
+PDF = ROOT / "Material_TopInvest_AI-da-Ancord.pdf"
+OUT = ROOT / "_questions_topinvest.json"
 
 LET = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
 
@@ -170,8 +172,48 @@ def parse_justification_urls(text: str) -> dict[int, str]:
     return urls
 
 
+def parse_justification_meta(gab_block: str) -> dict[int, dict]:
+    """
+    Por número da questão no gabarito: texto do PDF após 'Justificativa:' e URL Top Invest.
+    O texto é o corpo da justificativa no material; a URL é referência adicional ao site.
+    """
+    blob = normalize_gabarito_urls_blob(gab_block)
+    out = {}
+    starts = list(re.finditer(r"(?m)^(\d+)\s*-\s*Resposta[s]?\s*:", blob))
+    for i, m in enumerate(starts):
+        qn = int(m.group(1))
+        seg_end = starts[i + 1].start() if i + 1 < len(starts) else len(blob)
+        segment = blob[m.start() : seg_end]
+        jm = re.search(r"Justificativa:\s*", segment, flags=re.IGNORECASE | re.DOTALL)
+        if not jm:
+            continue
+        tail = segment[jm.end() :].strip()
+        url = None
+        um = re.search(r"(https?://[^\s<>]+)", tail)
+        if um:
+            url = um.group(1).rstrip(">).,;")
+            before = tail[: um.start()].strip()
+            after = tail[um.end() :].strip()
+            parts_txt = [before, after]
+            text_part = " ".join(p for p in parts_txt if p).strip()
+        else:
+            text_part = tail
+        text_part = re.sub(r"\s+", " ", text_part).strip()
+        out[qn] = {
+            "url": url,
+            "text": text_part if text_part else None,
+        }
+    legacy = parse_justification_urls(gab_block)
+    for qn, u in legacy.items():
+        if qn not in out:
+            out[qn] = {"url": u, "text": None}
+        elif not out[qn].get("url"):
+            out[qn]["url"] = u
+    return out
+
+
 def main():
-    with pdfplumber.open(PDF) as pdf:
+    with pdfplumber.open(str(PDF)) as pdf:
         blob = full_text(pdf)
 
     all_q = []
@@ -180,7 +222,7 @@ def main():
     for sec, body, gab_block in iter_sections(blob):
         qs = parse_questions_block(body)
         gab = parse_gabarito_block(gab_block)
-        just_urls = parse_justification_urls(gab_block)
+        just_meta = parse_justification_meta(gab_block)
         for q in qs:
             ln = q["n_local"]
             if ln not in gab:
@@ -197,14 +239,18 @@ def main():
                 "options": q["options"],
                 "correct": c_idx,
             }
-            if ln in just_urls:
-                entry["justificationUrl"] = just_urls[ln]
+            jm = just_meta.get(ln)
+            if jm:
+                if jm.get("url"):
+                    entry["justificationUrl"] = jm["url"]
+                if jm.get("text"):
+                    entry["justificationText"] = jm["text"]
             all_q.append(entry)
 
     for i, q in enumerate(all_q, start=1):
         q["id"] = i
 
-    with open(OUT, "w", encoding="utf-8") as f:
+    with open(str(OUT), "w", encoding="utf-8") as f:
         json.dump(all_q, f, ensure_ascii=False, indent=2)
 
     print("questions", len(all_q))
