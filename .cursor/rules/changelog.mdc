@@ -1,0 +1,13 @@
+---
+description: Update CHANGELOG.md when shipping significant project changes
+alwaysApply: true
+---
+
+# Changelog
+
+- When you complete **significant** work, update **`CHANGELOG.md`** in the same change set when practical (same commit or PR).
+- Treat as significant: new or removed features, notable UX/content changes in the simulado, new scripts or pipelines, meaningful fixes to extraction/build, dependency or tooling additions, security/privacy-related ignores, or anything a reader would expect to see in release notes.
+- Skip trivial edits (typos only, comments-only), mechanical regenerations with no behavioral change, or purely internal refactors with no user-visible effect—unless they affect how others run or deploy the project.
+- Follow **Keep a Changelog** style: keep **`## [Unreleased]`** at the top; add bullets under **Added**, **Changed**, **Fixed**, **Removed**, **Security** as appropriate; then roll dated entries into a version section (this repo uses **[0.x.y] - YYYY-MM-DD** aligned with meaningful milestones).
+- Write changelog entries in **English** (consistent with assistant-facing docs); learner-facing simulado strings remain pt-BR in HTML/JSON content.
+- If unsure whether a change is “significant,” err on the side of a one-line **Changed** note rather than omitting it.

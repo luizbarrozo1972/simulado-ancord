@@ -12,6 +12,7 @@ This repository generates **HTML practice exams** (multiple-choice questions) fr
 - `_questions_raw.json` / `_questions_topinvest.json` — question bank (text, options, metadata as produced by the extractor).
 - `_extract_q.py`, `_extract_topinvest.py` — extraction from PDF.
 - `_build_html.py`, `_build_html_tabs.py` — generation of `simulado_ancord_1.html` (or variants).
+- `CHANGELOG.md` — notable releases and milestones (keep updated when making significant changes; see `.cursor/rules/changelog.mdc`).
 - Output HTML is **static** (no backend).
 
 ## Content and language
