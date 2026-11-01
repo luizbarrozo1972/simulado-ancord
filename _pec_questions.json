@@ -1,0 +1,770 @@
+{
+  "mock_exam": [
+    {
+      "id": "pec-m-1",
+      "chapter": "I",
+      "q": "Segundo a Resolução CVM 178/23 (e suas atualizações), que trata das atividades do Assessor de Investimentos (AI), a responsabilidade da fiscalização dos AI que atuem como preposto de instituição integrante do sistema de distribuição de valores mobiliários é da(o):",
+      "options": [
+        "Ancord",
+        "AI constituído como pessoa jurídica.",
+        "Comissão de Valores Mobiliários.",
+        "Próprio intermediário."
+      ],
+      "correct": 3,
+      "explanation": "Art. 28, II, RCVM 178/2023: fiscalização do AI preposto é dever do intermediário contratante.",
+      "source": "toro:2"
+    },
+    {
+      "id": "pec-m-2",
+      "chapter": "I",
+      "q": "Rafael e Guilherme são irmãos e ambos são Assessores de Investimentos (AI) pessoas naturais, mas não trabalham na mesma corretora (CTVM): Rafael é vinculado a corretora ABCD e Guilherme trabalha para a corretora XYZ. Certo dia, um cliente de Rafael deseja realizar diversas operações na bolsa de valores e para ganhar tempo, resolveu passar a sua senha do homebroker para que Rafael pudesse executar de forma mais ágil, já que eles são amigos de longa data. No entanto, Rafael necessitou levar seu filho urgentemente no médico, não podendo executar as operações. Com isso, Rafael decide repassar a senha do cliente a seu irmão Guilherme, pedindo que o mesmo lhe ajude a transmitir as ordens diretamente pelo homebroker ou por seu sistema próprio. Diante dessa situação, podemos afirmar que:",
+      "options": [
+        "Rafael não pode usar a senha do cliente e tão pouco Guilherme, mas pode solicitar a seu irmão que transmita as ordens para sua corretora, afinal, Guilherme também é um Al.",
+        "Rafael pode usar a senha do cliente, pois foi o cliente que repassou, mas não pode pedir a Guilherme que transmita as ordens porque o cliente não o conhece.",
+        "Rafael pode usar a senha do cliente, pois foi o cliente que repassou e por isso pode pedir a Guilherme para acessar tanto o homebroker, quanto encaminhar a ordem por seu sistema.",
+        "Rafael não pode usar a senha do cliente, tão pouco repassar a senha a Guilherme ou solicitar que o mesmo transmita as ordens para sua corretora."
+      ],
+      "correct": 3,
+      "explanation": "Vedado ao AI utilizar senha do cliente ou repassar ordens/credenciais a terceiros (deveres de conduta e sigilo).",
+      "source": "toro:3"
+    },
+    {
+      "id": "pec-m-3",
+      "chapter": "I",
+      "q": "Com a Resolução CVM 178/2023, em vigor desde 1º/6/2023, sobre a vinculação do assessor de investimento (AI) a intermediários, é correto afirmar que:",
+      "options": [
+        "a exclusividade com um único intermediário passou a ser obrigatória para AI pessoa natural.",
+        "o AI pessoa natural e o AI pessoa jurídica podem atuar como prepostos de um ou mais intermediários, não havendo mais exclusividade imposta pela regulamentação da CVM.",
+        "o AI pessoa jurídica continua obrigado a contrato de exclusividade, mas o AI pessoa natural não.",
+        "contratos de exclusividade firmados antes da norma foram automaticamente invalidados pela CVM."
+      ],
+      "correct": 1,
+      "explanation": "A RCVM 178/2023 flexibilizou a multivinculação: AI pessoa natural ou jurídica pode prestar serviços a um ou mais intermediários (arts. 2º, II, e 6º). A exclusividade deixou de ser exigência regulatória; contratos pré-existentes dependem das cláusulas contratuais, não são invalidados automaticamente pela norma (FAQ mercado).",
+      "source": "new:178-exclusividade"
+    },
+    {
+      "id": "pec-m-4",
+      "chapter": "I",
+      "q": "Na credenciamento de assessor de investimento pessoa jurídica, a Resolução CVM 178/2023 exige indicação de diretor responsável. Sobre esse cargo, assinale a alternativa correta:",
+      "options": [
+        "pode ser qualquer empregado da sociedade, mesmo sem registro como AI pessoa natural.",
+        "deve ser diretor, sócio ou administrador da sociedade, registrado como AI pessoa natural; nomeação ou substituição deve ser informada à credenciadora e aos intermediários em até 7 dias úteis.",
+        "é opcional quando a sociedade possui apenas um sócio AI.",
+        "substitui integralmente o dever de fiscalização do intermediário contratante."
+      ],
+      "correct": 1,
+      "explanation": "Arts. 2º, III, 16, IV, e 26, § 1º, da RCVM 178/2023: diretor responsável é diretor/sócio/administrador registrado como AI pessoa natural; comunicação em 7 dias úteis à entidade credenciadora e intermediários.",
+      "source": "new:178-diretor"
+    },
+    {
+      "id": "pec-m-5",
+      "chapter": "III",
+      "q": "O recurso recuperado nos casos de Lavagem de Dinheiro é destinado:",
+      "options": [
+        "em um primeiro momento à uma conta remunerada na CEF ou outra instituição financeira pública, através de depósito judicial quando trata-se de processos de competência da Justiça Federal e da Justiça do Distrito Federal.",
+        "O recurso fica disponível em conta do Estado para que seja utilizado como investimentos para combate à prevenção de Lavagem de dinheiro de acordo com determinação do Bacen.",
+        "As operações relativas a pagamentos, recebimentos e transferências de recursos, por meio de qualquer instrumento, contra pagamento em espécie, de valor igual ou superior a R$ 50.000,00 (cinquenta mil reais) serão devolvidas diretamente ao tesouro nacional.",
+        "As instituições financeiras deverão identificar seus clientes, representantes e manter cadastro atualizado, nos termos de instruções emanadas das autoridades competentes para que em caso de recuperação dos recursos judicialmente esses possam ser favorecidos."
+      ],
+      "correct": 0,
+      "explanation": "Lei 9.613/1998 e regulamentação PLD: destinação de recursos recuperados conforme legislação.",
+      "source": "toro:13"
+    },
+    {
+      "id": "pec-m-6",
+      "chapter": "III",
+      "q": "Segundo a Circular BACEN 3.978/20 (e suas atualizações) caracterizam-se Pessoas Expostas Politicamente (PEP) os agentes públicos que desempenham ou tenham desempenhado, no país ou no exterior cargos, empregos ou funções públicas relevantes, assim como seus representantes, familiares ou outras Pessoas do seu relacionamento próximo, no seguinte prazo:",
+      "options": [
+        "10 anos se pertenceu a administração direta federal.",
+        "5 anos após o seu desenquadramento.",
+        "7 anos ininterruptos.",
+        "24 meses contados a partir do seu enquadramento."
+      ],
+      "correct": 1,
+      "explanation": "Circular BACEN 3.978/2020: operações atípicas e comunicação ao COAF/BACEN.",
+      "source": "toro:14"
+    },
+    {
+      "id": "pec-m-7",
+      "chapter": "III",
+      "q": "Com respeito ao crime de \"lavagem\" ou ocultação de bens, diretos e valores, a Circular Bacen 3.978/20 (e suas atualizações) determina que as instituições financeiras devem indicar um diretor responsável pela implementação e cumprimento das medidas estabelecidas para evitar tais crimes. Admita-se entretanto que esse diretor desempenhe outras funções desde que:",
+      "options": [
+        "Não aja conflito de interesses.",
+        "Não seja na mesma Instituição.",
+        "Tenha uma certificação reconhecida pela CVM.",
+        "Essa função não seja de diretoria."
+      ],
+      "correct": 0,
+      "explanation": "Lei 9.613/1998: tipificação de lavagem de dinheiro e ocultação de bens.",
+      "source": "toro:15"
+    },
+    {
+      "id": "pec-m-8",
+      "chapter": "III",
+      "q": "Segundo a Res. CVM 50/21 PLD-FT (Lavagem de dinheiro) as entidades administradoras de mercados organizados que não tenham relacionamento direto com o investidor devem obter e manter atualizados os dados cadastrais (dos investidores) com o(s):",
+      "options": [
+        "seus participantes.",
+        "seus Representantes (dos investidores).",
+        "cadastro de Investidores do Banco central.",
+        "cadastro de Investidores da B3."
+      ],
+      "correct": 0,
+      "explanation": "Res. CVM 50/2021: deveres de PLD-FTP das entidades administradoras de mercados.",
+      "source": "toro:16"
+    },
+    {
+      "id": "pec-m-9",
+      "chapter": "VII",
+      "q": "Uma empresa emitiu debêntures e não está conseguindo honrar seus pagamentos. O risco predominante é:",
+      "options": [
+        "risco de crédito.",
+        "risco operacional.",
+        "risco de liquidez.",
+        "risco de mercado."
+      ],
+      "correct": 0,
+      "explanation": "O risco predominante é o risco de crédito, pois se refere à possibilidade de a empresa não conseguir honrar seus pagamentos relacionados às debêntures emitidas. Esse tipo de risco está diretamente ligado à capacidade da empresa de cumprir suas obrigações financeiras, o que é característico do risco de crédito.",
+      "source": "topinvest:37"
+    },
+    {
+      "id": "pec-m-10",
+      "chapter": "VII",
+      "q": "O risco de mercado associa-se fundamentalmente:",
+      "options": [
+        "ao baixo índice de negociabilidade.",
+        "às falhas operacionais.",
+        "à inadimplência de emissores.",
+        "à flutuação de preços."
+      ],
+      "correct": 3,
+      "explanation": "Material Top Invest (ref. 3807, módulo 7.5).",
+      "source": "topinvest:38"
+    },
+    {
+      "id": "pec-m-11",
+      "chapter": "VII",
+      "q": "Umfundodeinvestimentoquepossuiretornoconstanteteráuma volatilidade:",
+      "options": [
+        "nula.",
+        "positiva.",
+        "crescente.",
+        "decrescente."
+      ],
+      "correct": 0,
+      "explanation": "A volatilidade de um fundo de investimento que possui retorno constante é nula, pois a volatilidade mede a variação dos retornos em relação à média. Como não há variação nos retornos, a volatilidade é zero.",
+      "source": "topinvest:40"
+    },
+    {
+      "id": "pec-m-12",
+      "chapter": "VII",
+      "q": "Um título prefixado paga cupom semestral de 3% e o principal no seu vencimento. O prazo até o seu vencimento é de três anos. A duration de Macaulay deste título é:",
+      "options": [
+        "inferior a três anos.",
+        "inferior a 3%.",
+        "igual a três anos.",
+        "igual a 3%."
+      ],
+      "correct": 0,
+      "explanation": "A duration de Macaulay de um título que paga cupons semestrais é sempre inferior ao prazo total até o vencimento, pois considera o tempo até o recebimento dos cupons. Como o título mencionado paga cupons semestrais e tem um prazo de três anos, a duration será inferior a três anos.",
+      "source": "topinvest:41"
+    },
+    {
+      "id": "pec-m-13",
+      "chapter": "VII",
+      "q": "Afunçãodacentraldeliquidaçãoecompensação,clearinghouse, é garantir o cumprimento e a integridade de todos os contratos assumidos:",
+      "options": [
+        "pelos órgãos controladores do mercado.",
+        "por compradores e vendedores.",
+        "somente por compradores.",
+        "somente dos vendedores."
+      ],
+      "correct": 1,
+      "explanation": "A função da central de liquidação e compensação (Clearing House) é garantir o cumprimento e a integridade de todos os contratos assumidos por compradores e vendedores. Isso implica que a clearing house atua como intermediária, assegurando que ambas as partes cumpram suas obrigações contratuais, o que justifica a escolha da alternativa B como correta.",
+      "source": "topinvest:42"
+    },
+    {
+      "id": "pec-m-14",
+      "chapter": "VII",
+      "q": "Considerando o value at risk (VAR), assinale a alternativa correta. Investimentos tem como consequência direta:",
+      "options": [
+        "significaoquantouminvestidorteráderetornoapartirdeumdeterminado valor investido.",
+        "significa o retorno máximo que um investidor pode ter.",
+        "significa a média histórica de oscilação de um ativo.",
+        "significaaperdamáximaqueuminvestidorpodeter,comumdeterminado nível de confiança."
+      ],
+      "correct": 3,
+      "explanation": "A alternativa D está correta porque o Value at Risk (VaR) é uma medida que quantifica a perda máxima que um investidor pode enfrentar em um determinado período, dado um nível de confiança específico. Essa definição está alinhada com o conceito de VaR, que busca estimar o risco de perda em uma carteira de investimentos.",
+      "source": "topinvest:43"
+    },
+    {
+      "id": "pec-m-15",
+      "chapter": "VIII",
+      "q": "A Câmara de Ações (B3) liquida operações realizadas por meio do sistema Bovespa Fix onde são negociados os _______________:",
+      "options": [
+        "títulos privados de renda fixa.",
+        "títulos lastreados em moedas.",
+        "títulos de renda variável.",
+        "títulos lastreados em ouro."
+      ],
+      "correct": 0,
+      "explanation": "Mercado de ações B3: liquidação e sistemas de negociação (Câmara de Ações).",
+      "source": "toro:20"
+    },
+    {
+      "id": "pec-m-16",
+      "chapter": "VIII",
+      "q": "A respeito do Sistema de compensação e liquidação (clearings) é correto afirmar que:",
+      "options": [
+        "Como contraparte central, a Clearing deve exigir que as corretoras imponham limites operacionais aos seus clientes , assegurando a eliminação do risco de mercado.",
+        "Como contraparte central, a Clearing se interpõe entre operações e contratos , tornando-se compradora para todos os vendedores e vendedora para todos os compradores, visando a redução do risco de mercado.",
+        "Como contraparte central, a Clearing se interpõe entre operações e contratos tornando-se compradora para todos os vendedores e vendedora para todos os compradores, visando aumentar a segurança das liquidações.",
+        "Como contraparte central, a Clearing deve exigir que as corretoras limitem os volumes de riscos dos seus clientes, assegurando a garantia das liquidações."
+      ],
+      "correct": 2,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 25.",
+      "source": "toro:25"
+    },
+    {
+      "id": "pec-m-17",
+      "chapter": "VIII",
+      "q": "Em relação aos Túneis de negociação , é correto afirmar que:",
+      "options": [
+        "Os túneis de rejeição e de negociação não são complementares.",
+        "No caso de leilão acionado por túnel, o algoritmo adotado é o de maximização da quantidade negociada e geração de negócios e vários preços.",
+        "Os túneis de rejeição e de negociação e demais regras do pregão eletrônicos, inclusive por prevenir a ocorrência de erros operacionais ao recusar ofertas de compras ou de vendas muito distantes dos vigentes.",
+        "Os túneis de rejeição e de negociação e demais regras do pregão eletrônico, não impõem limites aos tamanhos das ofertas, mas somente aos seus preços."
+      ],
+      "correct": 2,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 28.",
+      "source": "toro:28"
+    },
+    {
+      "id": "pec-m-18",
+      "chapter": "VIII",
+      "q": "O Commercial Papers (Nota Promissória) é um tipo de ativo de emissão das companhias com prazo máximo de vencimento de:",
+      "options": [
+        "360 dias após a data da sua emissão.",
+        "720 dias após a data de sua emissão.",
+        "720 dias após a data de sua aquisição.",
+        "360 dias após a data de sua aquisição."
+      ],
+      "correct": 0,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 29.",
+      "source": "toro:29"
+    },
+    {
+      "id": "pec-m-19",
+      "chapter": "VIII",
+      "q": "Nas debêntures com garantias reais,",
+      "options": [
+        "se houver liquidação da companhia, há preferência de pagamento aos debenturistas em aos acionistas.",
+        "não existem garantia ou preferência ao investidor em caso de liquidação da companhia.",
+        "os bens e direitos garantidos pela empresa na emissão podem ser negociados sem autorização prévia dos debenturistas.",
+        "os bens e direitos garantidos pela empresa na emissão não podem ser comprometidos, portanto só poderá ser negociado com a aprovação dos debenturistas."
+      ],
+      "correct": 3,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 30.",
+      "source": "toro:30"
+    },
+    {
+      "id": "pec-m-20",
+      "chapter": "VIII",
+      "q": "A quantidade de ações de uma empresa negociada em bolsa de valores foi alterada em função de uma bonificação Nesse caso, um investidor que tenha adquirido estas ações:",
+      "options": [
+        "terá um crédito a receber, na forma de juros.",
+        "terá direito a receber novas ações.",
+        "será obrigado a realizar um aporte de capital na empresa.",
+        "terá a quantidade de ações reduzida."
+      ],
+      "correct": 1,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 31.",
+      "source": "toro:31"
+    },
+    {
+      "id": "pec-m-21",
+      "chapter": "VIII",
+      "q": "São emissores de ações, os agentes participantes do mercado de capitais brasileiro:",
+      "options": [
+        "As corretoras de títulos e valores mobiliários.",
+        "Underwriters.",
+        "Bancos múltiplos, com carteira de desenvolvimento.",
+        "Companhias Abertas."
+      ],
+      "correct": 3,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 32.",
+      "source": "toro:32"
+    },
+    {
+      "id": "pec-m-22",
+      "chapter": "VIII",
+      "q": "Quanto a participação da companhia emissora das ações, existem duas categorias de BDRs ( Brazilian Depositary Receipts) que são:",
+      "options": [
+        "Patrocinados (Nível I, II e III) e não patrocinados (Nível III).",
+        "Patrocinados apenas (Nível I e II) e não patrocinados ( Nível II).",
+        "Patrocinados apenas (Nível I) e não patrocinados (Nível I).",
+        "Patrocinados (Nível I, II e III) e não patrocinados."
+      ],
+      "correct": 3,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 33.",
+      "source": "toro:33"
+    },
+    {
+      "id": "pec-m-23",
+      "chapter": "VIII",
+      "q": "O ambiente de negociação onde ocorre o mecanismo de ajuste diário de lucros e perdas em relação ao preço do ajuste é o mercado.",
+      "options": [
+        "De opções",
+        "Futuro",
+        "A termo",
+        "De Swaps"
+      ],
+      "correct": 1,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 35.",
+      "source": "toro:35"
+    },
+    {
+      "id": "pec-m-24",
+      "chapter": "VIII",
+      "q": "Em relação aos índices da B3, é incorreto afirmar que:",
+      "options": [
+        "Os índices amplos (Ibovespa, IBrX-100, IBrX-50 e IBrA) são compostos exclusivamente por ações, units de ações e BDR’s.",
+        "Os índices IBrX-100 e IBrX-50 se diferem, exclusivamente em sua metodologia, pela quantidade de ativos que compõe a carteira, vide que o IBrX-100 é o indicador do desempenho médio das cotações dos 100 ativos, enquanto que o IBrX-50 é o dos 50 ativos.",
+        "O Ibovespa é o principal índice da bolsa brasileira e seu objetivo é ser o indicador do desempenho médio das cotações dos ativos de maior negociabilidade e representatividade do mercado de ações brasileiro, considerando que não há aportes adicionais nem resgates posteriores, e no qual todos os dividendos são reinvestidos.",
+        "As ações consideradas como Penny Stocks não são elegíveis para a composição da carteiras dos índices amplos."
+      ],
+      "correct": 0,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 40.",
+      "source": "toro:40"
+    },
+    {
+      "id": "pec-m-25",
+      "chapter": "IX",
+      "q": "Quanto a composição de sua carteira, os fundos de investimentos financeiros, registrados na CVM, classificam-se em:",
+      "options": [
+        "Renda fixa, Ações, Multimercado e Cambial.",
+        "Renda fixa, Ações, Derivativos e Cambial.",
+        "Renda fixa, Renda variável, Multimercado e Cambial.",
+        "Renda variável, Ações, Multimercado e Cambial."
+      ],
+      "correct": 0,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 51.",
+      "source": "toro:51"
+    },
+    {
+      "id": "pec-m-26",
+      "chapter": "IX",
+      "q": "A classe dos fundos classificados como \"Dívida Externa\" deverão aplicar no mínimo ___ de seu (sua) _______em títulos representativos da dívida externa de responsabilidade da União, sendo permitida a aplicação dos recursos remanescentes em operações de derivativos , no Brasil, exclusivamente para fins de proteção da sua carteira (hedge) ou mantê-los em conta de depósito à vista em nome da classe do fundo, observando, no conjunto, o limite de _____do Patrimônio Líquido respectivo.",
+      "options": [
+        "90% / carteira / 10%",
+        "80% / patrimônio líquido / 10%",
+        "90% / patrimônio líquido / 10%",
+        "80% / Carteira / 20%"
+      ],
+      "correct": 1,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 52.",
+      "source": "toro:52"
+    },
+    {
+      "id": "pec-m-27",
+      "chapter": "IX",
+      "q": "Os ativos presentes no fundo de investimento são de propriedade:",
+      "options": [
+        "do gestor do fundo.",
+        "do custodiante do fundo.",
+        "dos cotistas do fundo.",
+        "do administrador do fundo."
+      ],
+      "correct": 2,
+      "explanation": "Os ativos presentes no fundo de investimento são de propriedade dos cotistas do fundo, pois a estrutura dos fundos de investimento é projetada para que os investidores (cotistas) detenham os direitos sobre os ativos que compõem a carteira do fundo. Essa característica é fundamental para a operação dos fundos, garantindo que os cotistas participem dos resultados proporcionais aos seus investimentos.",
+      "source": "topinvest:56"
+    },
+    {
+      "id": "pec-m-28",
+      "chapter": "IX",
+      "q": "Em relação ao seu benchmark, é característica de um fundo ativo e passivo, respectivamente:",
+      "options": [
+        "acompanhar e acompanhar o benchmark.",
+        "superar e superar o benchmark.",
+        "superar e superar o benchmark.",
+        "superar e acompanhar o benchmark."
+      ],
+      "correct": 3,
+      "explanation": "A alternativa D é correta porque um fundo ativo tem como objetivo superar o benchmark, buscando um desempenho melhor do que o índice de referência, enquanto um fundo passivo tem a característica de acompanhar o benchmark, replicando sua performance. Essa distinção é fundamental na gestão de fundos de investimento.",
+      "source": "topinvest:60"
+    },
+    {
+      "id": "pec-m-29",
+      "chapter": "X",
+      "q": "Em relação aos FIDCS, as cotas:",
+      "options": [
+        "sênior tem preferencia no recebimento.",
+        "subordinadas tem preferência no recebimento.",
+        "sênior contam com a cobertura do FGC, as subordinadas não.",
+        "sênior receberão depois das subordinadas."
+      ],
+      "correct": 0,
+      "explanation": "A alternativa A está correta porque, em relação aos FIDCs, as cotas sênior realmente têm preferência no recebimento em comparação às cotas subordinadas. Essa estrutura de prioridade é uma característica comum em fundos de investimento, onde as cotas sênior são pagas antes das subordinadas em caso de liquidação ou distribuição de recursos.",
+      "source": "topinvest:67"
+    },
+    {
+      "id": "pec-m-30",
+      "chapter": "X",
+      "q": "A Resolução CVM 175/2022, no novo marco de fundos, permite:",
+      "options": [
+        "apenas uma classe de cotas por fundo, vedadas subclasses.",
+        "estruturação em classes e subclasses de cotas, conforme regulamento do fundo e normas da Resolução.",
+        "subclasses apenas para FII, vedadas nos demais anexos.",
+        "classes de cotas somente para fundos fechados."
+      ],
+      "correct": 1,
+      "explanation": "A RCVM 175/2022 modernizou fundos e prevê classes e subclasses de cotas (estrutura de condomínio), com regras nos anexos por tipo de fundo — base para FII, FIDC, FIP, ETF etc.",
+      "source": "new:175-subclasses"
+    },
+    {
+      "id": "pec-m-31",
+      "chapter": "XII",
+      "q": "Instrumento legal que permite a reunião de um grupo de investi- dores para investimento em ações:",
+      "options": [
+        "clube de investimento.",
+        "cooperativa de investidores.",
+        "agremiação de investidores.",
+        "assembleia de investidores."
+      ],
+      "correct": 0,
+      "explanation": "A alternativa correta é a letra A, clube de investimento, pois é um instrumento legal que permite a reunião de um grupo de investidores para realizar investimentos em ações, conforme a regulamentação vigente. O clube de investimento possibilita que pequenos investidores tenham acesso a operações mais complexas e sofisticadas do mercado financeiro.",
+      "source": "topinvest:86"
+    },
+    {
+      "id": "pec-m-32",
+      "chapter": "XII",
+      "q": "Um clube de investimento:",
+      "options": [
+        "deve ter, no mínimo, três participantes.",
+        "deve ter, no mínimo, dez participantes.",
+        "pode ter um único participante (clube exclusivo).",
+        "deve ter, no mínimo, 150 participantes."
+      ],
+      "correct": 0,
+      "explanation": "A alternativa A está correta porque, segundo o contexto, um clube de investimento deve ter, no mínimo, três participantes. Essa informação é explicitamente mencionada, confirmando a exigência mínima de participantes para a formação de um clube de investimento.",
+      "source": "topinvest:88"
+    },
+    {
+      "id": "pec-m-33",
+      "chapter": "XIV",
+      "q": "O CDB é um título nominativo privado, emitido por instituições financeiras bancárias e vendidos ao público como forma de captação de recursos. Eles são negociados tanto a partir de uma taxa fixa de juros (prefixadas), quanto de uma taxa vinculada a índices econômicos (pós-fixados). Seus prazos e condições variam de instituição para instituição. Os impostos que incidem sobre as rentabilidades do CDB são o IOF (Imposto sobre Operações Financeiras) e o IR (Imposto de renda) com as características:",
+      "options": [
+        "O IOF decrescente, de acordo com a duração da aplicação e isento a aplicação com duração superior a 30 dias e o IR com alíquota de 15% constante.",
+        "O IOF decrescente, de acordo com a duração da aplicação e isento a aplicação com duração superior a 30 dias e o IR decrescente de acordo com a duração da aplicação e isento de IR para aplicação com prazo superior a 720 dias.",
+        "O IOF decrescente de acordo com a duração da aplicação e isento sobre a aplicação com duração superior a 30 dias e o IR decrescente de acordo com a duração da aplicação, até o mínimo de 15% para aplicação com prazo superior a 720 dias.",
+        "O IOF com alíquota de 3% constante e o IR decrescente de acordo com a duração da aplicação , até o mínimo de 15% para aplicação com prazo superior a 360 dias."
+      ],
+      "correct": 2,
+      "explanation": "CDB: título de crédito emitido por IF bancária; características de emissão e negociação.",
+      "source": "toro:65"
+    },
+    {
+      "id": "pec-m-34",
+      "chapter": "XIV",
+      "q": "As Letras Imobiliárias são títulos de renda fixa, geralmente emitidos com longo prazo, não sendo garantidos pelo FGC (Fundo Garantidor de Crédito), e que são:",
+      "options": [
+        "Emitidos por bancos de investimento, destinados a captação de recursos de construtores e adquirentes de imóveis.",
+        "Emitidos por bancos comerciais, destinados a captação de recursos para capital de giro de empresas em geral.",
+        "Emitido por Sociedades de Crédito Imobiliário, destinados a captação de recursos para o financiamento de construtores e adquirentes de imóveis.",
+        "Emitidos por sociedades corretoras, destinados para financiar o mercado imobiliário."
+      ],
+      "correct": 2,
+      "explanation": "Letras Imobiliárias (LI): captacao por sociedades de crédito imobiliário; características de prazo/garantia.",
+      "source": "toro:68"
+    },
+    {
+      "id": "pec-m-35",
+      "chapter": "XIV",
+      "q": "O investidor fez uma aplicação em CDB. Em caso de liquidação extrajudicial do banco:",
+      "options": [
+        "oinvestidorvaireceberovalorinvestidonolimitedeR$250.000doFGC,por CPF/CNPJ.",
+        "cabeaoinvestidorparticipardeassembleiaparatransferirorecursoaplicado em CDB para outro banco.",
+        "oinvestidorvaireceberodinheirodobanco,quegaranteodinheirodocliente mesmo em casos de liquidação extrajudicial.",
+        "o investidor vai receber o dinheiro do BACEN, que garante o dinheiro do cliente mesmo em casos de liquidação extrajudicial."
+      ],
+      "correct": 0,
+      "explanation": "A alternativa A está correta porque o Fundo Garantidor de Créditos (FGC) assegura que os investidores recebam até R$ 250.000,00 por CPF ou CNPJ em caso de liquidação extrajudicial de instituições financeiras. Essa proteção é uma característica fundamental do FGC, que visa proteger os depositantes e investidores em situações de insolvência dos bancos.",
+      "source": "topinvest:100"
+    },
+    {
+      "id": "pec-m-36",
+      "chapter": "XIV",
+      "q": "Segundo a Resolução CMN nº 5.119/2024 (alteração à Res. 4.410), o prazo mínimo de vencimento da LCI, quando atualizada mensalmente por índice de preços, é de:",
+      "options": [
+        "9 meses.",
+        "12 meses.",
+        "24 meses.",
+        "36 meses."
+      ],
+      "correct": 3,
+      "explanation": "Res. CMN 5.119/2024 alterou o art. 4º da Res. 4.410: LCI indexada a preços — prazo mínimo 36 meses; nos demais casos, prazo mínimo conforme redação vigente (9 meses após Res. 5.168/2024).",
+      "source": "new:cmn-5119-lci"
+    },
+    {
+      "id": "pec-m-37",
+      "chapter": "XV",
+      "q": "Uma empresa beneficiadora de determinado produto agrícola vendeu a termo a sua produção. A empresa terá que comprar o produto no prazo de três meses, para que possa beneficiá-lo e efetuar a entrega física da venda a termo. Por temer uma alta no preço do produto agrícola, a empresa resolve avaliar algumas alternativas de hedge disponíveis no mercado, que está com as seguintes cotações: • Ptermo (3 meses ) = R$ 500,00 • A taxa de juros efetiva no mercado de renda fixa para 3 meses está em 10% • Opções com Vencimento em 3 meses: - Modalidades: Call - PE: R$ 500,00 - Prêmio: R$ 30,00 Considerando PV o preço à vista no vencimento do produto agrícola, é preferível efetuar hedge por meio de compra da Call, comparativamente ao hedge por meio da compra a termo, se:",
+      "options": [
+        "PV > R$ 467",
+        "PV < R$ 530",
+        "PV > R$ 530",
+        "PV < R$ 467"
+      ],
+      "correct": 3,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 69.",
+      "source": "toro:69"
+    },
+    {
+      "id": "pec-m-38",
+      "chapter": "XV",
+      "q": "Mercado de derivativos são aqueles:",
+      "options": [
+        "Que tem horários reduzidos de funcionamento e que contam com a participação de apenas investidores residentes.",
+        "Restritos, onde são negociados contratos conjugados, de elevado risco e que se destinam ao aumento dos ganhos dos especuladores.",
+        "Onde são negociados contratos lastreado em ações que tenham apregoações nos mercados brasileiros e europeu (EDRs).",
+        "Nos quais são negociados contratos cujos preços derivam daqueles praticados em mercados mais básicos, onde são negociados os ativos-subjacentes e que podem servir a diferentes interesses."
+      ],
+      "correct": 3,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 70.",
+      "source": "toro:70"
+    },
+    {
+      "id": "pec-m-39",
+      "chapter": "XV",
+      "q": "As operações a termo são aquelas que:",
+      "options": [
+        "Destinam-se aos mercados agropecuários, devendo ser entregues as mercadorias de acordo com o interesse dos compradores.",
+        "Destinam-se aos mercados de ações, preveem a liquidação por diferença não permitindo a liquidação física.",
+        "Após a sua realização, preveem liquidação física e financeira, ou liquidação por diferença, em data futura.",
+        "Têm as margens de garantias mais reduzidas, dada a existência de mecanismo de ajustes diários."
+      ],
+      "correct": 2,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 71.",
+      "source": "toro:71"
+    },
+    {
+      "id": "pec-m-40",
+      "chapter": "XV",
+      "q": "Em relação as operações a futuro, é correto afirmar que:",
+      "options": [
+        "Os vendedores descobertos estão sujeitos a ajustes diários negativos, mas não aos positivos.",
+        "O mercado futuro de depósito interfinanceiro destina-se principalmente a especulação, devido a não existência da liquidação física.",
+        "Os contratos são negociados para determinados prazos e não para determinadas datas de vencimento.",
+        "Há mercados futuros com volumes de negociação bastante elevados e tanto podem ser utilizados com objetivos de hedge como de especulação."
+      ],
+      "correct": 3,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 72.",
+      "source": "toro:72"
+    }
+  ],
+  "drill": [
+    {
+      "id": "pec-d-1",
+      "chapter": "I",
+      "q": "Considere as afirmativas abaixo: I – Um assessor de Investimento pode exercer a função de consultor de valores mobiliários. II – Um assessor de Investimento pode exercer a função de administrador de carteira. III – Um assessor de Investimento não pode exercer a função de consultor de valores mobiliários. IV – Um assessor de Investimento não pode exercer a função de administrador de carteira. Estão corretas APENAS as alternativas",
+      "options": [
+        "I e II",
+        "I e III",
+        "II e III",
+        "III e IV"
+      ],
+      "correct": 3,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 5.",
+      "source": "toro:5"
+    },
+    {
+      "id": "pec-d-2",
+      "chapter": "I",
+      "q": "O Art. 5 da Resolução CVM 178/23 define Assessor de Investimento como uma pessoa natural. O Art. 6, da mesma resolução, define o assessor de Investimento pessoa jurídica. Analise as assertivas abaixo: I – Para o credenciamento da Sociedade de AI, é obrigatório que essa tenha como objeto social exclusivo, o exercício da atividade de assessor de Investimento, sendo vedada a participação em outras sociedades. II – Para o credenciamento da Sociedade de AI é obrigatório que essa seja constituída como Sociedade Anônima, adotando qualquer uma das formas permitidas para tal, na forma da legislação em vigor. III – Para o credenciamento da Sociedade de AI, é obrigatório que essa sociedade tenha apenas sócios AI pessoas naturais, as quais será atribuído, o exercício das atividades inerentes ao AI, dentre outras. Estão corretas as alternativas:",
+      "options": [
+        "I, apenas",
+        "II e III, apenas.",
+        "I, II e III.",
+        "Nenhuma das anteriores."
+      ],
+      "correct": 3,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 9.",
+      "source": "toro:9"
+    },
+    {
+      "id": "pec-d-3",
+      "chapter": "I",
+      "q": "O Credenciamento de Assessor de Investimentos e das pessoas jurídicas por elas constituídas é feito:",
+      "options": [
+        "pela CVM.",
+        "pela B3.",
+        "por entidades autorizadas pela CVM.",
+        "pela Instituição Contratante."
+      ],
+      "correct": 2,
+      "explanation": "Gabarito apostila Rafael Toro (fev/2024), questão 11.",
+      "source": "toro:11"
+    },
+    {
+      "id": "pec-d-4",
+      "chapter": "I",
+      "q": "Quanto ao credenciamento de assessor de investimento pessoa jurídica após a Resolução CVM 178/2023, é correto afirmar:",
+      "options": [
+        "o objeto social deve ser exclusivamente assessoria de investimentos, vedada qualquer outra atividade.",
+        "a sociedade deve ser necessariamente sociedade simples.",
+        "o objeto social deve incluir a prestação dos serviços de assessoria (art. 3º), admitindo-se atividades complementares nos mercados financeiro, de capitais, securitário e de capitalização, se compatíveis e não conflitantes.",
+        "sócios não registrados como AI podem executar atividades do art. 3º sem registro."
+      ],
+      "correct": 2,
+      "explanation": "A RCVM 178/2023 afastou a exigência de objeto social exclusivo e de forma societária única; exige objeto social compatível com a assessoria (arts. 6º, II, e 16, III), com possibilidade de atividades complementares reguladas, sem conflito com a atividade central.",
+      "source": "new:178-pj-objeto"
+    },
+    {
+      "id": "pec-d-5",
+      "chapter": "I",
+      "q": "Em caso de conduta do assessor de investimento que configure indício de infração à regulamentação, a comunicação à CVM é de responsabilidade:",
+      "options": [
+        "exclusiva da Ancord, em até 30 dias após fiscalização mensal.",
+        "do credenciado, em 30 dias úteis após descredenciamento.",
+        "da Ancord, independentemente do intermediário.",
+        "do intermediário integrante do sistema de distribuição contratante do AI que cometeu a possível infração."
+      ],
+      "correct": 3,
+      "explanation": "Conforme RCVM 178/2023 e deveres do intermediário/preposto: a instituição contratante integrante do sistema de distribuição deve comunicar indícios de infração à CVM (tema recorrente em provas; alinhado ao dever de supervisão do intermediário sobre o AI preposto).",
+      "source": "new:178-comunicacao-cvm"
+    },
+    {
+      "id": "pec-d-6",
+      "chapter": "I",
+      "q": "Pela Resolução CVM 179/2023 (Cap. VII-A da RCVM 35), as informações quantitativas sobre remuneração do intermediário devem ser apresentadas:",
+      "options": [
+        "somente no extrato anual enviado por correio.",
+        "no mesmo momento e ambiente franqueado ao cliente para transmissão da ordem, com valores ou percentuais praticados para o produto ofertado (art. 26-E).",
+        "apenas oralmente, antes da ordem.",
+        "somente na página pública do site, sem área logada."
+      ],
+      "correct": 1,
+      "explanation": "Art. 26-E da RCVM 35 (incluído pela RCVM 179/2023): remuneração quantitativa no ambiente de transmissão de ordens. Obrigações quantitativas e extratos tiveram vigência prorrogada para 1/11/2024 (RCVM 196/2023).",
+      "source": "new:179-remuneracao-ordem"
+    },
+    {
+      "id": "pec-d-7",
+      "chapter": "I",
+      "q": "Sobre o extrato trimestral de remuneração previsto na Resolução CVM 179/2023, assinale a correta:",
+      "options": [
+        "é facultativo para clientes pessoa jurídica.",
+        "deve conter remuneração auferida pelo intermediário em razão dos investimentos do cliente, discriminando modalidade, natureza da remuneração e parcela relativa a assessores (art. 26-F).",
+        "substitui a declaração de IR do investidor.",
+        "só se aplica a fundos exclusivos."
+      ],
+      "correct": 1,
+      "explanation": "Art. 26-F da RCVM 35: extrato trimestral com discriminação exigida, incluindo parcela de remuneração de assessores.",
+      "source": "new:179-extrato-trimestral"
+    },
+    {
+      "id": "pec-d-8",
+      "chapter": "I",
+      "q": "As informações qualitativas sobre remuneração e conflitos de interesse (Res. CVM 179/2023) devem:",
+      "options": [
+        "ser mantidas apenas na área logada, sem acesso público.",
+        "constar em página na rede mundial de computadores, em linguagem clara, descrevendo formas e arranjos (art. 26-B), sem necessidade de divulgar valores efetivos praticados nessa página.",
+        "ser comunicadas verbalmente em cada prospecção.",
+        "ser enviadas somente a investidores profissionais."
+      ],
+      "correct": 1,
+      "explanation": "Arts. 26-A a 26-B da RCVM 35: transparência qualitativa no site; valores/percentuais efetivos vão ao ambiente de ordens (quantitativo). Norma não se aplica a investidores profissionais (art. 26-A e regulamentação).",
+      "source": "new:179-qualitativa-site"
+    },
+    {
+      "id": "pec-d-9",
+      "chapter": "X",
+      "q": "No regime da Resolução CVM 175/2022, quanto à responsabilidade do cotista:",
+      "options": [
+        "o cotista responde ilimitada e solidariamente por todas as obrigações do fundo.",
+        "a responsabilidade do cotista limita-se ao valor de suas cotas, salvo disposição legal específica em contrário.",
+        "cotistas pessoa física respondem com patrimônio pessoal por débitos trabalhistas do administrador.",
+        "não há previsão de limitação de responsabilidade em fundos fechados."
+      ],
+      "correct": 1,
+      "explanation": "A RCVM 175/2022 mantém o princípio de responsabilidade limitada ao valor das cotas subscritas, característica central do condomínio de fundos.",
+      "source": "new:175-resp-limitada"
+    },
+    {
+      "id": "pec-d-10",
+      "chapter": "X",
+      "q": "Fundos de investimento imobiliário (FII) no marco da Resolução CVM 175/2022:",
+      "options": [
+        "foram revogados e substituídos apenas por CRIs.",
+        "têm regras específicas no Anexo da Resolução aplicável a FII (condomínio fechado, política de investimento, oferta etc.).",
+        "só podem investir em títulos públicos.",
+        "não podem ter cotas negociadas em bolsa."
+      ],
+      "correct": 1,
+      "explanation": "A RCVM 175/2022 traz anexo próprio para FII, consolidando regras antes espalhadas em instruções revogadas (ex.: ICVM 555).",
+      "source": "new:175-anexo-fii"
+    },
+    {
+      "id": "pec-d-11",
+      "chapter": "XIV",
+      "q": "A Resolução CMN nº 5.118/2024 restringe o lastro de CRAs e CRIs. É vedado lastrear com:",
+      "options": [
+        "direitos creditórios do agronegócio em CRA de emissor do setor.",
+        "títulos de dívida cujo devedor seja instituição financeira ou conglomerado prudencial (salvo exceções regulamentares).",
+        "créditos imobiliários em CRI de emissor do setor imobiliário.",
+        "recebíveis performados de consumo."
+      ],
+      "correct": 1,
+      "explanation": "Art. 3º da Res. CMN 5.118/2024: veda lastro com devedores instituição financeira/conglomerado prudencial, operações entre partes relacionadas, entre outras restrições; há regras de transição para emissões anteriores.",
+      "source": "new:cmn-5118-lastro"
+    },
+    {
+      "id": "pec-d-12",
+      "chapter": "IX",
+      "q": "A Lei nº 14.754/2023 instituiu tributação periódica (come-cotas) para fundos de investimento. Sobre fundos fechados, assinale a correta:",
+      "options": [
+        "permanecem isentos de qualquer antecipação de IR.",
+        "passam a sofrer retenção na fonte nos últimos dias úteis de maio e novembro, nos termos do art. 17 (abrangendo condomínios abertos e fechados, salvo exceções legais).",
+        "só têm come-cotas se forem FII.",
+        "come-cotas incide apenas sobre cotistas pessoa jurídica."
+      ],
+      "correct": 1,
+      "explanation": "Art. 17, § 8º, da Lei 14.754/2023: incidência periódica abrange fundos abertos e fechados, com retenção em maio e novembro; alíquotas conforme longo/curto prazo (15%/20% na periodicidade, complemento no resgate).",
+      "source": "new:lei-14754-comecotas-fechado"
+    },
+    {
+      "id": "pec-d-13",
+      "chapter": "I",
+      "q": "Quanto à tributação de investimentos no exterior pela Lei nº 14.754/2023, para pessoa física residente no Brasil:",
+      "options": [
+        "lucros de entidades controladas no exterior ficam isentos até repatriação.",
+        "rendimentos de aplicações diretas e lucros de entidades controladas em paraíso fiscal ou com renda passiva relevante podem ser tributados anualmente (alíquota de 15%), com apuração na declaração anual.",
+        "offshore nunca exige balanço patrimonial.",
+        "fundos no exterior usam sempre regime de caixa sem ajuste anual."
+      ],
+      "correct": 1,
+      "explanation": "Lei 14.754/2023 e IN RFB 2.180/2024: regime de transparência fiscal anual para aplicações no exterior e entidades controladas (art. 2º e seguintes); alíquota 15% na DAA para hipóteses previstas.",
+      "source": "new:lei-14754-offshore"
+    }
+  ],
+  "chapter_labels": {
+    "I": "Cap. I — Atividade do assessor",
+    "III": "Cap. III — PLD/FTP e suitability",
+    "VII": "Cap. VII — Gestão de risco",
+    "VIII": "Cap. VIII — Mercado de capitais",
+    "IX": "Cap. IX — Fundos de investimento",
+    "X": "Cap. X — Anexos Res. CVM 175 / outros fundos",
+    "XII": "Cap. XII — Clubes de investimento",
+    "XIV": "Cap. XIV — Outros produtos",
+    "XV": "Cap. XV — Derivativos"
+  },
+  "targets": {
+    "I": 4,
+    "III": 4,
+    "VII": 6,
+    "VIII": 10,
+    "IX": 4,
+    "X": 2,
+    "XII": 2,
+    "XIV": 4,
+    "XV": 4
+  }
+}
