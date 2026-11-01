@@ -311,6 +311,7 @@ def main():
         <div class="tab-bar">
             <button type="button" class="tab-btn active" data-tab="1">Simulado 1 · ANCORD ({n1})</button>
             <button type="button" class="tab-btn" data-tab="2">Simulado 2 · Top Invest ({n2})</button>
+            <a class="tab-link" href="simulado_pec_recertificacao.html" style="padding:12px 20px;border-radius:8px;font-weight:600;font-size:0.92rem;background:#bee3f8;color:var(--primary);text-decoration:none;">PEC · Recertificação (40)</a>
         </div>
         <h1 id="hdr-title">Simulado ANCORD 1</h1>
         <p id="hdr-desc">{desc1}</p>

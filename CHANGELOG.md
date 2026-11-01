@@ -6,7 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
-<!-- Add significant work here before folding it into a dated release section below. -->
+### Added
+
+- PEC recertification mock: `simulado_pec_recertificacao.html` (40 questions, chapter-weighted pass rules, drill tab), built via `_build_html_pec.py` and `_pec_bank.py`; question bank snapshot `_pec_questions.json`.
+- Cross-link from tabbed simulado (`simulado_ancord_1.html`) to the PEC page.
 
 ## [0.4.0] - 2026-05-10
 
